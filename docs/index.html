@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jurisprudência Registral</title>
+<meta name="description" content="Decisões do Conselho Superior da Magistratura de São Paulo em matéria registral, compiladas do Diário de Justiça Eletrônico Nacional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --papel:#FAF9F7; --cartao:#FFFFFF; --fundo:#F1EFEB;
+  --tinta:#1A1A1C; --tinta-2:#55555C; --tinta-3:#8A8A93;
+  --linha:#E3E0DA; --realce:#7A2230; --realce-fraco:#F5E9EA;
+  --fd:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --fc:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --fm:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --papel:#15151A; --cartao:#1D1D23; --fundo:#24242B;
+    --tinta:#EDEBE6; --tinta-2:#B3B0A9; --tinta-3:#807D78;
+    --linha:#33333C; --realce:#E0828F; --realce-fraco:#2A1D21;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --papel:#15151A; --cartao:#1D1D23; --fundo:#24242B;
+  --tinta:#EDEBE6; --tinta-2:#B3B0A9; --tinta-3:#807D78;
+  --linha:#33333C; --realce:#E0828F; --realce-fraco:#2A1D21;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--papel); color:var(--tinta);
+  font-family:var(--fd); font-size:17px; line-height:1.62;
+  font-synthesis-weight:none;
+}
+.env{
+  max-width:46rem; margin:0 auto;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+header{border-bottom:1px solid var(--linha); background:var(--cartao)}
+header .env{padding-block:38px 26px}
+h1{font-family:var(--fd); font-size:clamp(1.7rem,5vw,2.3rem); font-weight:700;
+   letter-spacing:-.015em; margin:0 0 6px; text-wrap:balance; line-height:1.15}
+.sub{font-family:var(--fc); color:var(--tinta-2); font-size:.98rem; margin:0; max-width:40rem}
+.marca{font-family:var(--fm); font-size:.7rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--realce); margin:0 0 14px; font-weight:500}
+.placar{display:flex; flex-wrap:wrap; gap:10px 30px; margin-top:24px}
+.placar div{display:flex; flex-direction:column}
+.placar .n{font-family:var(--fd); font-size:1.5rem; font-weight:700; line-height:1.1}
+.placar .k{font-family:var(--fc); font-size:.7rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--tinta-3); margin-top:2px}
+
+nav{position:sticky; top:env(safe-area-inset-top,0px); z-index:10;
+  background:var(--papel); border-bottom:1px solid var(--linha)}
+nav .env{display:flex; gap:4px; padding-block:0; overflow-x:auto;
+  scrollbar-width:none}
+nav .env::-webkit-scrollbar{display:none}
+.aba{font-family:var(--fc); font-size:.88rem; font-weight:500; background:none;
+  border:none; border-bottom:2px solid transparent; color:var(--tinta-3);
+  padding:13px 12px; cursor:pointer; white-space:nowrap}
+.aba[aria-selected="true"]{color:var(--realce); border-bottom-color:var(--realce)}
+.aba:hover{color:var(--tinta)}
+
+main .env{padding-block:30px 70px}
+.busca{margin:0 0 20px}
+.busca input{width:100%; font-family:var(--fc); font-size:.95rem; padding:11px 14px;
+  border:1px solid var(--linha); border-radius:9px; background:var(--cartao);
+  color:var(--tinta)}
+.busca input:focus{outline:2px solid var(--realce); outline-offset:-1px; border-color:transparent}
+.conta{font-family:var(--fc); font-size:.8rem; color:var(--tinta-3); margin-top:8px}
+
+article{border-top:1px solid var(--linha); padding:26px 0}
+article:first-of-type{border-top:none; padding-top:4px}
+.topo{display:flex; flex-wrap:wrap; gap:6px 14px; align-items:baseline; margin-bottom:10px}
+.proc{font-family:var(--fm); font-size:.76rem; color:var(--tinta-3)}
+.com{font-family:var(--fc); font-size:.72rem; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--realce); background:var(--realce-fraco); padding:3px 9px; border-radius:5px;
+  font-weight:600}
+.dt{font-family:var(--fm); font-size:.76rem; color:var(--tinta-3); margin-left:auto}
+h2{font-family:var(--fd); font-size:1.22rem; font-weight:600; line-height:1.34;
+  margin:0 0 4px; text-wrap:balance}
+.tema{font-family:var(--fc); font-size:.72rem; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--tinta-3); font-weight:600; margin:0 0 12px}
+article p{margin:0 0 12px; max-width:62ch}
+.orient{background:var(--fundo); border-left:2px solid var(--realce);
+  padding:14px 16px; margin:16px 0 0; border-radius:0 7px 7px 0}
+.orient .r{font-family:var(--fm); font-size:.68rem; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--realce); display:block; margin-bottom:6px; font-weight:500}
+.orient ul{margin:0; padding-left:19px}
+.orient li{margin-bottom:5px}
+.orient li:last-child{margin-bottom:0}
+.orient p{margin:0; max-width:none}
+.aten{border-left:2px solid var(--tinta-3); background:transparent;
+  padding:4px 0 4px 14px; margin:14px 0 0; font-size:.93rem; color:var(--tinta-2)}
+.aten .r{font-family:var(--fm); font-size:.68rem; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--tinta-3); display:block; margin-bottom:4px}
+details{margin-top:16px}
+summary{font-family:var(--fc); font-size:.84rem; color:var(--realce); cursor:pointer;
+  font-weight:500; padding:4px 0}
+summary::marker{color:var(--tinta-3)}
+.integra{font-family:var(--fm); font-size:.8rem; line-height:1.7; white-space:pre-wrap;
+  background:var(--fundo); padding:16px; border-radius:9px; margin-top:10px;
+  overflow-x:auto; color:var(--tinta-2)}
+
+.prosa h3{font-family:var(--fc); font-size:.7rem; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--tinta-3); margin:30px 0 9px; font-weight:700}
+.prosa h3:first-child{margin-top:0}
+.prosa p{margin:0 0 13px; max-width:62ch}
+.prosa code{font-family:var(--fm); font-size:.84em; background:var(--fundo);
+  padding:2px 5px; border-radius:4px}
+.prosa a{color:var(--realce)}
+.tab{width:100%; border-collapse:collapse; font-family:var(--fc); font-size:.88rem; margin:14px 0}
+.tab th,.tab td{text-align:left; padding:9px 12px 9px 0; border-bottom:1px solid var(--linha)}
+.tab th{font-size:.7rem; letter-spacing:.09em; text-transform:uppercase; color:var(--tinta-3)}
+.rolar{overflow-x:auto}
+.vazio{font-family:var(--fc); color:var(--tinta-3); padding:40px 0; text-align:center}
+footer{border-top:1px solid var(--linha); background:var(--cartao)}
+footer .env{padding-block:26px 40px; font-family:var(--fc); font-size:.82rem; color:var(--tinta-3)}
+footer p{margin:0 0 7px; max-width:60ch}
+@media (max-width:420px){
+  body{font-size:16px}
+  .dt{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<header><div class="env">
+  <p class="marca">Comarca de Assis · São Paulo</p>
+  <h1>Jurisprudência Registral</h1>
+  <p class="sub">Decisões do Conselho Superior da Magistratura de São Paulo em matéria registral, compiladas do Diário de Justiça Eletrônico Nacional. Cada acórdão traz a tese em linguagem direta e o que ela muda na qualificação.</p>
+  <div class="placar">
+    <div><span class="n" id="p-ac">—</span><span class="k">Acórdãos</span></div>
+    <div><span class="n" id="p-ed">—</span><span class="k">Edições varridas</span></div>
+    <div><span class="n" id="p-pe">—</span><span class="k">Período</span></div>
+  </div>
+</div></header>
+
+<nav><div class="env" role="tablist">
+  <button class="aba" id="t-ac" role="tab" aria-selected="true">Decisões do CSM</button>
+  <button class="aba" id="t-ed" role="tab" aria-selected="false">Edições varridas</button>
+  <button class="aba" id="t-or" role="tab" aria-selected="false">De onde vem</button>
+</div></nav>
+
+<main><div class="env">
+
+  <section id="p-ac-sec" role="tabpanel">
+    <div class="busca">
+      <input type="search" id="q" placeholder="Buscar por comarca, tese, número do processo…" aria-label="Buscar nos acórdãos">
+      <div class="conta" id="conta"></div>
+    </div>
+    <div id="lista"></div>
+  </section>
+
+  <section id="p-ed-sec" role="tabpanel" hidden>
+    <div class="rolar"><table class="tab" id="tab-ed">
+      <thead><tr><th>Data</th><th>Atos</th><th>Acórdãos</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="p-or-sec" role="tabpanel" hidden class="prosa">
+    <h3>As duas fontes</h3>
+    <p>Este material não é produzido aqui. É recorte de <b>dois diários oficiais</b>, os dois abertos e sem senha.</p>
+    <p><b>DJEN</b> — Diário de Justiça Eletrônico Nacional, do Conselho Nacional de Justiça. É de onde vêm os acórdãos do Conselho Superior da Magistratura, no órgão “Intimação de Acordãos” do Tribunal de Justiça de São Paulo. O registro traz as partes, o relator, o resultado e a ementa inteira.</p>
+    <p><b>DEJESP</b> — Diário Eletrônico da Justiça do Estado de São Paulo, em <a href="https://www.tjsp.jus.br/dejesp" target="_blank" rel="noopener">tjsp.jus.br/dejesp</a>. Entrou no ar em 23 de julho de 2025 e substituiu o Caderno 1, Administrativo, do antigo Diário da Justiça Eletrônico. É onde a Corregedoria Geral e a Presidência publicam.</p>
+    <p>As duas <b>não se sobrepõem</b>: os atos da Corregedoria não estão no DJEN, e os acórdãos do Conselho Superior não estão no DEJESP. Quem quiser a informação completa tem de ler as duas.</p>
+
+    <h3>O antigo diário acabou</h3>
+    <p>A consulta do antigo Diário da Justiça Eletrônico devolve sempre <b>22 de julho de 2025</b>, qualquer que seja a data pedida. Não é defeito nem bloqueio: é a última edição que existe. No dia seguinte o Caderno 1 foi extinto e o DEJESP tomou o lugar.</p>
+
+    <h3>Como a compilação foi conferida</h3>
+    <p>Em 22 de outubro de 2026 esta compilação foi testada contra 35 edições de um serviço de curadoria pago, acórdão por acórdão, pelo número do processo.</p>
+    <div class="rolar"><table class="tab">
+      <thead><tr><th>Filtro</th><th>No serviço pago</th><th>Recuperados</th><th>Perda</th></tr></thead>
+      <tbody>
+        <tr><td>Acórdãos do CSM (35 edições)</td><td>30</td><td><b>30</b></td><td><b>0</b></td></tr>
+        <tr><td>Corregedoria Geral (3 edições)</td><td>32</td><td><b>32</b></td><td><b>0</b></td></tr>
+      </tbody>
+    </table></div>
+    <p>O texto do DJEN é igual ou maior que o do serviço pago, e traz seções que ele corta — “Legislação citada”, “Jurisprudência citada” e os advogados.</p>
+
+    <h3>O que não está aqui</h3>
+    <p>As decisões de primeira instância das Varas de Registros Públicos da Capital ficam fora. São decisões do juiz corregedor permanente da Capital, que valem para as serventias da Capital: não vinculam outra comarca e não são precedente. O que for relevante sobe por apelação e aparece como acórdão do Conselho Superior — ou seja, chega aqui de todo jeito.</p>
+
+    <h3>Ressalva</h3>
+    <p>As sínteses e as orientações práticas são leitura dos acórdãos, não texto oficial. Para citar em processo ou em nota de devolução, use sempre o inteiro teor na fonte. O número do processo está em cada item.</p>
+  </section>
+
+</div></main>
+
+<footer><div class="env">
+  <p>Compilado a partir do DJEN e do DEJESP, diários oficiais de acesso aberto. As sínteses e orientações são leitura própria dos acórdãos e não substituem o texto oficial.</p>
+  <p>Mantido pela coordenação de tecnologia e inovação do Cartório de Registro de Imóveis, Títulos e Documentos e Civil de Pessoas Jurídicas da Comarca de Assis/SP.</p>
+</div></footer>
+
+<script type="module">
+import { Fonte } from './fonte.js';
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
+  ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+const $ = s => document.querySelector(s);
+
+// Modo `seed`: lê o dados.json do próprio repositório. Para ler do Firestore,
+// trocar por Fonte.usar('firestore', { projectId: '…', apiKey: '…' }).
+let D = { acordaos: [], dias: [] };
+try {
+  D = await Fonte.usar('seed').carregar();
+} catch (e) {
+  $('#lista').innerHTML = '<p class="vazio">Não foi possível carregar os dados: '
+    + esc(e.message) + '</p>';
+}
+
+const AC = D.acordaos || [], DIAS = D.dias || [];
+
+$('#p-ac').textContent = AC.length;
+$('#p-ed').textContent = DIAS.length;
+if (DIAS.length) {
+  const ds = DIAS.map(d => d.d).filter(Boolean);
+  $('#p-pe').textContent = ds.length ? (ds[ds.length - 1].slice(0, 5) + '–' + ds[0].slice(0, 5)) : '—';
+}
+
+function bloco(a) {
+  const r = a.resumo || {};
+  const corpo = Array.isArray(r.corpo) ? r.corpo : (r.corpo ? [r.corpo] : []);
+  const ori = Array.isArray(r.orientacao) ? r.orientacao : (r.orientacao ? [r.orientacao] : []);
+  return '<article>'
+    + '<div class="topo">'
+      + (a.com ? '<span class="com">' + esc(a.com) + '</span>' : '')
+      + '<span class="proc">' + esc(a.num) + '</span>'
+      + (a.ed ? '<span class="dt">' + esc(a.ed) + '</span>' : '')
+    + '</div>'
+    + (r.tema ? '<p class="tema">' + esc(r.tema) + '</p>' : '')
+    + '<h2>' + esc(a.titulo) + '</h2>'
+    + corpo.map(p => '<p>' + esc(p) + '</p>').join('')
+    + (ori.length ? '<div class="orient"><span class="r">Na qualificação</span>'
+        + (ori.length > 1
+            ? '<ul>' + ori.map(o => '<li>' + esc(o) + '</li>').join('') + '</ul>'
+            : '<p>' + esc(ori[0]) + '</p>')
+      + '</div>' : '')
+    + (r.atencao ? '<div class="aten"><span class="r">Ponto de atenção</span>'
+        + esc(r.atencao) + '</div>' : '')
+    + (a.integra ? '<details><summary>Ver a íntegra como publicada</summary>'
+        + '<div class="integra">' + esc(a.integra) + '</div></details>' : '')
+    + '</article>';
+}
+
+function pinta(termo = '') {
+  const t = termo.trim().toLowerCase();
+  const sel = !t ? AC : AC.filter(a =>
+    JSON.stringify(a).toLowerCase().includes(t));
+  $('#lista').innerHTML = sel.length
+    ? sel.map(bloco).join('')
+    : '<p class="vazio">Nada encontrado para “' + esc(termo) + '”.</p>';
+  $('#conta').textContent = t
+    ? sel.length + ' de ' + AC.length + ' acórdãos'
+    : AC.length + ' acórdãos, do mais recente ao mais antigo';
+}
+pinta();
+$('#q').addEventListener('input', e => pinta(e.target.value));
+
+$('#tab-ed tbody').innerHTML = DIAS.map(d =>
+  '<tr><td>' + esc(d.d) + (d.wd ? ' <span class="proc">' + esc(d.wd) + '</span>' : '') + '</td>'
+  + '<td>' + (d.sem ? '<span class="proc">sem edição</span>' : esc(d.atos ?? '—')) + '</td>'
+  + '<td>' + esc(d.nac ?? '—') + '</td></tr>').join('');
+
+const abas = { ac: '#p-ac-sec', ed: '#p-ed-sec', or: '#p-or-sec' };
+const TOKENS = Object.keys(abas);
+function troca(k) {
+  if (!abas[k]) return;
+  for (const [n, sec] of Object.entries(abas)) {
+    $('#t-' + n).setAttribute('aria-selected', String(n === k));
+    $(sec).hidden = n !== k;
+  }
+  try { history.replaceState(null, '', '#' + k); } catch (_) {}
+}
+TOKENS.forEach(k => $('#t-' + k).addEventListener('click', () => troca(k)));
+const inicial = (location.hash || '').replace('#', '');
+if (TOKENS.includes(inicial)) troca(inicial);
+</script>
+</body>
+</html>
