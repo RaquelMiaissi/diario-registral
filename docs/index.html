@@ -203,14 +203,14 @@ footer p{margin:0 0 7px; max-width:60ch}
 </div></footer>
 
 <script type="module">
-import { Fonte } from './fonte.js';
+import { Fonte, FIREBASE } from './fonte.js';
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
   ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
 const $ = s => document.querySelector(s);
 
-// Modo `seed`: lê o dados.json do próprio repositório. Para ler do Firestore,
-// trocar por Fonte.usar('firestore', { projectId: '…', apiKey: '…' }).
+// Modo `seed`: lê o dados.json do próprio repositório. Quando o Firestore
+// receber a carga inicial, trocar por: Fonte.usar('firestore', FIREBASE).
 let D = { acordaos: [], dias: [] };
 try {
   D = await Fonte.usar('seed').carregar();

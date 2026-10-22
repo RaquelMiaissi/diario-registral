@@ -1,4 +1,24 @@
-# Firebase — o que a Raquel precisa fazer
+# Firebase — situação em 22/10/2026
+
+**Feito pelo Claude, com a Raquel logada no painel do app:**
+
+| Item | Valor |
+|---|---|
+| Projeto | `diarioregistral` (número 74636502994), plano Spark |
+| Firestore | `(default)`, edição Standard, **southamerica-east1 (São Paulo)**, modo de produção |
+| App web | "Diário Registral — site" |
+| `projectId` | `diarioregistral` |
+| `apiKey` | `AIzaSyDKC7RK3p-FHl0gngqtmwrcSa1uV1kXphs` (identificador público do cliente) |
+| `appId` | `1:74636502994:web:50ddbeb60ddd9af4810a0b` |
+| Regras | `firestore.rules` publicadas e **testadas**: 200 em `acordaos`/`edicoes`, 403 em `interno`/`conferencia`/escrita |
+
+**Pendente:** a carga inicial dos dados internos (passo 5 abaixo — exige a
+conta de serviço, que fica só com a Raquel) e a troca do site de `seed` para
+`firestore` depois disso.
+
+---
+
+# O passo a passo original (para referência)
 
 Eu não consigo fazer estes passos: exigem a sua conta e, em alguns deles, a
 sua senha. **Eu não digito senha, token nem chave de acesso sua em lugar

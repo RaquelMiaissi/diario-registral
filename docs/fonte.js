@@ -6,7 +6,20 @@
 // Nenhuma credencial entra neste arquivo além da chave pública do cliente,
 // que não é segredo. Quem decide o acesso são as REGRAS do banco.
 
+// Projeto Firebase "diarioregistral", criado em 22/10/2026.
+// projectId e apiKey são identificadores públicos do cliente — não são segredo.
+// Quem controla o acesso são as regras em ../firestore.rules (conferidas:
+// leitura livre em acordaos/edicoes, 403 em interno/conferencia e em escrita).
+export const FIREBASE = {
+  projectId: 'diarioregistral',
+  apiKey: 'AIzaSyDKC7RK3p-FHl0gngqtmwrcSa1uV1kXphs',
+  appId: '1:74636502994:web:50ddbeb60ddd9af4810a0b',
+  local: 'southamerica-east1',
+};
+
 export const Fonte = {
+  // 'seed' enquanto o Firestore estiver vazio; trocar para 'firestore' depois
+  // da carga inicial: Fonte.usar('firestore', FIREBASE)
   modo: 'seed',
   config: null,
 
