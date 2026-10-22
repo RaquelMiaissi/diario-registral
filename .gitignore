@@ -11,3 +11,8 @@ __pycache__/
 *.pyc
 .DS_Store
 node_modules/
+
+# dados brutos de carga inicial — contêm a árvore do índice do compilador pago,
+# a verificação do Filtro 1 e links para ele. Ficam fora do repositório público;
+# o lugar deles é o Firestore, atrás das regras de acesso.
+dados/seed/
