@@ -1,0 +1,13 @@
+# segredos — nunca versionar
+.env
+.env.*
+*-serviceAccount*.json
+*-adminsdk-*.json
+firebase-debug.log
+.firebase/
+
+# locais
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
