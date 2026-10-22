@@ -1,4 +1,4 @@
-# CLAUDE.md — Monitoramento do Diário Oficial (INR Publicações)
+# CLAUDE.md — Diário Registral
 
 > Arquivo de instruções do projeto. Leia este arquivo antes de executar qualquer
 > rotina de monitoramento do Diário Oficial.

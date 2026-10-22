@@ -8,7 +8,7 @@ nenhum** — então esta parte é sua, e depois eu sigo daqui.
 
 1. Entre em <https://console.firebase.google.com> com a conta
    `rmiaissi@gmail.com`.
-2. **Adicionar projeto** → nome sugerido: `classificador-inr-assis`.
+2. **Adicionar projeto** → nome sugerido: `diario-registral`.
 3. Google Analytics: pode **desativar**. Não serve para nada aqui e simplifica.
 
 ## 2. Criar o banco

@@ -1,6 +1,6 @@
-# Monitoramento do Classificador INR SP
+# Diário Registral
 
-Varredura diária das publicações oficiais de interesse do Cartório de Registro
+Leitura diária do Diário oficial em matéria registral. Varredura das publicações oficiais de interesse do Cartório de Registro
 de Imóveis, Títulos e Documentos e Civil de Pessoas Jurídicas da Comarca de
 Assis/SP.
 

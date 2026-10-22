@@ -1,6 +1,6 @@
 # Como publicar no GitHub
 
-O repositório já está pronto e com dois commits, em `~/Sites/classificador-inr`
+O repositório já está pronto e com três commits, em `~/Sites/diario-registral`
 no seu Mac. Falta só criar o repositório no GitHub e enviar.
 
 **Eu não faço estes passos** porque exigem a sua credencial, e eu não digito
@@ -10,7 +10,7 @@ token nem senha sua em lugar nenhum. São três comandos.
 
 Em <https://github.com/new>:
 
-- **Repository name:** `classificador-inr`
+- **Repository name:** `diario-registral`
 - **Public** — precisa ser público para o GitHub Pages funcionar no plano
   gratuito. O que está neste repositório foi preparado para ser público:
   só código, documentação e material de diário oficial aberto.
@@ -25,8 +25,8 @@ Clique em **Create repository** e não feche a página.
 Abra o Terminal (⌘ + espaço, digite "Terminal") e cole, uma linha por vez:
 
 ```sh
-cd ~/Sites/classificador-inr
-git remote add origin https://github.com/SEU-USUARIO/classificador-inr.git
+cd ~/Sites/diario-registral
+git remote add origin https://github.com/SEU-USUARIO/diario-registral.git
 git push -u origin main
 ```
 
@@ -50,14 +50,14 @@ No repositório no GitHub: **Settings → Pages**.
 - **Save**
 
 Em um ou dois minutos o site fica no ar em
-`https://SEU-USUARIO.github.io/classificador-inr/`.
+`https://SEU-USUARIO.github.io/diario-registral/`.
 
 ## Depois, no dia a dia
 
 Eu continuo fazendo os commits aqui — você só precisa dar o push:
 
 ```sh
-cd ~/Sites/classificador-inr && git push
+cd ~/Sites/diario-registral && git push
 ```
 
 ## Não esqueça
