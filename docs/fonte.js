@@ -36,10 +36,16 @@ export const Fonte = {
 
   // Dados versionados junto com o código. Só deve conter o que é público:
   // acórdãos e atos de fonte DEJESP/DJEN. Ver dados/schema.md.
+  // Tenta o dados.json ao lado; se a página foi aberta direto da pasta (file://)
+  // o navegador bloqueia esse fetch, e aí usa a cópia embutida no index.html.
   async _seed() {
-    const r = await fetch('./dados.json');
-    if (!r.ok) throw new Error('não foi possível ler dados.json: ' + r.status);
-    return r.json();
+    try {
+      const r = await fetch('./dados.json');
+      if (r.ok) return await r.json();
+    } catch (_) { /* file:// ou sem rede: cai no embutido */ }
+    const el = document.getElementById('dados-inline');
+    if (el) return JSON.parse(el.textContent);
+    throw new Error('não foi possível ler dados.json nem a cópia embutida');
   },
 
   // Firestore pela API REST — sem SDK, para a página seguir sendo um arquivo só.
