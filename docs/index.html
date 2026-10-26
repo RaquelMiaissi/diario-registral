@@ -106,6 +106,7 @@ details{margin-top:16px}
 summary{font-family:var(--fc); font-size:.84rem; color:var(--realce); cursor:pointer;
   font-weight:500; padding:4px 0}
 summary::marker{color:var(--tinta-3)}
+.integra-full{font-family:var(--fd); font-size:1rem; line-height:1.68; white-space:pre-wrap; color:var(--tinta); max-width:66ch; margin:10px 0 0}
 .integra{font-family:var(--fm); font-size:.8rem; line-height:1.7; white-space:pre-wrap;
   background:var(--fundo); padding:16px; border-radius:9px; margin-top:10px;
   overflow-x:auto; color:var(--tinta-2)}
@@ -146,6 +147,7 @@ footer p{margin:0 0 7px; max-width:60ch}
 
 <nav><div class="env" role="tablist">
   <button class="aba" id="t-ac" role="tab" aria-selected="true">Decisões do CSM</button>
+  <button class="aba" id="t-in" role="tab" aria-selected="false">Íntegra</button>
   <button class="aba" id="t-ed" role="tab" aria-selected="false">Edições varridas</button>
   <button class="aba" id="t-or" role="tab" aria-selected="false">De onde vem</button>
 </div></nav>
@@ -159,6 +161,15 @@ footer p{margin:0 0 7px; max-width:60ch}
     </div>
     <div id="lista"></div>
   </section>
+
+  <section id="p-in-sec" role="tabpanel" hidden>
+    <div class="busca">
+      <input type="search" id="q-in" placeholder="Buscar na íntegra: comarca, processo, palavra…" aria-label="Buscar nas íntegras">
+      <div class="conta" id="conta-in"></div>
+    </div>
+    <div id="lista-in"></div>
+  </section>
+
 
   <section id="p-ed-sec" role="tabpanel" hidden>
     <div class="rolar"><table class="tab" id="tab-ed">
@@ -379,7 +390,28 @@ $('#tab-ed tbody').innerHTML = DIAS.map(d =>
   + '<td>' + (d.sem ? '<span class="proc">sem edição</span>' : esc(d.atos ?? '—')) + '</td>'
   + '<td>' + esc(d.nac ?? '—') + '</td></tr>').join('');
 
-const abas = { ac: '#p-ac-sec', ed: '#p-ed-sec', or: '#p-or-sec' };
+function blocoIntegra(a) {
+  return '<article>'
+    + '<div class="topo">'
+      + (a.com ? '<span class="com">' + esc(a.com) + '</span>' : '')
+      + '<span class="proc">' + esc(a.num) + '</span>'
+      + (a.ed ? '<span class="dt">' + esc(a.ed) + '</span>' : '')
+    + '</div>'
+    + '<h2>' + esc(a.titulo) + '</h2>'
+    + '<div class="integra-full">' + esc(a.integra || 'Íntegra não disponível.') + '</div>'
+    + (a.fonteUrl ? '<p class="conta" style="margin-top:10px">Fonte oficial: <a href="' + esc(a.fonteUrl) + '" target="_blank" rel="noopener" style="color:var(--realce)">' + esc(a.fonte || 'DJEN') + '</a></p>' : '')
+    + '</article>';
+}
+function pintaIntegra(termo = '') {
+  const t = termo.trim().toLowerCase();
+  const sel = !t ? AC : AC.filter(a => ((a.com||'') + ' ' + (a.num||'') + ' ' + (a.titulo||'') + ' ' + (a.integra||'')).toLowerCase().includes(t));
+  $('#lista-in').innerHTML = sel.length ? sel.map(blocoIntegra).join('') : '<p class="vazio">Nada encontrado para “' + esc(termo) + '”.</p>';
+  $('#conta-in').textContent = t ? sel.length + ' de ' + AC.length + ' íntegras' : AC.length + ' íntegras, texto oficial como publicado no DJEN';
+}
+pintaIntegra();
+$('#q-in').addEventListener('input', e => pintaIntegra(e.target.value));
+
+const abas = { ac: '#p-ac-sec', in: '#p-in-sec', ed: '#p-ed-sec', or: '#p-or-sec' };
 const TOKENS = Object.keys(abas);
 function troca(k) {
   if (!abas[k]) return;
