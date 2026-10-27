@@ -4,8 +4,8 @@ rules_version = '2';
 // público e o que é interno da serventia — não no repositório, que é público.
 //
 // Princípio: diário oficial aberto pode ser lido por qualquer um; verificação
-// do Filtro 1, marcação do que toca a rotina da serventia e qualquer coisa
-// reproduzida do INR exigem usuário autenticado.
+// do Filtro 1, marcação do que toca a rotina da serventia e dados herdados
+// do antigo serviço pago (inativos) exigem usuário autenticado.
 //
 // Escrita: NUNCA pelo cliente. Só pelo Admin SDK (conta de serviço), que
 // ignora estas regras. Assim nenhuma chave de escrita precisa existir no
@@ -30,15 +30,15 @@ service cloud.firestore {
     }
 
     // Atos da edição. Leitura livre só quando a fonte é diário oficial.
-    // Ato com fonte "INR" reproduz compilação de fornecedor contratado:
+    // Ato herdado do antigo serviço pago (fonte diferente de DEJESP/DJEN):
     // exige autenticação.
     match /atos/{id} {
       allow read: if resource.data.fonte in ['DEJESP', 'DJEN'];
       allow write: if false;
     }
 
-    // Resultado da conferência paralela — quanto a varredura aberta
-    // reproduziu do INR. Número de uso interno.
+    // Resultado da conferência de validação (set–out/2026) — quanto a
+    // leitura direta reproduziu do antigo serviço pago. Uso interno.
     match /conferencia/{id} {
       allow read: if request.auth != null;
       allow write: if false;

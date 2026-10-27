@@ -1,8 +1,9 @@
 # Diário Registral
 
-Leitura diária do Diário oficial em matéria registral. Varredura das publicações oficiais de interesse do Cartório de Registro
-de Imóveis, Títulos e Documentos e Civil de Pessoas Jurídicas da Comarca de
-Assis/SP.
+Leitura diária dos diários oficiais em matéria registral, para o Cartório de
+Registro de Imóveis, Títulos e Documentos e Civil de Pessoas Jurídicas da
+Comarca de Assis/SP. Fontes: só o DJEN e o DEJESP, diários oficiais abertos.
+Desde 26/10/2026 nenhuma fonte paga é usada.
 
 Dois filtros, decididos em 15/09/2026 e mantidos desde então:
 
@@ -13,16 +14,15 @@ Dois filtros, decididos em 15/09/2026 e mantidos desde então:
 
 ## De onde vêm os dados
 
-O INR Publicações não produz ato nenhum: o Classificador INR SP é recorte de
-**duas** fontes oficiais abertas, nenhuma delas com senha. Levantado e
-conferido processo por processo em 22/10/2026.
+Duas fontes oficiais abertas, nenhuma delas com senha. Levantado e conferido
+processo por processo em 22/10/2026; fonte única desde 26/10/2026.
 
 | Conteúdo | Fonte | Endereço |
 |---|---|---|
-| Acórdãos do CSM (Classificador I) | **DJEN** — Diário de Justiça Eletrônico Nacional, do CNJ, órgão "Intimação de Acordãos" (`orgaoId` 92345) | `comunicaapi.pje.jus.br/api/v1/comunicacao` |
-| Atos da Corregedoria Geral (Classificadores II e III) | **DEJESP** — Caderno 1 Administrativo, Subseção III, seções Dicoge | `tjsp.jus.br/dejesp` |
-| Atos da Presidência e da SEMA (parte do Classificador I) | **DEJESP** — Caderno 1, Seção I, Subseção I | idem |
-| Atos das 1ª e 2ª Varas de Registros Públicos da Capital (Classificador IV) | **DJEN**, `orgaoId` 93296 e 93416 | idem |
+| Acórdãos do CSM | **DJEN** — Diário de Justiça Eletrônico Nacional, do CNJ, órgão "Intimação de Acordãos" (`orgaoId` 92345) | `comunicaapi.pje.jus.br/api/v1/comunicacao` |
+| Atos da Corregedoria Geral | **DEJESP** — Caderno 1 Administrativo, Subseção III, seções Dicoge, bloco EXTRAJUDICIAL | `tjsp.jus.br/dejesp` |
+| Atos da Presidência e da SEMA | **DEJESP** — Caderno 1, Seção I, Subseção I | idem |
+| Decisões das 1ª e 2ª Varas de Registros Públicos da Capital (fora da triagem) | **DJEN**, `orgaoId` 93296 e 93416 | idem |
 
 As duas fontes **não se sobrepõem**: os atos da Corregedoria não estão no
 DJEN, e os acórdãos do CSM não estão no DEJESP. Quem quiser a informação
@@ -36,29 +36,24 @@ seguinte o Caderno 1 foi extinto e o DEJESP tomou o lugar. O DOE-SP
 (`do-api-web-search.doe.sp.gov.br`) responde com o envelope certo e
 `totalItems: 0` em toda tentativa — não é fonte utilizável.
 
-## Quanto a varredura aberta reproduz do INR
+## Como a leitura direta foi validada
 
-Retrotestado contra as 35 edições arquivadas de 01/09 a 22/10/2026.
+Antes de virar fonte única, a leitura direta dos dois diários foi conferida
+contra 35 edições do serviço de curadoria pago então assinado (INR, assinatura
+encerrada em 26/10/2026), de 01/09 a 22/10/2026, processo por processo.
 
-| Filtro | Atos no INR | Recuperados | Perda |
+| Filtro | No serviço pago | Recuperados | Perda |
 |---|---|---|---|
 | Acórdãos do CSM (35 edições) | 30 | **30** | **0** |
-| Corregedoria, Classif. II e III (20, 21 e 22/10) | 32 | **32** | **0** |
+| Corregedoria Geral (20, 21 e 22/10) | 32 | **32** | **0** |
 
-O texto do DJEN é igual ou maior que o do INR, e traz seções que o INR corta
-("Legislação citada", "Jurisprudência citada", advogados):
+O texto do DJEN é igual ou maior que o do serviço, e traz seções que ele cortava
+("Legislação citada", "Jurisprudência citada"). E chega antes: o serviço
+racionava 5 acórdãos por edição e empurrava o resto para os dias seguintes —
+por isso, em 26/10/2026, a data de 10 acórdãos nas páginas passou para a data
+real do DJEN. Os dados daquele período ficaram em `dados/arquivo/` (inativos).
 
-| Acórdão | DJEN | INR |
-|---|---|---|
-| 1001998-69.2026.8.26.0100 | 3.562 car. | 3.424 car. |
-| 1003618-59.2024.8.26.0271 | 1.217 car. | 1.276 car. |
-
-E chega antes: o INR raciona 5 acórdãos por edição e empurra o resto. O lote
-do DJEN de 09/10 só saiu na edição do INR de **13/10**, quatro dias depois.
-
-**O Classificador IV não é reproduzível por regra.** A seleção do INR ali é
-editorial: itens idênticos em classe e forma são separados pelo assunto e pela
-relevância. Está fora da triagem por decisão de 22/10/2026 — é primeira
+**As Varas de Registros Públicos da Capital estão fora da triagem** por decisão de 22/10/2026 — é primeira
 instância de outra comarca, não vincula Assis, e o que for relevante sobe por
 apelação e aparece no CSM. `src/varredura/iv_regra.py` guarda a regra de
 descarte por exclusão, para quando for preciso.
@@ -78,8 +73,7 @@ implementa a separação:
   São diário oficial aberto.
 - **Fica restrito a quem estiver autenticado** — a verificação do Filtro 1, a
   marcação do que toca a rotina da serventia, qualquer orientação interna, e os
-  atos cuja fonte é o INR, que reproduzem a compilação de um fornecedor
-  contratado.
+  dados herdados do serviço pago (inativos, em `dados/arquivo/`).
 
 ```
 src/varredura/    consultas às duas APIs (rodam no navegador)
@@ -109,15 +103,14 @@ Cada uma destas custou uma falha real. Não repetir.
 - **Nunca adivinhar a faixa de páginas da Subseção III.** Usar as páginas das
   seções `Dicoge` da lista de seções. A heurística de fim de faixa leu 72
   páginas em vez de 7 em 20/10/2026.
-- **Ritmo no INR.** Abrir cada edição uma vez e guardar. Em 22/10/2026 o IP foi
-  bloqueado ("Verificação de segurança") porque uma execução abriu 8 edições
-  quatro vezes cada em poucos minutos.
-- **A contagem sai do índice da edição, nunca da busca no texto.** Em
-  11/09/2026 um acórdão foi perdido e o dia reportado como "não consta nada".
+- **Ritmo nas APIs.** O DJEN devolve HTML em vez de JSON quando o ritmo
+  aperta: conferir o `content-type`, repetir com espera crescente, pausar
+  ~350 ms. Em 22/10/2026 um site foi bloqueado por IP depois de dezenas de
+  aberturas em poucos minutos — a lição vale para qualquer fonte.
 - **"Não consta nada" significa nada em matéria extrajudicial** — não que o
-  termo não apareça no diário. O INR corta ~95% do DEJESP antes de montar os
-  classificadores, e menções reais a Assis (designação de juiz auxiliar, obra
-  no fórum) ficam fora dos cinco classificadores.
+  termo não apareça no diário. Menções reais a Assis (designação de juiz
+  auxiliar, obra no fórum) existem no DEJESP e ficam fora por decisão de
+  22/10/2026.
 
 ## Segurança
 

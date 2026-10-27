@@ -1,63 +1,60 @@
-# Modelo de dados
+# Esquema de dados — Diário Registral
 
-Vale para Firestore e para Postgres/Supabase. Em Firestore cada item abaixo é
-uma coleção; em Postgres, uma tabela.
+Um único arquivo alimenta as duas páginas (a Jurisprudência Registral, no
+Claude, e o site Diário Registral): `docs/dados.json`. Reescrito em 26/10/2026,
+quando os diários oficiais passaram a ser a única fonte. O modelo anterior,
+organizado por edição do serviço pago, está em `dados/arquivo/` (inativo).
 
-## `edicoes` — uma por dia útil
+## `acordaos[]` — decisões do CSM, do mais recente ao mais antigo
+
 | campo | tipo | o que é |
 |---|---|---|
-| `data` | date | data da edição (chave) |
-| `diaSemana` | text | segunda-feira, terça-feira… |
-| `idInr` | int | id da edição no INR (nunca é previsível) |
-| `idDejesp` | int | id da edição do DEJESP do mesmo dia |
-| `totalAtos` | int | atos no índice — vem do índice, nunca da busca no texto |
-| `semEdicao` | bool | true quando a edição não subiu |
-| `assisVerificacao` | text | o que foi achado no Filtro 1, e o que foi descartado e por quê |
-| `correcao` | text | se o dia foi revarrido, por que |
+| `ed` | text | data em que o acórdão saiu no DJEN, `dd/mm/aaaa` (é a data mostrada nas páginas) |
+| `djen` | text | a mesma data em `AAAA-MM-DD`, para ordenar |
+| `djenId` | int | `id` do item no DJEN — chave para não duplicar |
+| `num` | text | "Apelação 1234567-89.2026.8.26.0405" ou "Embargos de Declaração …/50000" |
+| `com` | text | comarca, em caixa alta |
+| `titulo` | text | título curto em caixa alta, para o cartão |
+| `resumo.tema` | text | título que entrega a conclusão |
+| `resumo.corpo` | text[] | 2 a 4 parágrafos: o que foi decidido e por quê |
+| `resumo.orientacao` | text ou text[] | o que o escrevente faz na qualificação; "apenas ciência" se não muda a rotina |
+| `resumo.atencao` | text | só quando há exceção, limite ou tensão com lei ou precedente superior |
+| `integra` | text | acórdão como publicado no DJEN — partes, relator, resultado e ementa; NÃO é o inteiro teor (relatório e voto não saem no diário). Sem nomes de advogados nem números de OAB. O nome do campo é herdado; nas páginas aparece como "acórdão publicado" |
+| `fonte` | text | "DJEN — TJSP, órgão Intimação de Acordãos, dd/mm/aaaa" |
+| `fonteUrl` | text | consulta oficial: `https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=<20 dígitos>` |
 
-## `atos` — um por ato da edição
+## `dias[]` — um por dia útil varrido, do mais recente ao mais antigo
+
 | campo | tipo | o que é |
 |---|---|---|
-| `data` | date | → `edicoes.data` |
-| `classificador` | text | I, II, III, III-Especial, IV |
-| `orgao` | text | nível 1 do índice |
-| `secao` | text | nível 2 — Dicoge 5.1, SEMA 1.1.2, Caderno 3… |
-| `titulo` | text | nível 3 — o ato |
-| `tocaServentia` | bool | reflete na rotina de RI, RTD ou RCPJ |
-| `fonte` | text | DEJESP, DJEN ou INR |
-| `link` | text | url da fonte oficial |
+| `d` | text | data, `dd/mm/aaaa` |
+| `wd` | text | dia da semana |
+| `sem` | text ou null | motivo, quando o dia não foi varrido ou não houve edição |
+| `nac` | int | acórdãos do CSM com `ed` igual a `d` |
+| `fonte` | text | o que foi lido: "DJEN + DEJESP (edição NNNN)" |
 
-## `acordaos` — decisões do CSM (Filtro 2)
-| campo | tipo | o que é |
-|---|---|---|
-| `processo` | text | nº do processo (chave) |
-| `data` | date | disponibilização |
-| `comarca` | text | comarca de origem |
-| `titulo` | text | a tese em poucas palavras |
-| `tema` | text | título curto em caixa alta |
-| `corpo` | text[] | síntese, 2 a 5 linhas por parágrafo |
-| `orientacao` | text[] | o que o escrevente faz na qualificação |
-| `atencao` | text | ressalva, quando o precedente é controvertido |
-| `integra` | text | ementa estruturada como publicada |
-| `fonte` | text | DJEN, órgão "Intimação de Acordãos" (orgaoId 92345) |
-| `parcial` | bool | se a íntegra pode estar truncada |
+Os dias anteriores a 23/10/2026 foram varridos pelo serviço pago então
+assinado; `nac` deles foi recalculado pela data do DJEN em 26/10/2026 e o campo
+`fonte` ficou vazio.
 
-## `conferencia` — resultado da varredura paralela
-| campo | tipo | o que é |
-|---|---|---|
-| `data` | date | → `edicoes.data` |
-| `filtro` | text | `acordaos` ou `corregedoria` |
-| `totalInr` | int | atos que o INR publicou |
-| `recuperados` | int | quantos as fontes abertas acharam |
-| `perdidos` | text[] | atos do INR que a varredura aberta NÃO achou |
-| `sobra` | int | achados a mais, só em contagem |
+## Firestore (quando a carga for feita)
+
+- `acordaos/{djenId}` — um documento por acórdão, campos acima. Leitura pública.
+- `edicoes/{AAAA-MM-DD}` — um por dia, campos de `dias[]`. Leitura pública.
+- `atos/{id}` — atos da Corregedoria, quando passarem a ser guardados:
+  `data`, `edicaoDejesp`, `secao` (Dicoge n), `titulo`, `texto`, `fonte`
+  ("DEJESP"), `tocaServentia` (bool, interno). Leitura pública só com `fonte`
+  em DEJESP/DJEN.
+- `interno/**` — verificação de Assis, orientação interna, marcação de
+  impacto. Só autenticado.
+- `conferencia/{data}` — resultado da validação de set–out/2026. Só autenticado.
+
+Escrita sempre fechada ao cliente (`firestore.rules`); só pelo Admin SDK, com
+chave que nunca passa por conversa nem entra no repositório.
 
 ## Acesso
 
-`acordaos` e os `atos` cuja `fonte` é DEJESP ou DJEN vêm de diário oficial
-aberto — podem ser de leitura pública.
-
-`edicoes.assisVerificacao`, `atos.tocaServentia` e qualquer orientação
-interna são **documento interno da serventia**. Os `atos` com `fonte` = INR
-reproduzem a compilação de um fornecedor contratado. Esses três ficam
-restritos a quem estiver autenticado.
+Acórdãos e atos de diário oficial aberto podem ser lidos por qualquer um. A
+verificação de Assis, a marcação do que toca a rotina da serventia e qualquer
+orientação interna são documento interno do cartório e ficam restritos a quem
+estiver autenticado.

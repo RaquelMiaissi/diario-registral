@@ -1,27 +1,31 @@
 import json
-D = json.load(open('dados-limpo.json', encoding='utf-8'))
+import os, sys
+RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DADOS = sys.argv[1] if len(sys.argv) > 1 else os.path.join(RAIZ, 'docs', 'dados.json')
+SAIDA = sys.argv[2] if len(sys.argv) > 2 else os.path.join(RAIZ, 'docs', 'jurisprudencia-registral.html')
+D = json.load(open(DADOS, encoding='utf-8'))
 
 ORIGEM = [
- {"cls":"I","nome":"Acórdãos do Conselho Superior da Magistratura",
-  "secoes":["DJEN","Intimação de Acordãos","ACÓRDÃO"],
-  "onde":"DJEN — Diário de Justiça Eletrônico Nacional, do Conselho Nacional de Justiça, no órgão “Intimação de Acordãos” do TJSP. O registro traz as partes, o relator, o resultado do julgamento e a ementa inteira. O número do voto, que o INR exibe no alto da íntegra, não está no DJEN: vem do próprio acórdão.",
-  "prova":"Conferido pelo número do processo: Itapevi 1003618-59.2024.8.26.0271 aparece no DJEN em 11/09/2026, e Várzea Paulista 1002736-75.2025.8.26.0655 em 14/09/2026 — as mesmas datas que o INR declara no rodapé de cada ato.",
+ {"cls":"CSM","nome":"Acórdãos do Conselho Superior da Magistratura",
+  "secoes":["DJEN","TJSP","Intimação de Acordãos"],
+  "onde":"DJEN — Diário de Justiça Eletrônico Nacional, do Conselho Nacional de Justiça. O Tribunal de Justiça de São Paulo publica cada acórdão registral no órgão “Intimação de Acordãos” (código 92345), que só traz acórdãos do Conselho Superior em matéria de registro. O registro traz as partes, o relator, o resultado do julgamento e a ementa inteira — é o texto da aba Acórdãos publicados — o acórdão, não o inteiro teor (relatório e voto ficam nos autos).",
+  "prova":"Conferido processo por processo, pelo número: os 40 acórdãos desta página foram localizados no DJEN, e a data mostrada em cada um é a data em que ele saiu lá.",
   "alinea":"Alimenta a alínea <b>a</b> do item 65"},
- {"cls":"I","nome":"Atos da Presidência e da SEMA",
-  "secoes":["DEJESP","Caderno 1 — Administrativo","Seção I","Subseção I","SEMA 1.3","SEMA 3.1"],
-  "onde":"DEJESP — Diário Eletrônico da Justiça do Estado de São Paulo, Caderno 1 — Administrativo, na Seção I, Subseção I (Atos e comunicados da Presidência). SEMA é a Secretaria da Magistratura do Tribunal.",
+ {"cls":"CGJ","nome":"Atos, decisões e comunicados da Corregedoria Geral da Justiça",
+  "secoes":["DEJESP","Caderno 1 — Administrativo","Subseção III","EXTRAJUDICIAL","Dicoge 1","Dicoge 3","Dicoge 5"],
+  "onde":"DEJESP — Diário Eletrônico da Justiça do Estado de São Paulo, Caderno 1 — Administrativo, Subseção III (Atos e comunicados da Corregedoria Geral da Justiça), bloco EXTRAJUDICIAL. Dicoge é a Diretoria da Corregedoria Geral; o número identifica a divisão de origem. Aqui saem processos CG, comunicados CG, portarias, correições e designações de corregedores permanentes.",
+  "prova":"Conferido na edição 4545, de 22/10/2026: o Processo nº 0000933-56.2026.8.26.0100 está na página 21, sob EXTRAJUDICIAL → Dicoge 5.1. O mesmo processo buscado no DJEN devolve zero — os atos da Corregedoria não passam por lá.",
+  "alinea":"Alimenta a alínea <b>b</b> do item 65"},
+ {"cls":"TJSP","nome":"Atos da Presidência e da SEMA",
+  "secoes":["DEJESP","Caderno 1 — Administrativo","Seção I","Subseção I","SEMA"],
+  "onde":"DEJESP, Caderno 1 — Administrativo, Seção I, Subseção I (Atos e comunicados da Presidência). SEMA é a Secretaria da Magistratura do Tribunal. Suspensões de expediente e comunicados da Presidência saem aqui.",
   "prova":"Conferido na edição 4545, de 22/10/2026: os comunicados nº 284 e 285/2026 da Presidência estão na página 11, sob esses rótulos.",
   "alinea":"Alimenta a alínea <b>a</b> do item 65"},
- {"cls":"II e III","nome":"Atos, decisões e comunicados da Corregedoria Geral da Justiça",
-  "secoes":["DEJESP","Caderno 1 — Administrativo","Subseção III","JUDICIAL","EXTRAJUDICIAL","Dicoge 1","Dicoge 2","Dicoge 5.1"],
-  "onde":"DEJESP, mesmo Caderno 1, na Subseção III (Atos e comunicados da Corregedoria Geral da Justiça), dividida em JUDICIAL e EXTRAJUDICIAL. Dicoge é a Diretoria da Corregedoria Geral; o número identifica a divisão de origem. O corte entre o Classificador II e o III é editorial do INR: o II recebe decisões e processos, o III recebe comunicados.",
-  "prova":"Conferido na edição 4545, de 22/10/2026: o Processo nº 0000933-56.2026.8.26.0100, que o INR publicou no Classificador II, está na página 21, sob EXTRAJUDICIAL → Dicoge 5.1. O mesmo processo buscado no DJEN devolve zero — os atos da Corregedoria não passam por lá.",
-  "alinea":"Alimenta a alínea <b>b</b> do item 65"},
- {"cls":"IV","nome":"Atos da 1ª e 2ª Varas de Registros Públicos da Capital",
+ {"cls":"VRP","nome":"Decisões da 1ª e 2ª Varas de Registros Públicos da Capital",
   "secoes":["DJEN","Foro Central Cível — 1ª Vara de Registros Públicos","2ª Vara de Registros Públicos"],
-  "onde":"DJEN, nos órgãos “Foro Central Cível — 1ª Vara de Registros Públicos” e “2ª Vara de Registros Públicos”. Não é ato normativo: é movimentação processual das duas varas da Capital.",
-  "prova":"Conferido pelo número do processo: 1015423-66.2026.8.26.0100 (1ª Vara) e 1003789-73.2026.8.26.0100 (2ª Vara) aparecem no DJEN em 15/09/2026, a data que o INR declara.",
-  "alinea":"Conteúdo adicional do INR — não corresponde a nenhuma alínea do item 65"},
+  "onde":"DJEN, nos órgãos “Foro Central Cível — 1ª Vara de Registros Públicos” (código 93296) e “2ª Vara de Registros Públicos” (código 93416). É movimentação processual de primeira instância: decisões do juiz corregedor permanente da Capital, que valem para as serventias da Capital e não vinculam outra comarca.",
+  "prova":"Conferido pelo número do processo: 1015423-66.2026.8.26.0100 (1ª Vara) e 1003789-73.2026.8.26.0100 (2ª Vara) aparecem no DJEN em 15/09/2026.",
+  "alinea":"Fora da triagem por decisão de 22/10/2026: o que for relevante sobe por apelação e chega como acórdão do Conselho Superior"},
 ]
 
 HTML = r'''<title>Jurisprudência Registral</title>
@@ -179,6 +183,11 @@ main .wrap{padding-block:26px 64px}
 .prosa p{margin:0 0 11px;color:var(--ink-2);max-width:64ch}
 .prosa ul{margin:0 0 11px;padding-left:1.15rem}
 .prosa li{margin-bottom:6px;color:var(--ink-2);max-width:62ch}
+.in{border-top:1px solid var(--rule);padding:22px 2px}
+.in:first-child{border-top:none}
+.in-full{font-family:var(--fd);font-size:1rem;line-height:1.68;white-space:pre-wrap;color:var(--ink);max-width:66ch;margin:10px 0 0}
+.in-fonte{font-size:.8rem;color:var(--ink-3);margin:10px 0 0}
+.in-fonte a{color:var(--accent)}
 .vazio{padding:40px 18px;text-align:center;color:var(--ink-2)}
 .vazio b{display:block;font-family:var(--fd);font-size:1.15rem;color:var(--ink);margin-bottom:6px}
 [hidden]{display:none!important}
@@ -189,7 +198,7 @@ main .wrap{padding-block:26px 64px}
   <div class="wrap">
     <p class="serventia">Registro de Imóveis, Títulos e Documentos e Civil de Pessoas Jurídicas — Assis/SP</p>
     <h1>Jurisprudência Registral</h1>
-    <p class="lead">O que o Conselho Superior da Magistratura decidiu, lido e resumido para a qualificação. Abaixo, o registro das edições do Classificador INR SP que foram varridas.</p>
+    <p class="lead">O que o Conselho Superior da Magistratura decidiu, lido e resumido para a qualificação. Cada acórdão traz a data em que saiu no Diário de Justiça Eletrônico Nacional. Abaixo, o registro dos dias varridos.</p>
     <div class="nums" id="nums"></div>
   </div>
 </header>
@@ -197,7 +206,8 @@ main .wrap{padding-block:26px 64px}
 <nav class="tabs" aria-label="Seções">
   <div class="wrap">
     <button class="tab" id="t-ac" type="button" role="tab" aria-selected="true">Decisões do CSM</button>
-    <button class="tab" id="t-ed" type="button" role="tab" aria-selected="false">Edições varridas</button>
+    <button class="tab" id="t-in" type="button" role="tab" aria-selected="false">Acórdãos publicados</button>
+    <button class="tab" id="t-ed" type="button" role="tab" aria-selected="false">Dias varridos</button>
     <button class="tab" id="t-or" type="button" role="tab" aria-selected="false">De onde vem</button>
   </div>
 </nav>
@@ -214,6 +224,14 @@ main .wrap{padding-block:26px 64px}
       <div id="lista-ac"></div>
     </section>
 
+    <section id="p-in" hidden>
+      <div class="busca">
+        <input id="q-in" type="search" placeholder="Buscar no texto publicado: comarca, processo, palavra…" autocomplete="off">
+        <span class="c" id="c-in"></span>
+      </div>
+      <div id="lista-in"></div>
+    </section>
+
     <section id="p-ed" hidden>
       <div class="busca"><span class="c" id="c-ed"></span></div>
       <div id="lista-ed"></div>
@@ -221,40 +239,27 @@ main .wrap{padding-block:26px 64px}
 
     <section id="p-or" hidden class="prosa">
       <h2>De onde vem a informação</h2>
-      <p class="sub">Levantado na origem em 22/10/2026, conferindo ato por ato, pelo número do processo, contra as duas fontes oficiais.</p>
-
-      <p>O INR não produz ato nenhum. O Classificador INR SP é um <b>recorte de dois diários oficiais diferentes</b>, não de um só: o <b>DEJESP</b>, do Tribunal de Justiça de São Paulo, e o <b>DJEN</b>, do Conselho Nacional de Justiça. O INR separa o que interessa à atividade extrajudicial, agrupa em cinco classificadores e entrega mastigado. As duas fontes são abertas e não pedem senha.</p>
+      <p class="sub">Dois diários oficiais, os dois abertos e sem senha. Levantado e conferido ato por ato, pelo número do processo, em 22/10/2026; em uso como fonte única desde 26/10/2026.</p>
 
       <h3>As duas fontes, e o que cada uma tem</h3>
-      <p><b>DEJESP</b> — Diário Eletrônico da Justiça do Estado de São Paulo, em <code>tjsp.jus.br/dejesp</code>. Entrou no ar em <b>23/07/2025</b> e substituiu o Caderno 1 — Administrativo do antigo DJe. É onde a Corregedoria Geral e a Presidência publicam. Daí vêm os Classificadores <b>II</b>, <b>III</b> e os atos administrativos do <b>I</b>.</p>
-      <p><b>DJEN</b> — Diário de Justiça Eletrônico Nacional, do CNJ. Daí vêm os <b>acórdãos do Conselho Superior da Magistratura</b> e o Classificador <b>IV</b> (1ª e 2ª Varas de Registros Públicos da Capital).</p>
-      <p>As duas não se sobrepõem: os atos da Corregedoria <b>não</b> estão no DJEN, e os acórdãos do Conselho Superior <b>não</b> estavam no DEJESP de 11/09, onde foram procurados. Quem quiser a informação completa tem de ler as duas.</p>
+      <p><b>DJEN</b> — Diário de Justiça Eletrônico Nacional, do Conselho Nacional de Justiça, em <code>comunica.pje.jus.br</code>. Daí vêm os <b>acórdãos do Conselho Superior da Magistratura</b>: o Tribunal de Justiça de São Paulo publica cada um no órgão “Intimação de Acordãos”, com partes, relator, resultado e a <b>ementa inteira</b>. É o texto da aba Acórdãos publicados — o acórdão como publicado, não o inteiro teor: relatório e voto não saem no diário e ficam nos autos. A data mostrada em cada acórdão é a data dessa publicação.</p>
+      <p><b>DEJESP</b> — Diário Eletrônico da Justiça do Estado de São Paulo, em <code>tjsp.jus.br/dejesp</code>. Entrou no ar em <b>23/07/2025</b> e substituiu o Caderno 1 — Administrativo do antigo DJe. É onde a <b>Corregedoria Geral</b> e a Presidência publicam: processos CG, comunicados CG, portarias, correições e designações de corregedores permanentes.</p>
+      <p>As duas não se sobrepõem: os atos da Corregedoria <b>não</b> estão no DJEN, e os acórdãos do Conselho Superior <b>não</b> estão no DEJESP. Quem quiser a informação completa tem de ler as duas — e é o que a varredura diária faz.</p>
 
-      <h3>Correção de um diagnóstico anterior</h3>
-      <p>Eu havia escrito aqui que o DJEN só publicava movimentação judicial das varas, e não os acórdãos do Conselho Superior. <b>Estava errado.</b> O DJEN publica os acórdãos, no órgão “Intimação de Acordãos”, com partes, relator, resultado e a <b>ementa inteira</b> — foi conferido pelo número de cinco processos. O que ele não publica são os atos da Corregedoria.</p>
-      <p>E o mistério do Caderno 1 ficou resolvido. A busca do antigo DJe devolvia sempre <b>22/07/2025</b> qualquer que fosse a data pedida. Não era bloqueio nem defeito: <b>22/07/2025 é a última edição que existe.</b> No dia seguinte o Caderno 1 foi extinto e o DEJESP tomou o lugar. A consulta estava devolvendo a última edição que tinha.</p>
+      <h3>O antigo diário acabou</h3>
+      <p>A busca do antigo DJe devolve sempre <b>22/07/2025</b>, qualquer que seja a data pedida. Não é bloqueio nem defeito: <b>22/07/2025 é a última edição que existe.</b> No dia seguinte o Caderno 1 foi extinto e o DEJESP tomou o lugar.</p>
 
-      <h3>A prova está no rodapé de cada ato</h3>
-      <p>Todo ato do INR traz a marcação do acervo, dizendo de onde saiu e em que data. Nos 42 atos abertos por inteiro apareceram quatro marcações: <code>DEJESP</code>, <code>DJEN</code>, <code>TJSP</code> e <code>Classificador INR SP</code> — esta última quando o INR registra a data da própria compilação. Essas marcações batem: cada processo testado apareceu na fonte declarada, na data declarada.</p>
-      <p>A data do acervo é quase sempre <b>anterior</b> à da edição do INR: o ato sai no diário num dia e aparece no classificador no dia seguinte.</p>
+      <h3>Como a leitura direta foi conferida</h3>
+      <p>Antes de virar fonte única, a leitura direta dos dois diários foi testada contra 35 edições de um serviço de curadoria pago, de 01/09 a 22/10/2026, acórdão por acórdão, pelo número do processo. Acórdãos do Conselho Superior: <b>30 de 30</b> recuperados. Atos da Corregedoria Geral, em três edições: <b>32 de 32</b>. Perda zero nos dois. O texto do DJEN é igual ou maior que o do serviço, e traz “Legislação citada” e “Jurisprudência citada”, que ele cortava. E chega antes: o serviço racionava cinco acórdãos por edição e empurrava o resto para os dias seguintes — por isso a data de alguns acórdãos nesta página mudou para trás em 26/10/2026, quando passaram a carregar a data do próprio diário.</p>
 
-      <h3>Os nomes das seções não são do INR</h3>
-      <p>A hierarquia do índice de cada edição vem literalmente dos diários. No DEJESP, a lista de seções da edição de 22/10/2026 traz <code>SEMA — Secretaria da Magistratura</code>, <code>Subseção III: Atos e comunicados da Corregedoria Geral da Justiça</code>, <code>JUDICIAL</code>, <code>EXTRAJUDICIAL</code>, <code>Dicoge 1</code>, <code>Dicoge 2</code>, <code>Dicoge 5.1</code>. No DJEN, os órgãos aparecem como <code>Intimação de Acordãos</code>, <code>SEMA 1.1</code>, <code>Próximos Julgamentos</code>, <code>Foro Central Cível — 1ª Vara de Registros Públicos</code>. São exatamente os rótulos que o INR reproduz.</p>
-
-      <h3>O mapa, classificador por classificador</h3>
+      <h3>O mapa, fonte por fonte</h3>
       <div id="origem"></div>
 
-      <h3>Então dá para pular o INR?</h3>
-      <p>Tecnicamente, sim. As duas fontes respondem a consulta por data e por palavra, sem senha, e devolvem o texto corrido das páginas. A edição do DEJESP de 22/10/2026 tem <b>286 páginas</b>; a mesma edição do INR tem <b>5 atos</b>. É essa a diferença — e é esse o trabalho que a assinatura paga.</p>
-      <p>Na prática, substituir o INR significa refazer três coisas que ele faz: achar os poucos atos extrajudiciais nas 286 páginas; dividir o que é decisão e o que é comunicado; e cruzar as duas fontes, porque nenhuma delas sozinha tem tudo. Dá para construir. Não dá para construir de graça.</p>
+      <h3>O que não está aqui</h3>
+      <p>As decisões de primeira instância das Varas de Registros Públicos da Capital ficam fora da triagem, por decisão de 22/10/2026. São decisões do juiz corregedor permanente da Capital, que valem para as serventias da Capital: não vinculam outra comarca e não são precedente. O que for relevante sobe por apelação e aparece como acórdão do Conselho Superior — ou seja, chega aqui de todo jeito.</p>
 
-      <h3>O que isso significa na prática</h3>
-      <ul>
-        <li>O ato é público e está em diário oficial aberto. Citar e usar o texto não depende do INR.</li>
-        <li>A seleção, o agrupamento e o cruzamento das duas fontes são trabalho do INR — isso sim é da assinatura, que é da serventia.</li>
-        <li>A ementa dos acórdãos do Conselho Superior está íntegra no DJEN, de graça, no mesmo dia. O número do voto, não: esse vem do acórdão.</li>
-        <li>Se um dia valer a pena montar a leitura direta, agora se sabe exatamente onde bater: DEJESP Caderno 1 para a Corregedoria, DJEN para os acórdãos e para as Varas de Registros Públicos.</li>
-      </ul>
+      <h3>Ressalva</h3>
+      <p>As sínteses e as orientações práticas são leitura dos acórdãos, não texto oficial. Para citar em processo ou em nota de devolução, use o inteiro teor na fonte: o número do processo está em cada item e o botão “Ver no DJEN” abre a consulta oficial.</p>
     </section>
 
   </div>
@@ -297,7 +302,7 @@ function copiaTexto(a){
   let t=r.tema+"\n\n"+lista(r.corpo).join("\n\n");
   if(r.orientacao) t+="\n\nOrientação prática:\n"+lista(r.orientacao).map(x=>"• "+semTag(x)).join("\n");
   if(r.atencao) t+="\n\nPonto de atenção: "+r.atencao;
-  t+="\n\nCSM/SP – "+a.num+" – "+tit(a.com)+" – Classificador INR SP de "+a.ed+".";
+  t+="\n\nCSM/SP – "+a.num+" – "+tit(a.com)+" – DJEN de "+a.ed+".";
   return t;
 }
 
@@ -326,11 +331,11 @@ function renderAc(){
         +(r.atencao?('<div class="bloco b-at"><span class="lbl">Ponto de atenção</span><p>'+marca(r.atencao,q)+'</p></div>'):'')
         +'<div class="acoes">'
         +'<button class="bt" type="button" data-cp="'+x.i+'">Copiar resumo</button>'
-        +'<button class="bt" type="button" data-in="'+x.i+'">Ver íntegra</button>'
-        +'<a class="bt" href="'+esc(a.src)+'" target="_blank" rel="noopener">Edição de origem</a>'
+        +'<button class="bt" type="button" data-in="'+x.i+'">Ver texto publicado</button>'
+        +(a.fonteUrl?'<a class="bt" href="'+esc(a.fonteUrl)+'" target="_blank" rel="noopener">Ver no DJEN</a>':'')
         +'</div>'
         +'<div class="integra" id="int-'+x.i+'">'
-        +(a.parcial?'<p class="parc">Íntegra como foi capturada da edição. Para o inteiro teor processual, abrir a edição de origem.</p>':'')
+        +'<p class="parc">Publicação do acórdão no DJEN: partes, relator, resultado do julgamento e ementa. O inteiro teor — relatório e voto — não é publicado no diário e está nos autos.</p>'
         +marca(a.integra,q)+'</div>'
         +'</div>'):'')
       +'</article>';
@@ -339,30 +344,20 @@ function renderAc(){
 }
 
 function renderEd(){
-  const varridas=DIAS.filter(d=>!d.sem).length;
-  $("#c-ed").innerHTML='<b>'+varridas+'</b> edições varridas · '+DIAS.reduce((s,d)=>s+d.atos,0)+' atos';
+  const varridos=DIAS.filter(d=>!d.sem).length;
+  $("#c-ed").innerHTML='<b>'+varridos+'</b> dias varridos · '+DIAS.reduce((s,d)=>s+(d.nac||0),0)+' acórdãos do CSM';
   $("#lista-ed").innerHTML = DIAS.map((d,i)=>{
-    const ab=abEd.has(i);
-    let arv="";
-    (d.t||[]).forEach(n=>{ arv+='<div class="a'+n[0]+'">'+esc(n[1])+'</div>'; });
-    return '<article class="ed" data-open="'+(ab?1:0)+'">'
-      +'<button class="ed-h" type="button" data-ed="'+i+'" aria-expanded="'+ab+'">'
+    return '<article class="ed" data-open="0">'
+      +'<div class="ed-h" style="cursor:default">'
       +'<span class="ed-d">'+d.d+'</span><span class="ed-w">'+esc(d.wd||"")+'</span>'
       +'<span class="ed-t">'
-      +(d.sem?'<span class="pill p-w">não varrida</span>'
-             :'<span class="pill p-z">Assis: nada</span>'
-              +(d.nac?'<span class="pill p-c">'+d.nac+(d.nac===1?' acórdão':' acórdãos')+'</span>':'')
-              +'<span class="pill p-n">'+d.atos+' atos</span>')
-      +'</span></button>'
-      +(ab?('<div class="ed-b">'
-        +(d.sem?'<p class="nota w">'+esc(d.sem)+'</p>':'')
-        +(d.fix?'<p class="nota w">'+esc(d.fix)+'</p>':'')
-        +(d.assis?'<p class="nota">'+esc(d.assis)+'</p>':'')
-        +(arv?'<div class="arv">'+arv+'</div>':'')
-        +'</div>'):'')
+      +(d.sem?'<span class="pill p-w">não varrido</span>'
+             :'<span class="pill p-n">'+esc(d.fonte||"DJEN")+'</span>'
+              +(d.nac?'<span class="pill p-c">'+d.nac+(d.nac===1?' acórdão':' acórdãos')+'</span>':'<span class="pill p-z">sem acórdão</span>'))
+      +'</span></div>'
+      +(d.sem?'<div class="ed-b"><p class="nota w">'+esc(d.sem)+'</p></div>':'')
       +'</article>';
   }).join("");
-  liga();
 }
 
 function liga(){
@@ -375,7 +370,7 @@ function liga(){
   document.querySelectorAll("[data-in]").forEach(b=>b.addEventListener("click",e=>{
     e.stopPropagation();
     const el=$("#int-"+b.dataset.in); const on=el.classList.toggle("on");
-    b.textContent=on?"Ocultar íntegra":"Ver íntegra";
+    b.textContent=on?"Ocultar texto publicado":"Ver texto publicado";
   }));
   document.querySelectorAll("[data-cp]").forEach(b=>b.addEventListener("click",async e=>{
     e.stopPropagation();
@@ -393,10 +388,10 @@ function liga(){
 
 $("#nums").innerHTML =
    '<div><span class="n a">'+AC.length+'</span><span class="k">Acórdãos do CSM</span></div>'
- + '<div><span class="n">'+DIAS.filter(d=>!d.sem).length+'</span><span class="k">Edições varridas</span></div>'
- + '<div><span class="n">'+DIAS.reduce((s,d)=>s+d.atos,0)+'</span><span class="k">Atos no índice</span></div>'
+ + '<div><span class="n">'+DIAS.filter(d=>!d.sem).length+'</span><span class="k">Dias varridos</span></div>'
+ + '<div><span class="n">'+[...new Set(AC.map(a=>a.com))].length+'</span><span class="k">Comarcas</span></div>'
  + '<div><span class="n z">0</span><span class="k">Citações de Assis</span></div>'
- + '<div><span class="n">01/09–22/10</span><span class="k">Período</span></div>';
+ + '<div><span class="n">'+(DIAS.length?DIAS[DIAS.length-1].d.slice(0,5)+'–'+DIAS[0].d.slice(0,5):'—')+'</span><span class="k">Período</span></div>';
 
 $("#origem").innerHTML = ORIGEM.map(o=>
   '<div class="org"><div class="org-t"><span class="org-c">'+esc(o.cls)+'</span>'
@@ -406,7 +401,22 @@ $("#origem").innerHTML = ORIGEM.map(o=>
   +(o.prova?'<p class="prova"><b>Como foi conferido</b>'+esc(o.prova)+'</p>':'')
   +'<p class="al">'+o.alinea+'.</p></div>').join("");
 
-const abas={ac:["#t-ac","#p-ac"],ed:["#t-ed","#p-ed"],or:["#t-or","#p-or"]};
+function renderIn(){
+  const q=($("#q-in").value||"").trim();
+  const vis=AC.filter(a=>!q||norm((a.com||"")+" "+(a.num||"")+" "+(a.titulo||"")+" "+(a.integra||"")).includes(norm(q)));
+  $("#c-in").innerHTML = q ? '<b>'+vis.length+'</b> de '+AC.length : '<b>'+AC.length+'</b> acórdãos como publicados no DJEN — partes, relator, resultado e ementa; o inteiro teor (relatório e voto) não sai no diário';
+  $("#lista-in").innerHTML = vis.length ? vis.map(a=>'<article class="in">'
+      +'<span class="ac-meta"><span class="ac-com">'+esc(tit(a.com))+'</span>'
+      +'<span class="ac-data">'+esc(a.ed)+'</span><span class="ac-num">'+esc(a.num)+'</span></span>'
+      +'<h3 class="ac-tit">'+marca(a.titulo,q)+'</h3>'
+      +'<div class="in-full">'+marca(a.integra||"Texto não disponível.",q)+'</div>'
+      +(a.fonteUrl?'<p class="in-fonte">Fonte oficial: <a href="'+esc(a.fonteUrl)+'" target="_blank" rel="noopener">'+esc(a.fonte||"DJEN")+'</a></p>':'')
+      +'</article>').join("")
+    : '<div class="vazio"><b>Nada encontrado.</b>Tente outra palavra.</div>';
+}
+$("#q-in").addEventListener("input",renderIn);
+
+const abas={ac:["#t-ac","#p-ac"],in:["#t-in","#p-in"],ed:["#t-ed","#p-ed"],or:["#t-or","#p-or"]};
 function vai(k){
   aba=k;
   Object.entries(abas).forEach(([n,[t,p]])=>{
@@ -414,6 +424,7 @@ function vai(k){
     $(p).hidden = n!==k;
   });
   if(k==="ed") renderEd();
+  if(k==="in") renderIn();
 }
 Object.keys(abas).forEach(k=>$(abas[k][0]).addEventListener("click",()=>vai(k)));
 $("#q").addEventListener("input",e=>{F.q=e.target.value;salva();renderAc();});
@@ -425,5 +436,5 @@ renderAc();
 
 D["origem"] = ORIGEM
 out = HTML.replace('__DATA__', json.dumps(D, ensure_ascii=False))
-open('jurisprudencia-registral.html','w',encoding='utf-8').write(out)
+open(SAIDA,'w',encoding='utf-8').write(out)
 print('bytes:', len(out.encode('utf-8')))

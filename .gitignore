@@ -21,3 +21,7 @@ dados/seed/
 # agendada) — vive na pasta do projeto no Google Drive, não aqui
 documentacao/CLAUDE.md
 documentacao/prompt-tarefa-diaria.md
+
+# arquivos inativos do período do serviço pago (até 26/10/2026) — ficam só no
+# disco; contêm estrutura e links do compilador e nomes de advogados
+dados/arquivo/
