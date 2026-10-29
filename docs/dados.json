@@ -880,6 +880,20 @@
  ],
  "dias": [
   {
+   "d": "29/10/2026",
+   "wd": "quinta-feira",
+   "sem": null,
+   "nac": 0,
+   "fonte": "DJEN + DEJESP (edição 4550)"
+  },
+  {
+   "d": "28/10/2026",
+   "wd": "quarta-feira",
+   "sem": null,
+   "nac": 0,
+   "fonte": "DJEN + DEJESP (edição 4549)"
+  },
+  {
    "d": "27/10/2026",
    "wd": "terça-feira",
    "sem": null,
