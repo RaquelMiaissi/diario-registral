@@ -880,6 +880,13 @@
  ],
  "dias": [
   {
+   "d": "30/10/2026",
+   "wd": "sexta-feira",
+   "sem": "Sem edição do DEJESP nesta data (a edição seguinte à 4550 não foi publicada em 30/10); DJEN sem acórdão do CSM.",
+   "nac": 0,
+   "fonte": "DJEN + DEJESP"
+  },
+  {
    "d": "29/10/2026",
    "wd": "quinta-feira",
    "sem": null,

@@ -351,7 +351,7 @@ function renderEd(){
       +'<div class="ed-h" style="cursor:default">'
       +'<span class="ed-d">'+d.d+'</span><span class="ed-w">'+esc(d.wd||"")+'</span>'
       +'<span class="ed-t">'
-      +(d.sem?'<span class="pill p-w">não varrido</span>'
+      +(d.sem?'<span class="pill p-w">sem edição</span>'
              :'<span class="pill p-n">'+esc(d.fonte||"DJEN")+'</span>'
               +(d.nac?'<span class="pill p-c">'+d.nac+(d.nac===1?' acórdão':' acórdãos')+'</span>':'<span class="pill p-z">sem acórdão</span>'))
       +'</span></div>'
