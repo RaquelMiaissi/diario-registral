@@ -880,6 +880,13 @@
  ],
  "dias": [
   {
+   "d": "05/11/2026",
+   "wd": "quinta-feira",
+   "sem": null,
+   "nac": 0,
+   "fonte": "DJEN + DEJESP (edição 4553)"
+  },
+  {
    "d": "04/11/2026",
    "wd": "quarta-feira",
    "sem": null,
