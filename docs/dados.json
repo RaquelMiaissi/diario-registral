@@ -1690,5 +1690,119 @@
    "fonte": "DJEN — TJSP, órgão Foro de Assis - 1ª Vara Cível (código 91968)",
    "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10049987620258260047"
   }
+ ],
+ "nacional": [
+  {
+   "d": "05/11/2026",
+   "org": "CNJ",
+   "tipo": "Provimento",
+   "num": "Provimento CN nº 259/2026",
+   "forca": "normativo",
+   "vinculante": true,
+   "situacao": "Vigente",
+   "afeta": [
+    "RI",
+    "RTD",
+    "RCPJ"
+   ],
+   "titulo": "LIVRO DIÁRIO AUXILIAR — NOVAS REGRAS NO CÓDIGO NACIONAL DE NORMAS; PROVIMENTO 45/2015 REVOGADO",
+   "ementa": "Altera o Código Nacional de Normas da Corregedoria Nacional de Justiça Foro Extrajudicial (CNN/CN/CNJ-Extra), instituído pelo Provimento n. 149, de 30 de agosto de 2023, para aperfeiçoar as normas relativas ao Livro Diário Auxiliar da Receita e da Despesa, disciplinar a fiscalização da escrituração e da conformidade tributária dos serviços notariais e de registro, consolidar disposições remanescentes do Provimento n. 45, de 13 de maio de 2015, e revogá-lo.",
+   "resumo": "Toda serventia escritura receita e despesa no Livro Diário Auxiliar. O Provimento 259 leva essas regras para dentro do Código Nacional de Normas, acrescenta a fiscalização da escrituração e da conformidade tributária e revoga o Provimento 45/2015, que era a norma própria do livro. O texto integral está no portal de atos do CNJ.",
+   "orientacao": "Conferir com o financeiro e a contabilidade a escrituração do Diário Auxiliar conforme a redação nova do CNN; atualizar a referência normativa interna (Prov. 45/2015 → CNN/CN/CNJ-Extra).",
+   "fonte": "CNJ — Atos normativos (atos.cnj.jus.br), Corregedoria Nacional, situação Vigente",
+   "fonteUrl": "https://atos.cnj.jus.br/atos/detalhar/7151"
+  },
+  {
+   "d": "22/10/2026",
+   "org": "CNJ",
+   "tipo": "Provimento",
+   "num": "Provimento CN nº 258/2026",
+   "forca": "normativo",
+   "vinculante": true,
+   "situacao": "Vigente",
+   "afeta": [
+    "RI",
+    "RTD",
+    "RCPJ"
+   ],
+   "titulo": "ART. 235 DO CÓDIGO NACIONAL DE NORMAS COM REDAÇÃO NOVA",
+   "ementa": "Altera a redação do artigo 235 do Código Nacional de Normas.",
+   "resumo": "A ementa publicada no portal do CNJ diz só isso. O alcance depende da leitura do texto compilado do art. 235 do CNN/CN/CNJ-Extra, que não foi lido nesta varredura — por isso não há resumo de mérito aqui.",
+   "orientacao": "Ler o texto compilado no link e registrar o que mudou antes de qualquer orientação à equipe.",
+   "fonte": "CNJ — Atos normativos (atos.cnj.jus.br), Corregedoria Nacional, situação Vigente",
+   "fonteUrl": "https://atos.cnj.jus.br/atos/detalhar/7170"
+  },
+  {
+   "d": "03/11/2026",
+   "org": "STJ",
+   "tipo": "Acórdão em informativo",
+   "num": "REsp 2.189.786-TO — Informativo nº 908",
+   "forca": "persuasivo",
+   "vinculante": false,
+   "ramo": "Direito Notarial e Registral; Direito Civil",
+   "afeta": [
+    "RI"
+   ],
+   "titulo": "SOBREPOSIÇÃO DE MATRÍCULAS — ENTRE CADEIAS DOMINIAIS HÍGIDAS, PREVALECE O REGISTRO MAIS ANTIGO",
+   "ementa": "Ação de cancelamento e restabelecimento de registro imobiliário. Atos registrais. Presunção juris tantum de veracidade. Cadeia dominial. Princípios da fé pública e da continuidade registral. Nulidade não demonstrada. Decisão extra petita. Inocorrência. Sobreposição de matrículas. Anterioridade do registro.",
+   "resumo": "Destaque do informativo: a prevalência do registro mais antigo, no confronto de cadeias dominiais hígidas, não viola o regime do ônus da prova nem desconsidera a prova técnica, porque o critério jurídico de definição do domínio privilegia a anterioridade registral quando não há vício de origem na matrícula reputada preferencial. Terceira Turma, Rel. Ministra Nancy Andrighi, unânime, julgado em 20/10/2026, DJEN de 26/10/2026.",
+   "orientacao": "Em caso de matrículas sobrepostas sem vício de origem, a anterioridade do registro é o critério que o STJ aplica; decisão de turma, não vinculante — serve de orientação, não de comando.",
+   "fonte": "STJ — Informativo de Jurisprudência nº 908, de 03/11/2026 (processo.stj.jus.br)",
+   "fonteUrl": "https://processo.stj.jus.br/jurisprudencia/externo/informativo/"
+  },
+  {
+   "d": "23/09/2026",
+   "org": "Receita Federal",
+   "tipo": "Instrução Normativa",
+   "num": "IN RFB nº 2.345/2026",
+   "forca": "normativo",
+   "vinculante": true,
+   "situacao": "Vigente",
+   "afeta": [
+    "RCPJ"
+   ],
+   "titulo": "COMPROVANTE DE INSCRIÇÃO NO CNPJ ADEQUADO ÀS MUDANÇAS DO CADASTRO",
+   "ementa": "Altera a Instrução Normativa RFB nº 2.119, de 6 de dezembro de 2022, para adequar o Comprovante de Inscrição e de Situação Cadastral às alterações promovidas no Cadastro Nacional da Pessoa Jurídica.",
+   "resumo": "Mexe na IN 2.119/2022, que é a norma do CNPJ. A ementa fala só do comprovante de inscrição e situação cadastral; o texto não foi lido nesta varredura.",
+   "orientacao": "Apenas ciência; conferir se o modelo de comprovante exigido na qualificação de pessoas jurídicas mudou.",
+   "fonte": "Receita Federal — Normas (normas.receita.fazenda.gov.br), publicada em 23/09/2026",
+   "fonteUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153688"
+  },
+  {
+   "d": "24/08/2026",
+   "org": "Receita Federal",
+   "tipo": "Instrução Normativa",
+   "num": "IN RFB nº 2.340/2026",
+   "forca": "normativo",
+   "vinculante": true,
+   "situacao": "Vigente",
+   "afeta": [
+    "RCPJ"
+   ],
+   "titulo": "INAPTIDÃO NO CNPJ — HIPÓTESES APERFEIÇOADAS",
+   "ementa": "Altera a Instrução Normativa RFB nº 2.119, de 6 de dezembro de 2022, para aperfeiçoar as hipóteses de declaração de inaptidão no Cadastro Nacional da Pessoa Jurídica - CNPJ.",
+   "resumo": "Altera a IN 2.119/2022 nas hipóteses de inaptidão do CNPJ. Texto não lido nesta varredura.",
+   "orientacao": "Apenas ciência.",
+   "fonte": "Receita Federal — Normas (normas.receita.fazenda.gov.br), publicada em 24/08/2026",
+   "fonteUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153059"
+  },
+  {
+   "d": "10/07/2026",
+   "org": "Receita Federal",
+   "tipo": "Instrução Normativa",
+   "num": "IN RFB nº 2.333/2026",
+   "forca": "normativo",
+   "vinculante": true,
+   "situacao": "Vigente",
+   "afeta": [
+    "RCPJ"
+   ],
+   "titulo": "CNPJ — ALTERAÇÃO DA IN 2.119/2022",
+   "ementa": "Altera a Instrução Normativa RFB nº 2.119, de 6 de dezembro de 2022, que dispõe sobre o Cadastro Nacional da Pessoa Jurídica no âmbito da Secretaria Especial da Receita Federal do Brasil.",
+   "resumo": "A ementa não diz o que mudou; só indica alteração da norma geral do CNPJ. Texto não lido nesta varredura.",
+   "orientacao": "Ler o texto no link; relevante para o RCPJ, que lida com a inscrição das pessoas jurídicas registradas.",
+   "fonte": "Receita Federal — Normas (normas.receita.fazenda.gov.br), publicada em 10/07/2026",
+   "fonteUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/152314"
+  }
  ]
 }

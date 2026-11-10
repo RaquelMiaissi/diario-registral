@@ -69,6 +69,26 @@ assinado; `nac` deles foi recalculado pela data do DJEN em 26/10/2026 e o campo
 | `fonte` | text | "DJEN — TJSP, órgão … (código NNNNN)" ou "DEJESP, Caderno 1, edição NNNN" |
 | `fonteUrl` | text | consulta oficial |
 
+## `nacional[]` — normas e precedentes nacionais (desde 10/11/2026)
+
+| campo | tipo | o que é |
+|---|---|---|
+| `d` | text | data de publicação/edição, `dd/mm/aaaa` |
+| `org` | text | "CNJ", "STJ", "STF" ou "Receita Federal" |
+| `tipo` | text | "Provimento", "Resolução", "Acórdão em informativo", "Tese repetitiva", "Repercussão geral", "Súmula", "Instrução Normativa" |
+| `num` | text | "Provimento CN nº 259/2026", "REsp 2.189.786-TO — Informativo nº 908", "IN RFB nº 2.345/2026", "Tema 1316" |
+| `forca` | text | "normativo" (ato que obriga), "vinculante" (precedente obrigatório: repetitivo, repercussão geral, súmula vinculante) ou "persuasivo" (decisão de turma/seção sem força obrigatória) |
+| `vinculante` | bool | `true` para normativo e precedente vinculante; `false` para persuasivo |
+| `situacao` | text ou ausente | "Vigente", "Alterado", "Revogado" (atos) |
+| `ramo` | text ou ausente | ramo do direito indicado pelo tribunal (STJ: "Direito Notarial e Registral; Direito Civil") |
+| `afeta` | text[] | "RI", "RTD", "RCPJ" |
+| `titulo` | text | título curto em caixa alta, que já entrega a conclusão |
+| `ementa` | text | ementa ou destaque como publicado |
+| `resumo` | text | redação própria; quando o texto integral não foi lido, dizer isso |
+| `orientacao` | text | o que muda na rotina; "apenas ciência" quando não muda |
+| `fonte` | text | órgão, publicação e data |
+| `fonteUrl` | text | página oficial do ato/informativo |
+
 ## Firestore (quando a carga for feita)
 
 - `acordaos/{djenId}` — um documento por acórdão, campos acima. Leitura pública.

@@ -121,7 +121,7 @@ button,input,select{font:inherit;color:inherit}
 a{color:var(--accent)}
 code{font-family:var(--fm);font-size:.85em;background:var(--sunk);padding:1px 5px;border-radius:4px}
 mark{background:var(--mark);color:var(--mark-ink);border-radius:2px;padding:0 2px}
-.wrap{max-width:54rem;margin:0 auto;
+.wrap{max-width:72rem;margin:0 auto;
   padding-left:max(16px,env(safe-area-inset-left,0px));
   padding-right:max(16px,env(safe-area-inset-right,0px))}
 
@@ -233,6 +233,8 @@ main .wrap{padding-block:26px 64px}
 .alr-meta .sec-pill.selo{font-weight:500;color:var(--ink)}
 .alr details{margin-top:6px}.alr summary{cursor:pointer;font-size:.86rem;color:var(--ink-2)}
 .alr .in-full{font-size:.92rem;margin-top:8px}
+.sec-pill.vinc{background:var(--accent);color:#fff;border-color:var(--accent)}
+.sec-pill.pers{background:transparent;border:1px dashed var(--ink-3)}
 .st{font-family:var(--fm);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2)}
 .st.ok{background:var(--accent);color:#fff;border-color:var(--accent)}
 .st.meio{background:var(--sunk)}
@@ -259,6 +261,15 @@ main .wrap{padding-block:26px 64px}
 .vazio b{display:block;font-family:var(--fd);font-size:1.15rem;color:var(--ink);margin-bottom:6px}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent)}
+@media (min-width:900px){
+  nav.tabs .wrap{flex-wrap:wrap;overflow:visible;-webkit-mask-image:none;mask-image:none}
+  .tab{padding:15px 16px}
+  .grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 56px;align-items:start}
+  .grade>*{min-width:0}
+  .prosa{max-width:72ch}
+}
+@media (min-width:1400px){.grade{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 48px}}
 </style>
 
 <header class="top">
@@ -277,6 +288,7 @@ main .wrap{padding-block:26px 64px}
     <button class="tab" id="t-ed" type="button" role="tab" aria-selected="false">Dias varridos</button>
     <button class="tab" id="t-al" type="button" role="tab" aria-selected="false">Alertas de fraude</button>
     <button class="tab" id="t-as" type="button" role="tab" aria-selected="false">Assis</button>
+    <button class="tab" id="t-np" type="button" role="tab" aria-selected="false">Normas e precedentes</button>
     <button class="tab" id="t-or" type="button" role="tab" aria-selected="false">De onde vem</button>
   </div>
 </nav>
@@ -290,7 +302,7 @@ main .wrap{padding-block:26px 64px}
         <select id="f-com" aria-label="Comarca"></select>
         <span class="c" id="c-ac"></span>
       </div>
-      <div id="lista-ac"></div>
+      <div id="lista-ac" class="grade"></div>
     </section>
 
     <section id="p-in" hidden>
@@ -298,7 +310,7 @@ main .wrap{padding-block:26px 64px}
         <input id="q-in" type="search" placeholder="Buscar no texto publicado: comarca, processo, palavra…" autocomplete="off">
         <span class="c" id="c-in"></span>
       </div>
-      <div id="lista-in"></div>
+      <div id="lista-in" class="grade"></div>
     </section>
 
     <section id="p-ed" hidden>
@@ -313,13 +325,23 @@ main .wrap{padding-block:26px 64px}
         <span class="c" id="c-al"></span>
       </div>
       <p class="al-nota">Comunicados CG de fraude, bloqueio e cancelamento publicados pela Corregedoria Geral da Justiça no DEJESP (Caderno 1, Subseção III, EXTRAJUDICIAL). Texto oficial como publicado; CPFs já saem mascarados no diário. ▲ marca os que envolvem imóvel ou matrícula.</p>
-      <div id="lista-al"></div>
+      <div id="lista-al" class="grade"></div>
     </section>
 
     <section id="p-as" hidden>
       <div class="busca"><span class="c" id="c-as"></span></div>
       <p class="al-nota">O que os diários publicam sobre a Comarca de Assis em matéria extrajudicial: decisões do Juízo Corregedor Permanente (1ª Vara Cível de Assis, no DJEN) dirigidas às serventias, editais e designações de correição no DEJESP, e qualquer determinação ou repreensão à comarca. Movimentação de magistrados, obras do fórum e atos de servidores ficam fora.</p>
-      <div id="lista-as"></div>
+      <div id="lista-as" class="grade"></div>
+    </section>
+
+    <section id="p-np" hidden>
+      <div class="busca">
+        <input id="q-np" type="search" placeholder="Buscar norma, tema, número, órgão…" autocomplete="off">
+        <select id="f-np" aria-label="Órgão"></select>
+        <span class="c" id="c-np"></span>
+      </div>
+      <p class="al-nota">Fontes nacionais que mudam a qualificação sem passar pelo diário paulista: atos da Corregedoria Nacional de Justiça (CNJ), precedentes do STJ e do STF filtrados para Direito Notarial e Registral e Direito Civil, e instruções normativas da Receita Federal sobre DOI e CNPJ. Cada item diz se é <b>vinculante</b> (norma ou precedente obrigatório) ou <b>persuasivo</b> (decisão de turma: orienta, não obriga).</p>
+      <div id="lista-np" class="grade"></div>
     </section>
 
     <section id="p-or" hidden class="prosa">
@@ -476,7 +498,9 @@ $("#nums").innerHTML =
    '<div><span class="n a">'+AC.length+'</span><span class="k">Acórdãos do CSM</span></div>'
  + '<div><span class="n">'+DIAS.filter(d=>!d.sem).length+'</span><span class="k">Dias varridos</span></div>'
  + '<div><span class="n">'+[...new Set(AC.map(a=>a.com))].length+'</span><span class="k">Comarcas</span></div>'
- + '<div><span class="n z">0</span><span class="k">Citações de Assis</span></div>'
+ + '<div><span class="n'+((D.assis||[]).length?'':' z')+'">'+(D.assis||[]).length+'</span><span class="k">Publicações sobre Assis</span></div>'
+ + '<div><span class="n">'+(D.alertas||[]).length+'</span><span class="k">Alertas de fraude</span></div>'
+ + '<div><span class="n">'+(D.nacional||[]).length+'</span><span class="k">Normas e precedentes</span></div>'
  + '<div><span class="n">'+(DIAS.length?DIAS[DIAS.length-1].d.slice(0,5)+'–'+DIAS[0].d.slice(0,5):'—')+'</span><span class="k">Período</span></div>';
 
 $("#origem").innerHTML = ORIGEM.map(o=>
@@ -537,7 +561,26 @@ function renderAs(){
     +(a.fonteUrl?'<p class="in-fonte">Fonte oficial: <a href="'+esc(a.fonteUrl)+'" target="_blank" rel="noopener">'+esc(a.fonte||"DJEN")+'</a></p>':'')
     +'</article>').join(""):'<div class="vazio"><b>Não consta nada.</b>Nenhuma publicação sobre a comarca em matéria extrajudicial.</div>';
 }
-const abas={ac:["#t-ac","#p-ac"],in:["#t-in","#p-in"],ed:["#t-ed","#p-ed"],al:["#t-al","#p-al"],as:["#t-as","#p-as"],or:["#t-or","#p-or"]};
+const NP = D.nacional || [];
+(function(){const sel=$("#f-np"); const orgs=[...new Set(NP.map(n=>n.org))]; sel.innerHTML='<option value="">Todos os órgãos</option>'+orgs.map(o=>'<option>'+esc(o)+'</option>').join('');})();
+function renderNp(){
+  const q=norm($("#q-np").value), f=$("#f-np").value;
+  const L=NP.filter(n=>(!f||n.org===f)&&(!q||norm([n.num,n.titulo,n.ementa,n.resumo,n.org,n.tipo,n.ramo||""].join(" ")).includes(q)));
+  $("#c-np").innerHTML='<b>'+L.length+'</b> de '+NP.length;
+  $("#lista-np").innerHTML=L.length?L.map(n=>'<article class="alr">'
+    +'<div class="alr-h"><span class="alr-num">'+esc(n.org)+' · '+esc(n.tipo)+'</span><span class="alr-d">'+esc(n.d)+'</span>'
+    +'<span class="sec-pill '+(n.vinculante?'vinc':'pers')+'">'+(n.vinculante?'vinculante':'persuasivo')+'</span>'
+    +(n.afeta||[]).map(x=>'<span class="sec-pill">'+esc(x)+'</span>').join('')+'</div>'
+    +'<p class="alr-serv">'+esc(n.num)+'</p>'
+    +'<p class="tema" style="margin:4px 0 8px">'+esc(n.titulo)+'</p>'
+    +'<p class="alr-res">'+esc(n.resumo)+'</p>'
+    +(n.orientacao?'<div class="bloco orient"><span class="r">Orientação prática</span><p>'+esc(n.orientacao)+'</p></div>':'')
+    +'<details><summary>Ementa como publicada</summary><div class="in-full">'+esc(n.ementa)+'</div></details>'
+    +'<p class="in-fonte">Fonte oficial: <a href="'+esc(n.fonteUrl)+'" target="_blank" rel="noopener">'+esc(n.fonte)+'</a></p>'
+    +'</article>').join(""):'<div class="vazio"><b>Nada encontrado.</b></div>';
+}
+$("#q-np").addEventListener("input",renderNp); $("#f-np").addEventListener("change",renderNp);
+const abas={ac:["#t-ac","#p-ac"],in:["#t-in","#p-in"],ed:["#t-ed","#p-ed"],al:["#t-al","#p-al"],as:["#t-as","#p-as"],np:["#t-np","#p-np"],or:["#t-or","#p-or"]};
 function vai(k){
   aba=k;
   Object.entries(abas).forEach(([n,[t,p]])=>{
@@ -548,6 +591,7 @@ function vai(k){
   if(k==="in") renderIn();
   if(k==="al") renderAl();
   if(k==="as") renderAs();
+  if(k==="np") renderNp();
 }
 Object.keys(abas).forEach(k=>$(abas[k][0]).addEventListener("click",()=>vai(k)));
 $("#q").addEventListener("input",e=>{F.q=e.target.value;salva();renderAc();});
