@@ -37,6 +37,38 @@ Os dias anteriores a 23/10/2026 foram varridos pelo serviço pago então
 assinado; `nac` deles foi recalculado pela data do DJEN em 26/10/2026 e o campo
 `fonte` ficou vazio.
 
+## `alertas[]` — alertas de fraude (comunicados CG), do mais recente ao mais antigo
+
+| campo | tipo | o que é |
+|---|---|---|
+| `d` | text | data do DEJESP, `dd/mm/aaaa` |
+| `ed` | int | edição do DEJESP |
+| `num` | text | "CG 850/2026" |
+| `proc` | text | processo CG |
+| `origem` | text | quem comunicou (serventia, Corregedoria Permanente) |
+| `serv` | text | serventia envolvida |
+| `tipo` | text[] | selo falso, matrícula falsa, certidão falsa, procuração falsa… |
+| `ri` | bool | toca Registro de Imóveis |
+| `selos`, `matriculas` | text[] | números citados, para busca |
+| `resumo` | text | redação própria, 1 a 3 frases |
+| `obs` | text ou null | observação interna |
+| `texto` | text | comunicado como publicado |
+| `fonte` | text | "DEJESP, Caderno 1, edição NNNN, dd/mm/aaaa" |
+
+## `assis[]` — publicações sobre a Comarca de Assis em matéria extrajudicial (desde 10/11/2026)
+
+| campo | tipo | o que é |
+|---|---|---|
+| `d` | text | data da publicação, `dd/mm/aaaa` |
+| `org` | text | órgão que publicou ("Foro de Assis – 1ª Vara Cível (Juízo Corregedor Permanente)", "DEJESP, Dicoge 5.2"…) |
+| `num` | text | número do processo ou do ato |
+| `cls` | text | classe ("Pedido de Providências — Registro de Imóveis", "Correição"…) |
+| `parte` | text | serventia ou parte envolvida |
+| `tema` | text | uma frase: o que é e em que ponto está |
+| `texto` | text | despacho ou ato como publicado |
+| `fonte` | text | "DJEN — TJSP, órgão … (código NNNNN)" ou "DEJESP, Caderno 1, edição NNNN" |
+| `fonteUrl` | text | consulta oficial |
+
 ## Firestore (quando a carga for feita)
 
 - `acordaos/{djenId}` — um documento por acórdão, campos acima. Leitura pública.

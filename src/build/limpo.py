@@ -221,6 +221,18 @@ main .wrap{padding-block:26px 64px}
 .secs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
 .sec-pill{font-family:var(--fm);font-size:.74rem;padding:3px 9px;border-radius:6px;background:var(--sunk);color:var(--ink-2)}
 .al{font-size:.86rem;color:var(--ink-3)}
+.al-nota{font-size:.88rem;color:var(--ink-2);max-width:66ch;margin:0 0 14px}
+.alr{border-top:1px solid var(--rule);padding:14px 0}
+.alr-h{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.alr-num{font-family:var(--fm);font-size:.8rem;color:var(--accent);font-weight:500}
+.alr-d{font-family:var(--fm);font-size:.78rem;color:var(--ink-3)}
+.alr-ri{color:var(--accent);font-weight:700}
+.alr-serv{font-family:var(--fd);font-weight:600;font-size:1.02rem;margin:4px 0 2px}
+.alr-res{margin:4px 0 6px;max-width:72ch}
+.alr-meta{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}
+.alr-meta .sec-pill.selo{font-weight:500;color:var(--ink)}
+.alr details{margin-top:6px}.alr summary{cursor:pointer;font-size:.86rem;color:var(--ink-2)}
+.alr .in-full{font-size:.92rem;margin-top:8px}
 .st{font-family:var(--fm);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2)}
 .st.ok{background:var(--accent);color:#fff;border-color:var(--accent)}
 .st.meio{background:var(--sunk)}
@@ -263,6 +275,8 @@ main .wrap{padding-block:26px 64px}
     <button class="tab" id="t-ac" type="button" role="tab" aria-selected="true">Decisões do CSM</button>
     <button class="tab" id="t-in" type="button" role="tab" aria-selected="false">Acórdãos publicados</button>
     <button class="tab" id="t-ed" type="button" role="tab" aria-selected="false">Dias varridos</button>
+    <button class="tab" id="t-al" type="button" role="tab" aria-selected="false">Alertas de fraude</button>
+    <button class="tab" id="t-as" type="button" role="tab" aria-selected="false">Assis</button>
     <button class="tab" id="t-or" type="button" role="tab" aria-selected="false">De onde vem</button>
   </div>
 </nav>
@@ -290,6 +304,22 @@ main .wrap{padding-block:26px 64px}
     <section id="p-ed" hidden>
       <div class="busca"><span class="c" id="c-ed"></span></div>
       <div id="lista-ed"></div>
+    </section>
+
+    <section id="p-al" hidden>
+      <div class="busca">
+        <input id="q-al" type="search" placeholder="Buscar por selo, matrícula, serventia, nome, cidade…" autocomplete="off">
+        <select id="f-al" aria-label="Tipo de documento"></select>
+        <span class="c" id="c-al"></span>
+      </div>
+      <p class="al-nota">Comunicados CG de fraude, bloqueio e cancelamento publicados pela Corregedoria Geral da Justiça no DEJESP (Caderno 1, Subseção III, EXTRAJUDICIAL). Texto oficial como publicado; CPFs já saem mascarados no diário. ▲ marca os que envolvem imóvel ou matrícula.</p>
+      <div id="lista-al"></div>
+    </section>
+
+    <section id="p-as" hidden>
+      <div class="busca"><span class="c" id="c-as"></span></div>
+      <p class="al-nota">O que os diários publicam sobre a Comarca de Assis em matéria extrajudicial: decisões do Juízo Corregedor Permanente (1ª Vara Cível de Assis, no DJEN) dirigidas às serventias, editais e designações de correição no DEJESP, e qualquer determinação ou repreensão à comarca. Movimentação de magistrados, obras do fórum e atos de servidores ficam fora.</p>
+      <div id="lista-as"></div>
     </section>
 
     <section id="p-or" hidden class="prosa">
@@ -478,7 +508,36 @@ function renderIn(){
 }
 $("#q-in").addEventListener("input",renderIn);
 
-const abas={ac:["#t-ac","#p-ac"],in:["#t-in","#p-in"],ed:["#t-ed","#p-ed"],or:["#t-or","#p-or"]};
+const AL = D.alertas || [];
+$("#f-al").innerHTML='<option value="">Todos os tipos</option>'+[...new Set(AL.flatMap(a=>a.tipo||[]))].sort((x,y)=>x.localeCompare(y,"pt-BR")).map(t=>'<option value="'+esc(t)+'">'+esc(t)+'</option>').join("");
+function renderAl(){
+  const q=($("#q-al").value||"").trim(), f=$("#f-al").value;
+  const vis=AL.filter(a=>(!f||(a.tipo||[]).includes(f))&&(!q||norm([a.num,a.serv,a.origem,a.resumo,a.texto,(a.selos||[]).join(" "),(a.matriculas||[]).join(" ")].join(" ")).includes(norm(q))));
+  $("#c-al").innerHTML=(q||f)?'<b>'+vis.length+'</b> de '+AL.length:'<b>'+AL.length+'</b> alertas desde 20/10/2026';
+  $("#lista-al").innerHTML=vis.length?vis.map(a=>'<article class="alr">'
+    +'<div class="alr-h">'+(a.ri?'<span class="alr-ri" title="Envolve imóvel ou matrícula">▲</span>':'')+'<span class="alr-num">Comunicado '+esc(a.num)+'</span><span class="alr-d">DEJESP '+esc(a.d)+' · edição '+esc(a.ed)+'</span></div>'
+    +'<p class="alr-serv">'+marca(a.serv,q)+'</p>'
+    +'<p class="alr-res">'+marca(a.resumo,q)+'</p>'
+    +'<div class="alr-meta">'+(a.tipo||[]).map(t=>'<span class="sec-pill">'+esc(t)+'</span>').join("")
+      +(a.selos||[]).map(x=>'<span class="sec-pill selo">selo '+marca(x,q)+'</span>').join("")
+      +(a.matriculas||[]).map(x=>'<span class="sec-pill selo">matrícula '+marca(x,q)+'</span>').join("")+'</div>'
+    +(a.obs?'<p class="al">'+esc(a.obs)+'</p>':'')
+    +'<details><summary>Texto como publicado · origem: '+esc(a.origem)+'</summary><div class="in-full">'+marca(a.texto,q)+'</div></details>'
+    +'</article>').join(""):'<div class="vazio"><b>Nada encontrado.</b>Tente outra palavra, selo ou matrícula.</div>';
+}
+$("#q-al").addEventListener("input",renderAl); $("#f-al").addEventListener("change",renderAl);
+const AS = D.assis || [];
+function renderAs(){
+  $("#c-as").innerHTML=AS.length?'<b>'+AS.length+'</b> publicações sobre a comarca':'<b>0</b> publicações';
+  $("#lista-as").innerHTML=AS.length?AS.map(a=>'<article class="alr">'
+    +'<div class="alr-h"><span class="alr-num">'+esc(a.cls)+'</span><span class="alr-d">'+esc(a.d)+' · '+esc(a.org)+'</span></div>'
+    +'<p class="alr-serv">Processo '+esc(a.num)+(a.parte?' — '+esc(a.parte):'')+'</p>'
+    +(a.tema?'<p class="al-nota">'+esc(a.tema)+'</p>':'')
+    +'<div class="in-full">'+esc(a.texto)+'</div>'
+    +(a.fonteUrl?'<p class="in-fonte">Fonte oficial: <a href="'+esc(a.fonteUrl)+'" target="_blank" rel="noopener">'+esc(a.fonte||"DJEN")+'</a></p>':'')
+    +'</article>').join(""):'<div class="vazio"><b>Não consta nada.</b>Nenhuma publicação sobre a comarca em matéria extrajudicial.</div>';
+}
+const abas={ac:["#t-ac","#p-ac"],in:["#t-in","#p-in"],ed:["#t-ed","#p-ed"],al:["#t-al","#p-al"],as:["#t-as","#p-as"],or:["#t-or","#p-or"]};
 function vai(k){
   aba=k;
   Object.entries(abas).forEach(([n,[t,p]])=>{
@@ -487,6 +546,8 @@ function vai(k){
   });
   if(k==="ed") renderEd();
   if(k==="in") renderIn();
+  if(k==="al") renderAl();
+  if(k==="as") renderAs();
 }
 Object.keys(abas).forEach(k=>$(abas[k][0]).addEventListener("click",()=>vai(k)));
 $("#q").addEventListener("input",e=>{F.q=e.target.value;salva();renderAc();});
