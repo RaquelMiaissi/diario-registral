@@ -25,17 +25,17 @@ COMUNICACOES = [
     "planilha": "2",
     "nome": "DOI — Declaração sobre Operações Imobiliárias",
     "destinatario": "Receita Federal do Brasil (sistema DOI-Web, pelo e-CAC)",
-    "gatilho": "Registro ou averbação de aquisição ou alienação de imóvel, qualquer que seja o valor.",
+    "gatilho": "Operação de aquisição ou alienação de imóvel, qualquer que seja o valor (IN RFB 2.186/2024, art. 4º). No Registro de Imóveis, quando o título for: instrumento particular, inclusive com força de escritura pública; título judicial de adjudicação, herança, legado ou meação; alienação por iniciativa particular ou leilão judicial; título da União, estado, município ou DF em regularização fundiária ou habitação de interesse social; ou escritura de notas ou de consulado, mesmo que já tenha havido DOI (art. 4º, II, a a f). No Registro de Títulos e Documentos, quando registrar instrumento particular dessas operações (art. 4º, III).",
     "periodicidade": "Mensal",
     "prazo": "Até o último dia útil do mês subsequente ao do registro ou averbação (IN RFB 2.186/2024, art. 5º).",
-    "meio": "DOI-Web no e-CAC, conta gov.br nível prata ou ouro, assinatura com certificado ICP-Brasil (art. 5º, §§ 1º e 3º).",
+    "meio": "Sistema DOI-Web, no portal gov.br, com conta gov.br prata ou ouro, restrito aos titulares ou procuradores, assinatura com certificado ICP-Brasil; uma declaração por imóvel (art. 4º, § 1º; art. 5º, §§ 1º a 3º).",
     "base": [
       {"norma": "Lei nº 10.426/2002", "disp": "art. 8º", "o_que": "Cria a obrigação de os serventuários da Justiça informarem à Receita as operações imobiliárias (fundamento da DOI).", "orgao": "União", "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10426-24-abril-2002-404256-normaatualizada-pl.pdf"},
-      {"norma": "Instrução Normativa RFB nº 2.186/2024", "disp": "arts. 1º, 2º, 4º (inc. II), 5º e 10", "o_que": "Regula a DOI; art. 4º, II obriga o registro de imóveis; art. 5º fixa o prazo; art. 10 revoga as IN 1.112/2010, 1.193/2011 e 1.239/2012. Vigente desde 01/06/2024.", "orgao": "Receita Federal", "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/"},
+      {"norma": "Instrução Normativa RFB nº 2.186/2024", "disp": "arts. 1º, 2º, 4º (incs. II e III), 5º e 10", "o_que": "Regula a DOI; art. 4º, II obriga o registro de imóveis nas hipóteses das alíneas a a f e art. 4º, III o registro de títulos e documentos; art. 5º fixa o prazo e o meio; art. 10 revoga as IN 1.112/2010, 1.193/2011 e 1.239/2012. Publicada em 16/04/2024 (retificada em 24/04/2024), vigente desde 01/06/2024; marcada como vigente e sem alteração no portal Normas da Receita em 11/11/2026.", "orgao": "Receita Federal", "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/137341"},
       {"norma": "NSCGJ-SP, Capítulo XX", "disp": "itens 144, 144.1 e 137 'l'", "o_que": "O oficial comunica as operações registradas à Receita pela DOI 'de conformidade com as instruções normativas vigentes'; recibos arquivados em papel ou formato eletrônico; classificador próprio para os recibos.", "orgao": "CGJ-SP", "url": NSCGJ}
     ],
     "vigiar": ["IN RFB 2186/2024", "DOI", "Declaração sobre Operações Imobiliárias", "Lei 10.426/2002 art. 8", "NSCGJ Cap. XX item 144"],
-    "pendencias": "A IN 2.186/2024 foi lida em cópia de repositório de legislação (legisweb), não no portal da Receita, que bloqueia o acesso automático; conferir o texto no portal Normas RFB antes de citar em documento oficial."
+    "pendencias": ""
   },
   {
     "id": "prefeituras",
