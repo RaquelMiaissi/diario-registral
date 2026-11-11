@@ -52,7 +52,7 @@ COMUNICACOES = [
       {"norma": "NSCGJ-SP, Capítulo XX", "disp": "itens 139 a 141 e 137 'k'", "o_que": "Negócios imobiliários 'deverão ser sempre comunicados' às Prefeituras para atualização cadastral, por listagem diária, semanal ou mensal; eventual dispensa pela Prefeitura fica documentada em cartório (item 141).", "orgao": "CGJ-SP", "url": NSCGJ}
     ],
     "vigiar": ["art. 184-A", "Provimento 174/2024", "Provimento 189/2025", "Comunicação de Transações às Prefeituras", "Resolução 547/2024", "NSCGJ Cap. XX itens 139 a 141"],
-    "pendencias": "A planilha 04 diz 'somente quando o município/prefeitura requerer'; o art. 184-A do CNN (desde 2024) trata a comunicação mensal como obrigatória para todos os registros de imóveis, sem condicionar a pedido do município. Ponto para o Oficial decidir se a rotina interna muda."
+    "pendencias": ""
   },
   {
     "id": "incra",
@@ -70,7 +70,7 @@ COMUNICACOES = [
       {"norma": "NSCGJ-SP, Capítulo XX", "disp": "item 137, alíneas 'p' e 'q'", "o_que": "Classificador das comunicações mensais enviadas ao INCRA e das comunicações recebidas dele (códigos para averbação).", "orgao": "CGJ-SP", "url": NSCGJ}
     ],
     "vigiar": ["Decreto 4.449/2002", "Lei 10.267/2001", "Lei 4.947/1966 art. 22", "Instrução Normativa INCRA", "comunicação mensal ao INCRA", "SIGEF", "SNCR"],
-    "pendencias": "Não confirmei se a IN INCRA 12/2003 continua vigente nem se há ato do INCRA que fixe o e-mail atual (a planilha registra governanca.fundiaria.spo@incra.gov.br, 'não é mais' servico.cadastro-rural). Vale pedir ao INCRA-SP a referência formal do canal."
+    "pendencias": "Não confirmei se a IN INCRA 12/2003 continua vigente (o portal do INCRA só foi lido por cópia de 2003); a lei e o decreto estão confirmados."
   },
   {
     "id": "estrangeiros",
@@ -88,7 +88,7 @@ COMUNICACOES = [
       {"norma": "Código Nacional de Normas (Prov. CN 149/2023)", "disp": "art. 436", "o_que": "Obrigação paralela: comunicação trimestral à CGJ e ao INCRA dos atos de arrendamento de imóvel rural por estrangeiro.", "orgao": "CNJ — Corregedoria Nacional", "url": CNN}
     ],
     "vigiar": ["Lei 5.709", "Decreto 74.965", "aquisição de imóvel rural por estrangeiro", "NSCGJ Cap. XX item 98", "CNN art. 436", "arrendamento por estrangeiro"],
-    "pendencias": "Não li o Decreto 74.965/74 diretamente (planalto bloqueia o acesso automático); os artigos 15 e 16 vêm das notas de rodapé das NSCGJ. A planilha diz que a venda por estrangeiro a brasileiro vai 'só por ofício'; as NSCGJ (98.3) mandam comunicar por e-mail à DICOGE 5.1 tão logo ocorra — conferir qual canal a CGJ aceita hoje."
+    "pendencias": "Não li o Decreto 74.965/74 diretamente (o Planalto bloqueia o acesso automático); os artigos 15 e 16 vêm das notas de rodapé das NSCGJ."
   },
   {
     "id": "coaf",
@@ -105,7 +105,7 @@ COMUNICACOES = [
       {"norma": "NSCGJ-SP, Capítulo XIII, Seção IX", "disp": "itens 155 a 163 (Prov. CG 25/2026)", "o_que": "Política de PLD/FTP da serventia; 155.4 remete hipóteses, prazos e valores ao CNN; 161.2 comunicação de não ocorrência; 163 treinamento anual, preferencialmente em janeiro.", "orgao": "CGJ-SP", "url": NSCGJ}
     ],
     "vigiar": ["Provimento 88/2019", "Provimento 161/2024", "CNN art. 151", "CNN art. 161", "lavagem de dinheiro", "COAF", "UIF", "Siscoaf", "NSCGJ Cap. XIII item 155", "Resolução Coaf"],
-    "pendencias": "A planilha fala em 'comunicações dos atos praticados no mês' em lote; pela norma a comunicação automática tem prazo próprio (30 dias + 24 h), não mensal — conferir se o lote mensal respeita esse prazo."
+    "pendencias": ""
   },
   {
     "id": "pep",
@@ -155,7 +155,7 @@ COMUNICACOES = [
       {"norma": "Código Nacional de Normas (Prov. CN 149/2023)", "disp": "art. 184-A, § 2º, II", "o_que": "Se o arquivo enviado é o mesmo da DOI, pode tratar-se da própria comunicação às prefeituras pela plataforma do ONR (ver item Prefeituras).", "orgao": "CNJ — Corregedoria Nacional", "url": CNN}
     ],
     "vigiar": ["Indicador Real", "Mapa do Registro de Imóveis", "Provimento 195/2025", "IERI-e", "manual técnico ONR"],
-    "pendencias": "Não encontrei norma que use o nome 'Relatório do Indicador Real' nem prazo específico para este envio. Pode ser a mesma remessa do art. 184-A (prefeituras) ou o IERI-e; o manual técnico do ONR (art. 320-O, § 1º) deve dizer — pedir ao ONR ou a quem opera o Mapa no cartório."
+    "pendencias": "Não encontrei norma que use o nome 'Relatório do Indicador Real'. O Mapa é ferramenta do SIG-RI (CNN art. 320-O, § 2º, Prov. 195/2025), então a origem provável é o Prov. 195/2025 e o manual técnico do ONR (art. 320-O, § 1º); mas, como a planilha diz que o arquivo é o mesmo JSON da DOI, pode ser a remessa do art. 184-A. Fica registrado com as duas origens até o manual do ONR ser lido."
   },
   {
     "id": "arisp-estatisticas",
@@ -171,7 +171,7 @@ COMUNICACOES = [
       {"norma": "Código Nacional de Normas (Prov. CN 149/2023)", "disp": "art. 104", "o_que": "Registradores remetem dados para indicadores estatísticos às entidades previstas em lei ou regulamento, anonimizados na origem (LGPD).", "orgao": "CNJ — Corregedoria Nacional", "url": CNN}
     ],
     "vigiar": ["NSCGJ Cap. XX item 414", "informações estatísticas", "Central Registradores de Imóveis", "ARISP", "Provimento CG 22/2019"],
-    "pendencias": "O bloco 3 da planilha ('estatísticas de transações imobiliárias', só atos classificados como DOI) não tem item próprio nas NSCGJ atuais: a versão anterior das normas tinha o item 406 (Prov. CG 37/2013 e Com. CG 602/2013, 'dados sobre operações imobiliárias à ARISP'), hoje absorvido nos itens 414/415. Conferir com a ARISP se o envio do XML continua exigido e com que base."
+    "pendencias": "O bloco 3 da planilha ('estatísticas de transações imobiliárias', só atos classificados como DOI) não tem item próprio nas NSCGJ atuais: a versão anterior tinha o item 406 (Prov. CG 37/2013 e Com. CG 602/2013, 'dados sobre operações imobiliárias à ARISP'), hoje absorvido nos itens 414/415."
   },
   {
     "id": "papel-seguranca",
@@ -191,7 +191,7 @@ COMUNICACOES = [
   }
 ]
 
-# Obrigações periódicas encontradas nas normas que NÃO estão na planilha 04 — para o Oficial decidir.
+# Outras obrigações de comunicação encontradas nas normas e que NÃO estão na planilha 04 — vigiadas do mesmo modo.
 # (3 itens; o treinamento anual de PLD foi retirado em 11/11/2026, ver abaixo)
 FORA_DA_PLANILHA = [
   {"nome": "Sistema Justiça Aberta (CNJ)", "prazo": "Mensal, até o 15º dia do mês subsequente; e semestral até o 10º dia útil de janeiro e julho (produtividade e arrecadação).", "base": "CNN, art. 136-A, § 1º (redação do Prov. CN 218/2026); NSCGJ Cap. XIII, item 14.3.", "url": CNN},

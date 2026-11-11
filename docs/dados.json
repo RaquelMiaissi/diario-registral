@@ -1887,7 +1887,7 @@
     "Resolução 547/2024",
     "NSCGJ Cap. XX itens 139 a 141"
    ],
-   "pendencias": "A planilha 04 diz 'somente quando o município/prefeitura requerer'; o art. 184-A do CNN (desde 2024) trata a comunicação mensal como obrigatória para todos os registros de imóveis, sem condicionar a pedido do município. Ponto para o Oficial decidir se a rotina interna muda."
+   "pendencias": ""
   },
   {
    "id": "incra",
@@ -1937,7 +1937,7 @@
     "SIGEF",
     "SNCR"
    ],
-   "pendencias": "Não confirmei se a IN INCRA 12/2003 continua vigente nem se há ato do INCRA que fixe o e-mail atual (a planilha registra governanca.fundiaria.spo@incra.gov.br, 'não é mais' servico.cadastro-rural). Vale pedir ao INCRA-SP a referência formal do canal."
+   "pendencias": "Não confirmei se a IN INCRA 12/2003 continua vigente (o portal do INCRA só foi lido por cópia de 2003); a lei e o decreto estão confirmados."
   },
   {
    "id": "estrangeiros",
@@ -1986,7 +1986,7 @@
     "CNN art. 436",
     "arrendamento por estrangeiro"
    ],
-   "pendencias": "Não li o Decreto 74.965/74 diretamente (planalto bloqueia o acesso automático); os artigos 15 e 16 vêm das notas de rodapé das NSCGJ. A planilha diz que a venda por estrangeiro a brasileiro vai 'só por ofício'; as NSCGJ (98.3) mandam comunicar por e-mail à DICOGE 5.1 tão logo ocorra — conferir qual canal a CGJ aceita hoje."
+   "pendencias": "Não li o Decreto 74.965/74 diretamente (o Planalto bloqueia o acesso automático); os artigos 15 e 16 vêm das notas de rodapé das NSCGJ."
   },
   {
    "id": "coaf",
@@ -2032,7 +2032,7 @@
     "NSCGJ Cap. XIII item 155",
     "Resolução Coaf"
    ],
-   "pendencias": "A planilha fala em 'comunicações dos atos praticados no mês' em lote; pela norma a comunicação automática tem prazo próprio (30 dias + 24 h), não mensal — conferir se o lote mensal respeita esse prazo."
+   "pendencias": ""
   },
   {
    "id": "pep",
@@ -2151,7 +2151,7 @@
     "IERI-e",
     "manual técnico ONR"
    ],
-   "pendencias": "Não encontrei norma que use o nome 'Relatório do Indicador Real' nem prazo específico para este envio. Pode ser a mesma remessa do art. 184-A (prefeituras) ou o IERI-e; o manual técnico do ONR (art. 320-O, § 1º) deve dizer — pedir ao ONR ou a quem opera o Mapa no cartório."
+   "pendencias": "Não encontrei norma que use o nome 'Relatório do Indicador Real'. O Mapa é ferramenta do SIG-RI (CNN art. 320-O, § 2º, Prov. 195/2025), então a origem provável é o Prov. 195/2025 e o manual técnico do ONR (art. 320-O, § 1º); mas, como a planilha diz que o arquivo é o mesmo JSON da DOI, pode ser a remessa do art. 184-A. Fica registrado com as duas origens até o manual do ONR ser lido."
   },
   {
    "id": "arisp-estatisticas",
@@ -2185,7 +2185,7 @@
     "ARISP",
     "Provimento CG 22/2019"
    ],
-   "pendencias": "O bloco 3 da planilha ('estatísticas de transações imobiliárias', só atos classificados como DOI) não tem item próprio nas NSCGJ atuais: a versão anterior das normas tinha o item 406 (Prov. CG 37/2013 e Com. CG 602/2013, 'dados sobre operações imobiliárias à ARISP'), hoje absorvido nos itens 414/415. Conferir com a ARISP se o envio do XML continua exigido e com que base."
+   "pendencias": "O bloco 3 da planilha ('estatísticas de transações imobiliárias', só atos classificados como DOI) não tem item próprio nas NSCGJ atuais: a versão anterior tinha o item 406 (Prov. CG 37/2013 e Com. CG 602/2013, 'dados sobre operações imobiliárias à ARISP'), hoje absorvido nos itens 414/415."
   },
   {
    "id": "papel-seguranca",

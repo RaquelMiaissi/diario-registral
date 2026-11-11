@@ -354,7 +354,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 36px),t
         <input id="q-co" type="search" placeholder="Buscar comunicação, destinatário, norma, artigo…" autocomplete="off">
         <span class="c" id="c-co"></span>
       </div>
-      <p class="al-nota">Comunicações que o Registro de Imóveis faz a terceiros depois do ato (Receita, prefeituras, INCRA, Corregedoria, COAF, ONR, ARISP), cada uma com a norma que a cria, o prazo e o canal. É base de <b>regra de comunicação</b>, separada das regras de qualificação: quando uma norma daqui mudar, a varredura diária marca o ato como <b>alteração de regra de comunicação</b>. Lista extraída dos cabeçalhos da planilha interna de comunicados mensais; origem normativa conferida nas fontes oficiais em <span id="co-data"></span>. O que não foi confirmado está em “Pendência” — nada foi preenchido por suposição.</p>
+      <p class="al-nota">Fontes das obrigações: as comunicações que o Registro de Imóveis faz a terceiros depois do ato (Receita, prefeituras, INCRA, Corregedoria, COAF, ONR, ARISP), cada uma com a norma que a cria. Esta página não agenda nem executa as comunicações — isso é de outra aplicação; aqui só se vigia se a norma mudou. É base de <b>regra de comunicação</b>, separada das regras de qualificação: quando uma norma daqui mudar, a varredura diária marca o ato como <b>alteração de regra de comunicação</b>. Lista extraída dos cabeçalhos da planilha interna de comunicados mensais; origem normativa conferida nas fontes oficiais em <span id="co-data"></span>. O que não foi confirmado está em “Pendência” — nada foi preenchido por suposição.</p>
       <div id="alt-co"></div>
       <div id="lista-co" class="grade"></div>
       <div id="fora-co"></div>
@@ -617,7 +617,7 @@ function renderCo(){
     +(c.pendencias?'<div class="bloco b-at"><span class="lbl">Pendência — não confirmado</span><p>'+esc(c.pendencias)+'</p></div>':'')
     +'<p class="al">Vigiar: '+(c.vigiar||[]).map(v=>esc(v)).join(' · ')+'</p>'
     +'</article>').join(""):'<div class="vazio"><b>Nada encontrado.</b></div>';
-  $("#fora-co").innerHTML = COF.length ? '<div class="bloco b-at" style="margin-top:18px"><span class="lbl">Obrigações periódicas encontradas nas normas que não estão na planilha 04 — para o Oficial decidir</span><ul>'+COF.map(f=>'<li><b>'+esc(f.nome)+'</b> — '+esc(f.prazo)+' <i>'+esc(f.base)+'</i>'+(f.url?' <a href="'+esc(f.url)+'" target="_blank" rel="noopener">abrir</a>':'')+'</li>').join('')+'</ul></div>' : '';
+  $("#fora-co").innerHTML = COF.length ? '<div class="bloco b-at" style="margin-top:18px"><span class="lbl">Outras obrigações de comunicação encontradas nas normas, fora da planilha 04 — vigiadas do mesmo modo</span><ul>'+COF.map(f=>'<li><b>'+esc(f.nome)+'</b> — '+esc(f.prazo)+' <i>'+esc(f.base)+'</i>'+(f.url?' <a href="'+esc(f.url)+'" target="_blank" rel="noopener">abrir</a>':'')+'</li>').join('')+'</ul></div>' : '';
 }
 $("#q-co").addEventListener("input",renderCo);
 const abas={ac:["#t-ac","#p-ac"],in:["#t-in","#p-in"],ed:["#t-ed","#p-ed"],al:["#t-al","#p-al"],as:["#t-as","#p-as"],np:["#t-np","#p-np"],co:["#t-co","#p-co"],or:["#t-or","#p-or"]};
