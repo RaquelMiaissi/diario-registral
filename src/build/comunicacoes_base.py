@@ -192,11 +192,13 @@ COMUNICACOES = [
 ]
 
 # Obrigações periódicas encontradas nas normas que NÃO estão na planilha 04 — para o Oficial decidir.
+# (3 itens; o treinamento anual de PLD foi retirado em 11/11/2026, ver abaixo)
 FORA_DA_PLANILHA = [
   {"nome": "Sistema Justiça Aberta (CNJ)", "prazo": "Mensal, até o 15º dia do mês subsequente; e semestral até o 10º dia útil de janeiro e julho (produtividade e arrecadação).", "base": "CNN, art. 136-A, § 1º (redação do Prov. CN 218/2026); NSCGJ Cap. XIII, item 14.3.", "url": CNN},
   {"nome": "Comunicação de não ocorrência ao COAF (à CGJ)", "prazo": "Anual, até 31 de janeiro do ano seguinte, quando não houve nenhuma comunicação à UIF no ano civil.", "base": "CNN, art. 153 (redação do Prov. CN 161/2024); NSCGJ Cap. XIII, item 161.2.", "url": CNN},
   {"nome": "Arrendamento de imóvel rural por estrangeiro", "prazo": "Trimestral, à CGJ e ao INCRA.", "base": "CNN, art. 436.", "url": CNN},
-  {"nome": "Treinamento anual de PLD/FTP", "prazo": "Anual, preferencialmente em janeiro.", "base": "NSCGJ Cap. XIII, item 163 (Prov. CG 25/2026).", "url": NSCGJ}
+  # Inativo desde 11/11/2026 (pedido da Raquel: "pode retirar o treinamento") — não é comunicação a terceiro:
+  # {"nome": "Treinamento anual de PLD/FTP", "prazo": "Anual, preferencialmente em janeiro.", "base": "NSCGJ Cap. XIII, item 163 (Prov. CG 25/2026).", "url": NSCGJ}
 ]
 
 if __name__ == '__main__':
