@@ -30,8 +30,9 @@ organizado por edição do serviço pago, está em `dados/arquivo/` (inativo).
 | `d` | text | data, `dd/mm/aaaa` |
 | `wd` | text | dia da semana |
 | `sem` | text ou null | motivo, quando o dia não foi varrido ou não houve edição |
-| `nac` | int | acórdãos do CSM com `ed` igual a `d` |
-| `fonte` | text | o que foi lido: "DJEN + DEJESP (edição NNNN)" |
+| `nac` | int ou null | acórdãos do CSM com `ed` igual a `d`; `null` enquanto o DJEN do dia estiver pendente |
+| `fonte` | text | o que foi lido: "DJEN + DEJESP (edição NNNN)"; com DJEN pendente, "DEJESP (edição NNNN) — DJEN pendente" |
+| `pend` | text[] ou ausente | fontes ainda não lidas no dia (desde 11/11/2026: `["DJEN"]` quando a tarefa em nuvem é barrada pelo bloqueio por país do DJEN); some quando o dia é completado pelo navegador do Mac |
 
 Os dias anteriores a 23/10/2026 foram varridos pelo serviço pago então
 assinado; `nac` deles foi recalculado pela data do DJEN em 26/10/2026 e o campo

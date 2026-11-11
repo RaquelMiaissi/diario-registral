@@ -477,7 +477,8 @@ function renderEd(){
       +'<span class="ed-t">'
       +(d.sem?'<span class="pill p-w">sem edição</span>'
              :'<span class="pill p-n">'+esc(d.fonte||"DJEN")+'</span>'
-              +(d.nac?'<span class="pill p-c">'+d.nac+(d.nac===1?' acórdão':' acórdãos')+'</span>':'<span class="pill p-z">sem acórdão</span>'))
+              +((d.pend||[]).length?'<span class="pill p-w">'+esc(d.pend.join(", "))+' pendente</span>'
+               :(d.nac?'<span class="pill p-c">'+d.nac+(d.nac===1?' acórdão':' acórdãos')+'</span>':'<span class="pill p-z">sem acórdão</span>')))
       +'</span></div>'
       +(d.sem?'<div class="ed-b"><p class="nota w">'+esc(d.sem)+'</p></div>':'')
       +'</article>';
