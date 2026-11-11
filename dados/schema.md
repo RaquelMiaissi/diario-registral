@@ -88,6 +88,32 @@ assinado; `nac` deles foi recalculado pela data do DJEN em 26/10/2026 e o campo
 | `orientacao` | text | o que muda na rotina; "apenas ciência" quando não muda |
 | `fonte` | text | órgão, publicação e data |
 | `fonteUrl` | text | página oficial do ato/informativo |
+| `classe` | text ou ausente | `"comunicacao"` quando o ato altera uma norma listada em `comunicacoes[]` (alteração de regra de comunicação, não de qualificação) |
+| `comunicacao` | text ou ausente | `id` da comunicação afetada (`doi`, `prefeituras`, `incra`, `estrangeiros`, `coaf`, `pep`, `itn003`, `mapa-estatisticas`, `arisp-estatisticas`, `papel-seguranca`) |
+
+## `comunicacoes[]` — comunicações obrigatórias pós-registro (desde 11/11/2026)
+
+Base fixa, gerada por `src/build/comunicacoes_base.py`; só muda por decisão do
+Oficial. Lista vinda dos cabeçalhos da planilha interna "04 - Planilha para
+comunicados mensais"; origem normativa conferida nas fontes oficiais.
+
+| campo | tipo | o que é |
+|---|---|---|
+| `id` | text | chave curta (acima) |
+| `planilha` | text | número do bloco na planilha 04 |
+| `nome` | text | nome da comunicação |
+| `destinatario` | text | quem recebe e por qual sistema |
+| `gatilho` | text | ato registral ou situação que dispara a comunicação |
+| `periodicidade` | text | "Mensal", "Trimestral", "Por operação"… |
+| `prazo` | text | prazo com o dispositivo que o fixa |
+| `meio` | text | canal/sistema de envio |
+| `base[]` | obj[] | `norma`, `disp` (artigo/item), `o_que` (o que o dispositivo diz), `orgao`, `url` |
+| `vigiar[]` | text[] | termos e normas que a varredura procura nos atos novos |
+| `pendencias` | text | o que não foi confirmado nas fontes oficiais (vazio quando tudo foi conferido) |
+
+`comunicacoes_fora[]` (`nome`, `prazo`, `base`, `url`): obrigações periódicas
+encontradas nas normas que não estão na planilha 04, para o Oficial decidir.
+`comunicacoes_conferido`: data da última conferência (`dd/mm/aaaa`).
 
 ## Firestore (quando a carga for feita)
 

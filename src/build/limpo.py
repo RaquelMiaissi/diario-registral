@@ -235,6 +235,10 @@ main .wrap{padding-block:26px 64px}
 .alr .in-full{font-size:.92rem;margin-top:8px}
 .sec-pill.vinc{background:var(--accent);color:#fff;border-color:var(--accent)}
 .sec-pill.pers{background:transparent;border:1px dashed var(--ink-3)}
+.sec-pill.com{background:var(--warn-bg);border-color:var(--warn-fg);color:var(--warn-fg)}
+.co-dl{margin:6px 0 10px;display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:.92em}
+.co-dl dt{color:var(--ink-3);font-weight:600;white-space:nowrap}.co-dl dd{margin:0}
+.bloco ul{margin:4px 0 0 18px;padding:0}.bloco li{margin:0 0 6px}
 .st{font-family:var(--fm);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2)}
 .st.ok{background:var(--accent);color:#fff;border-color:var(--accent)}
 .st.meio{background:var(--sunk)}
@@ -289,6 +293,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 36px),t
     <button class="tab" id="t-al" type="button" role="tab" aria-selected="false">Alertas de fraude</button>
     <button class="tab" id="t-as" type="button" role="tab" aria-selected="false">Assis</button>
     <button class="tab" id="t-np" type="button" role="tab" aria-selected="false">Normas e precedentes</button>
+    <button class="tab" id="t-co" type="button" role="tab" aria-selected="false">Comunicações obrigatórias</button>
     <button class="tab" id="t-or" type="button" role="tab" aria-selected="false">De onde vem</button>
   </div>
 </nav>
@@ -342,6 +347,17 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 36px),t
       </div>
       <p class="al-nota">Fontes nacionais que mudam a qualificação sem passar pelo diário paulista: atos da Corregedoria Nacional de Justiça (CNJ), precedentes do STJ e do STF filtrados para Direito Notarial e Registral e Direito Civil, e instruções normativas da Receita Federal sobre DOI e CNPJ. Cada item diz se é <b>vinculante</b> (norma ou precedente obrigatório) ou <b>persuasivo</b> (decisão de turma: orienta, não obriga).</p>
       <div id="lista-np" class="grade"></div>
+    </section>
+
+    <section id="p-co" hidden>
+      <div class="busca">
+        <input id="q-co" type="search" placeholder="Buscar comunicação, destinatário, norma, artigo…" autocomplete="off">
+        <span class="c" id="c-co"></span>
+      </div>
+      <p class="al-nota">Comunicações que o Registro de Imóveis faz a terceiros depois do ato (Receita, prefeituras, INCRA, Corregedoria, COAF, ONR, ARISP), cada uma com a norma que a cria, o prazo e o canal. É base de <b>regra de comunicação</b>, separada das regras de qualificação: quando uma norma daqui mudar, a varredura diária marca o ato como <b>alteração de regra de comunicação</b>. Lista extraída dos cabeçalhos da planilha interna de comunicados mensais; origem normativa conferida nas fontes oficiais em <span id="co-data"></span>. O que não foi confirmado está em “Pendência” — nada foi preenchido por suposição.</p>
+      <div id="alt-co"></div>
+      <div id="lista-co" class="grade"></div>
+      <div id="fora-co"></div>
     </section>
 
     <section id="p-or" hidden class="prosa">
@@ -501,6 +517,7 @@ $("#nums").innerHTML =
  + '<div><span class="n'+((D.assis||[]).length?'':' z')+'">'+(D.assis||[]).length+'</span><span class="k">Publicações sobre Assis</span></div>'
  + '<div><span class="n">'+(D.alertas||[]).length+'</span><span class="k">Alertas de fraude</span></div>'
  + '<div><span class="n">'+(D.nacional||[]).length+'</span><span class="k">Normas e precedentes</span></div>'
+ + '<div><span class="n">'+(D.comunicacoes||[]).length+'</span><span class="k">Comunicações obrigatórias</span></div>'
  + '<div><span class="n">'+(DIAS.length?DIAS[DIAS.length-1].d.slice(0,5)+'–'+DIAS[0].d.slice(0,5):'—')+'</span><span class="k">Período</span></div>';
 
 $("#origem").innerHTML = ORIGEM.map(o=>
@@ -570,6 +587,7 @@ function renderNp(){
   $("#lista-np").innerHTML=L.length?L.map(n=>'<article class="alr">'
     +'<div class="alr-h"><span class="alr-num">'+esc(n.org)+' · '+esc(n.tipo)+'</span><span class="alr-d">'+esc(n.d)+'</span>'
     +'<span class="sec-pill '+(n.vinculante?'vinc':'pers')+'">'+(n.vinculante?'vinculante':'persuasivo')+'</span>'
+    +(n.classe==='comunicacao'?'<span class="sec-pill com">regra de comunicação</span>':'')
     +(n.afeta||[]).map(x=>'<span class="sec-pill">'+esc(x)+'</span>').join('')+'</div>'
     +'<p class="alr-serv">'+esc(n.num)+'</p>'
     +'<p class="tema" style="margin:4px 0 8px">'+esc(n.titulo)+'</p>'
@@ -580,7 +598,29 @@ function renderNp(){
     +'</article>').join(""):'<div class="vazio"><b>Nada encontrado.</b></div>';
 }
 $("#q-np").addEventListener("input",renderNp); $("#f-np").addEventListener("change",renderNp);
-const abas={ac:["#t-ac","#p-ac"],in:["#t-in","#p-in"],ed:["#t-ed","#p-ed"],al:["#t-al","#p-al"],as:["#t-as","#p-as"],np:["#t-np","#p-np"],or:["#t-or","#p-or"]};
+const CO = D.comunicacoes || [], COF = D.comunicacoes_fora || [];
+$("#co-data").textContent = D.comunicacoes_conferido || "—";
+function renderCo(){
+  const q=norm($("#q-co").value);
+  const L=CO.filter(c=>!q||norm([c.nome,c.destinatario,c.gatilho,c.prazo,c.meio,c.pendencias,(c.base||[]).map(b=>b.norma+" "+b.disp+" "+b.o_que).join(" ")].join(" ")).includes(q));
+  $("#c-co").innerHTML='<b>'+L.length+'</b> de '+CO.length+' comunicações';
+  const alt=NP.filter(n=>n.classe==='comunicacao');
+  $("#alt-co").innerHTML = alt.length
+    ? '<div class="bloco b-at" style="margin:0 0 18px"><span class="lbl">Alterações de regra de comunicação detectadas pela varredura</span><ul>'+alt.map(n=>'<li><b>'+esc(n.d)+'</b> — '+esc(n.num)+': '+esc(n.titulo)+(n.comunicacao?' <i>(afeta: '+esc(n.comunicacao)+')</i>':'')+' — <a href="'+esc(n.fonteUrl)+'" target="_blank" rel="noopener">fonte</a></li>').join('')+'</ul></div>'
+    : '<p class="al-nota" style="margin-top:0"><b>Nenhuma alteração de regra de comunicação detectada</b> pela varredura até agora. Quando um ato do CNJ, da CGJ-SP, da Receita, do INCRA ou do ONR alterar uma das normas abaixo, ele aparece aqui e na aba Normas e precedentes com a etiqueta “regra de comunicação”.</p>';
+  $("#lista-co").innerHTML=L.length?L.map(c=>'<article class="alr">'
+    +'<div class="alr-h"><span class="alr-num">Planilha 04 · bloco '+esc(c.planilha)+'</span><span class="alr-d">'+esc(c.periodicidade)+'</span></div>'
+    +'<h3 class="ac-tit" style="margin:4px 0 6px">'+esc(c.nome)+'</h3>'
+    +'<p class="alr-serv">Para: '+esc(c.destinatario)+'</p>'
+    +'<dl class="co-dl"><dt>O que dispara</dt><dd>'+esc(c.gatilho)+'</dd><dt>Prazo</dt><dd>'+esc(c.prazo)+'</dd><dt>Canal</dt><dd>'+esc(c.meio)+'</dd></dl>'
+    +'<div class="bloco b-or"><span class="lbl">Origem normativa</span><ul>'+(c.base||[]).map(b=>'<li><b>'+esc(b.norma)+'</b>, '+esc(b.disp)+' <span class="sec-pill">'+esc(b.orgao)+'</span><br>'+esc(b.o_que)+(b.url?' <a href="'+esc(b.url)+'" target="_blank" rel="noopener">abrir</a>':'')+'</li>').join('')+'</ul></div>'
+    +(c.pendencias?'<div class="bloco b-at"><span class="lbl">Pendência — não confirmado</span><p>'+esc(c.pendencias)+'</p></div>':'')
+    +'<p class="al">Vigiar: '+(c.vigiar||[]).map(v=>esc(v)).join(' · ')+'</p>'
+    +'</article>').join(""):'<div class="vazio"><b>Nada encontrado.</b></div>';
+  $("#fora-co").innerHTML = COF.length ? '<div class="bloco b-at" style="margin-top:18px"><span class="lbl">Obrigações periódicas encontradas nas normas que não estão na planilha 04 — para o Oficial decidir</span><ul>'+COF.map(f=>'<li><b>'+esc(f.nome)+'</b> — '+esc(f.prazo)+' <i>'+esc(f.base)+'</i>'+(f.url?' <a href="'+esc(f.url)+'" target="_blank" rel="noopener">abrir</a>':'')+'</li>').join('')+'</ul></div>' : '';
+}
+$("#q-co").addEventListener("input",renderCo);
+const abas={ac:["#t-ac","#p-ac"],in:["#t-in","#p-in"],ed:["#t-ed","#p-ed"],al:["#t-al","#p-al"],as:["#t-as","#p-as"],np:["#t-np","#p-np"],co:["#t-co","#p-co"],or:["#t-or","#p-or"]};
 function vai(k){
   aba=k;
   Object.entries(abas).forEach(([n,[t,p]])=>{
@@ -592,6 +632,7 @@ function vai(k){
   if(k==="al") renderAl();
   if(k==="as") renderAs();
   if(k==="np") renderNp();
+  if(k==="co") renderCo();
 }
 Object.keys(abas).forEach(k=>$(abas[k][0]).addEventListener("click",()=>vai(k)));
 $("#q").addEventListener("input",e=>{F.q=e.target.value;salva();renderAc();});
