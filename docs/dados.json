@@ -1,6 +1,234 @@
 {
  "acordaos": [
   {
+   "ed": "12/11/2026",
+   "num": "Apelação 1000220-42.2026.8.26.0366",
+   "com": "MONGAGUÁ",
+   "titulo": "Recurso de dúvida não conhecido: o apelante não juntou procuração válida no prazo",
+   "resumo": {
+    "tema": "APELAÇÃO EM DÚVIDA — REPRESENTAÇÃO PROCESSUAL NÃO REGULARIZADA: RECURSO NÃO CONHECIDO",
+    "corpo": [
+     "A dúvida tratava do registro de carta de adjudicação extraída de ação de adjudicação compulsória. O apelante foi intimado a juntar procuração válida e não atendeu ao despacho; aplicado o art. 76, § 2º, I, do Código de Processo Civil, o recurso não foi conhecido. O mérito da carta de adjudicação não foi examinado."
+    ],
+    "orientacao": "Questão processual, sem reflexo direto na qualificação: a nota devolutiva que motivou a dúvida continua de pé."
+   },
+   "integra": "Apelação Cível - Mongaguá - Apelante: Marcos César Vilarim - Apelado: Oficial de Registro de Imóveis e Anexos da Comarca de Mongaguá - Magistrado(a) Silvia Rocha (Corregedora Geral) - Não conheceram do recurso. V. U. - APELAÇÃO. REGISTRO DE IMÓVEIS. CARTA DE ADJUDICAÇÃO EXTRAÍDA DOS AUTOS DA AÇÃO DE ADJUDICAÇÃO COMPULSÓRIA. O APELANTE NÃO ATENDEU AO DESPACHO QUE DETERMINOU A JUNTADA DE INSTRUMENTO DE PROCURAÇÃO VÁLIDO, CONFORME DISPÕE O ART. 76, § 2º, I, DO CÓDIGO DE PROCESSO CIVIL. RECURSO NÃO CONHECIDO.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10002204220268260366",
+   "djen": "2026-11-12",
+   "djenId": 783887743
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Apelação 1002251-22.2024.8.26.0296",
+   "com": "JAGUARIÚNA",
+   "titulo": "Casamento no exterior: sem o regime de bens averbado no Registro Civil, a escritura não entra",
+   "resumo": {
+    "tema": "CASAMENTO CELEBRADO NO EXTERIOR — REGIME DE BENS NÃO INDICADO NA TRANSCRIÇÃO: EXIGÊNCIA DE AVERBAÇÃO PRÉVIA NO REGISTRO CIVIL",
+    "corpo": [
+     "Na escritura de venda e compra, os adquirentes eram casados na China e os alienantes, na França. As transcrições dos casamentos no Brasil não indicavam o regime de bens; só remetiam à lei estrangeira ou à lei do país da celebração. Isso viola o princípio da especialidade subjetiva.",
+     "O CSM manteve a exigência de averbar antes, no Registro Civil, o regime patrimonial de cada casal. O regime não pode ser presumido pela lei brasileira nem extraído de informações de sites consulares."
+    ],
+    "orientacao": "Partes casadas no exterior cuja transcrição no Brasil não diz o regime de bens: exigir a averbação do regime na transcrição do casamento antes do registro; não aceitar presunção nem página consular como prova."
+   },
+   "integra": "Apelação Cível - Jaguariúna - Apelante: Claudio de Siqueira Junior - Apelado: Oficial de Registro de Imóveis e Anexos da Comarca de Jaguariúna-sp. - Magistrado(a) Silvia Rocha (Corregedora Geral) - Negaram provimento ao recurso. V. U. - DIREITO REGISTRAL IMOBILIÁRIO. DÚVIDA. APELAÇÃO. ESCRITURA PÚBLICA DE VENDA E COMPRA. ADQUIRENTES CASADOS NA CHINA E ALIENANTES CASADOS NA FRANÇA. TRANSCRIÇÕES DE CASAMENTO NO BRASIL NÃO ESPECIFICAM O REGIME DE BENS, REMETENDO APENAS À LEGISLAÇÃO ESTRANGEIRA OU VIGENTE NO PAÍS DE CELEBRAÇÃO. VIOLAÇÃO AO PRINCÍPIO DA ESPECIALIDADE SUBJETIVA. NECESSIDADE DE PRÉVIA AVERBAÇÃO NO REGISTRO CIVIL PARA DEFINIÇÃO DO REGIME PATRIMONIAL. IMPOSSIBILIDADE DE PRESUNÇÃO PELA LEI BRASILEIRA OU POR INFORMAÇÕES DE SÍTIOS ELETRÔNICOS CONSULARES. MANUTENÇÃO DO ÓBICE. RECURSO NÃO PROVIDO.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10022512220248260296",
+   "djen": "2026-11-12",
+   "djenId": 783887760
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Embargos de Declaração 1003788-80.2025.8.26.0405",
+   "com": "OSASCO",
+   "titulo": "Fração ideal adquirida antes da união estável não gera meação, mesmo com divisão amigável posterior",
+   "resumo": {
+    "tema": "EMBARGOS DE DECLARAÇÃO — INVENTÁRIO EXTRAJUDICIAL: FRAÇÃO IDEAL ANTERIOR À UNIÃO ESTÁVEL NÃO ENTRA NA MEAÇÃO",
+    "corpo": [
+     "A dúvida tratava da recusa de registro de escritura de inventário e partilha. O CSM manteve o entendimento: a fração ideal foi adquirida antes do início da união estável, então não há meação. A divisão amigável feita depois não muda a natureza do bem.",
+     "Os embargos foram rejeitados por buscarem rediscutir o mérito; o CSM registrou o prequestionamento temático."
+    ],
+    "orientacao": "Na partilha com companheiro, conferir a data de aquisição do bem frente ao início da união estável; bem adquirido antes não se comunica, ainda que depois tenha havido divisão amigável do condomínio."
+   },
+   "integra": "Embargos de Declaração Cível - Osasco - Embargte: Ernane Viana Teixeira - Embargdo: 1º Oficial de Registro de Imóveis e Anexos da Comarca de Osasco - Magistrado(a) Silvia Rocha (Corregedora Geral) - Rejeitaram os embargos. V. U. - EMBARGOS DE DECLARAÇÃO. DÚVIDA. REGISTRO DE IMÓVEIS. RECUSA DE REGISTRO DE ESCRITURA PÚBLICA DE INVENTÁRIO E PARTILHA. AFASTADA ALEGAÇÃO DE OMISSÃO. FRAÇÃO IDEAL ADQUIRIDA ANTES DO INÍCIO DA UNIÃO ESTÁVEL. INEXISTÊNCIA DE MEAÇÃO. IRRELEVÂNCIA DA POSTERIOR DIVISÃO AMIGÁVEL PARA ALTERAÇÃO DA NATUREZA DO BEM. PRETENSÃO DE REDISCUSSÃO DO MÉRITO. PREQUESTIONAMENTO TEMÁTICO. EMBARGOS DE DECLARAÇÃO REJEITADOS.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10037888020258260405",
+   "djen": "2026-11-12",
+   "djenId": 783887763
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Apelação 1001985-89.2025.8.26.0396",
+   "com": "NOVO HORIZONTE",
+   "titulo": "Venda de imóvel por município sem licitação: escritura de 2004 só entra se cumprir os requisitos da lei da época",
+   "resumo": {
+    "tema": "ALIENAÇÃO DE IMÓVEL PÚBLICO MUNICIPAL COM DISPENSA DE LICITAÇÃO — TEMPUS REGIT ACTUM: REQUISITOS FORMAIS ATUAIS E VALIDADE PELA LEI DA ÉPOCA",
+    "corpo": [
+     "A escritura de compra e venda, lavrada em 2004, tinha por objeto imóvel alienado por município com dispensa de licitação. O oficial recusou o registro pela falta dos requisitos da lei de licitações (Lei 14.133/2021 e a anterior Lei 8.666/1993).",
+     "O CSM aplicou o princípio tempus regit actum (o tempo rege o ato): a qualificação observa os requisitos legais vigentes quando o título é apresentado e verifica a validade material do negócio pela lei da época — no caso, avaliação prévia e motivação de interesse público. Registros irregulares feitos antes não justificam continuar o erro."
+    ],
+    "orientacao": "Título antigo de alienação de imóvel público: exigir prova da avaliação prévia e da motivação de interesse público exigidas pela lei vigente na data do negócio, além dos requisitos formais atuais; precedente local irregular não serve de base."
+   },
+   "integra": "Apelação Cível - Novo Horizonte - Apelante: Everaldo Antonio Barbosa e outro - Apelado: Oficial de Registro de Imóveis e Anexos da Comarca de Novo Horizonte - Magistrado(a) Silvia Rocha (Corregedora Geral) - Negaram provimento ao recurso. V. U. - DIREITO REGISTRAL IMOBILIÁRIO. DÚVIDA. APELAÇÃO. REGISTRO DE COMPRA E VENDA, CELEBRADA POR ESCRITURA PÚBLICA LAVRADA EM 2004. IMÓVEL ALIENADO POR MUNICÍPIO COM DISPENSA DE LICITAÇÃO. RECUSA DO OFICIAL POR AUSÊNCIA DE REQUISITOS DA LEI DE LICITAÇÕES (LEI Nº 14.133/2021 E PRETÉRITA LEI Nº 8.666/93). A QUALIFICAÇÃO REGISTRAL SE REGE PELO PRINCÍPIO TEMPUS REGIT ACTUM. NECESSIDADE DE OBSERVÂNCIA DOS REQUISITOS LEGAIS VIGENTES AO TEMPO DA APRESENTAÇÃO DO TÍTULO, BEM COMO VERIFICAÇÃO DA VALIDADE MATERIAL DO NEGÓCIO À LUZ DA LEI DA ÉPOCA (AVALIAÇÃO PRÉVIA E MOTIVAÇÃO DE INTERESSE PÚBLICO). ERROS PRETÉRITOS NÃO JUSTIFICAM A CONTINUIDADE DE REGISTROS IRREGULARES ANTE O PRINCÍPIO DA LEGALIDADE ESTRITA. MANUTENÇÃO DO ÓBICE. RECURSO NÃO PROVIDO.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10019858920258260396",
+   "djen": "2026-11-12",
+   "djenId": 783887767
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Apelação 1003332-67.2025.8.26.0038",
+   "com": "ARARAS",
+   "titulo": "Título judicial contra cessionária sem registro: antes, é preciso registrar a transmissão a ela",
+   "resumo": {
+    "tema": "TÍTULO JUDICIAL E CONTINUIDADE — DEMANDADA MERA CESSIONÁRIA DE DIREITOS SEM TÍTULO REGISTRADO: REGISTRO PRÉVIO DA TRANSMISSÃO",
+    "corpo": [
+     "A dúvida ficou prejudicada porque o apresentante concordou com uma das exigências e não impugnou todas: no processo de dúvida, a exigência não rebatida e não cumprida vale como anuência. Mesmo assim, o CSM examinou os óbices impugnados para orientar a futura prenotação.",
+     "A origem judicial do título não o isenta da qualificação nem do princípio da continuidade. A parte demandada era mera cessionária de direitos aquisitivos, sem título registrado na matrícula; para registrar a transmissão por ordem judicial à demandante, é preciso antes registrar a transmissão do bem à demandada."
+    ],
+    "orientacao": "Título judicial que transmite imóvel a partir de quem não é titular inscrito: exigir o registro prévio do título de aquisição do demandado; a ordem judicial não supre a quebra da cadeia."
+   },
+   "integra": "Apelação Cível - Araras - Apelante: Condomínio Residencial Parque das Flores - Apelado: Oficial de Registro de Imóveis e Anexos da Comarca de Araras - Magistrado(a) Silvia Rocha (Corregedora Geral) - Não conheceram do recurso, com observação. V.U. - APELAÇÃO. DÚVIDA. REGISTRO DE IMÓVEIS. IMPUGNAÇÃO PARCIAL DAS EXIGÊNCIAS. CONCORDÂNCIA EXPRESSA COM UMA DAS EXIGÊNCIAS. PERDA SUPERVENIENTE DO OBJETO. DÚVIDA PREJUDICADA. ANÁLISE DOS ÓBICES IMPUGNADOS PARA ORIENTAÇÃO FUTURA. TÍTULO JUDICIAL. SUJEIÇÃO À QUALIFICAÇÃO REGISTRAL. PRINCÍPIO DA CONTINUIDADE. NECESSIDADE DE REGISTRO PRÉVIO. NÃO CONHECIMENTO DO RECURSO.NO PROCESSO DE DÚVIDA, A RESOLUÇÃO DO MÉRITO DEPENDE DA IMPUGNAÇÃO DE TODOS OS ÓBICES ELENCADOS PELO REGISTRADOR NA NOTA DEVOLUTIVA. A AUSÊNCIA DE IMPUGNAÇÃO A ALGUMA DAS EXIGÊNCIAS ELENCADAS, DESACOMPANHADA DO SEU CUMPRIMENTO, CONFIGURA ANUÊNCIA À EXIGÊNCIA NÃO REBATIDA, CIRCUNSTÂNCIA QUE TORNA A DÚVIDA PREJUDICADA E INVIABILIZA DE MODO ABSOLUTO O EXAME DO APELO. TODAVIA, A DESPEITO DA PREJUDICIALIDADE DA DÚVIDA, A JURISPRUDÊNCIA DO CONSELHO SUPERIOR DA MAGISTRATURA AUTORIZA A ANÁLISE DOS ÓBICES EFETIVAMENTE IMPUGNADOS PARA A ORIENTAÇÃO DE FUTURA PRENOTAÇÃO.A ORIGEM JUDICIAL DO TÍTULO NÃO O ISENTA DO CRIVO DA QUALIFICAÇÃO REGISTRAL E, POR ISSO, NÃO DISPENSA A OBSERVÂNCIA DO PRINCÍPIO DA CONTINUIDADE, O QUAL IMPÕE À MATRÍCULA UMA CADEIA DE NEXOS FORMAIS ININTERRUPTOS ENTRE OS SUCESSIVOS TITULARES DE DIREITOS, DE MODO QUE A SÉRIE DE INSCRIÇÕES REFLITA O HISTÓRICO JURÍDICO DO IMÓVEL, SEM INTERMITÊNCIA.NO CASO, O REGISTRO DO TÍTULO JUDICIAL DEPENDE DO PRÉVIO REGISTRO DA TRANSMISSÃO DO BEM À PARTE DEMANDADA, A FIM DE PERMITIR A SUBSEQUENTE TRANSMISSÃO POR ORDEM JUDICIAL À PARTE DEMANDANTE, PARA MANTER A CONTINUIDADE DOS ATOS REGISTRAIS. A DEMANDADA É MERA CESSIONÁRIA DE DIREITOS AQUISITIVOS, SEM TÍTULO REGISTRADO NA MATRÍCULA, DE MODO QUE, PARA O REGISTRO DO TÍTULO PRENOTADO, É INDISPENSÁVEL O CUMPRIMENTO DAS EXIGÊNCIAS FEITAS PELO OFICIAL, A FIM DE ASSEGURAR O CUMPRIMENTO DO PRINCÍPIO DA CONTINUIDADE REGISTRAL.NÃO CONHECIMENTO DO RECURSO, COM OBSERVAÇÕES APENAS PARA ORIENTAR FUTURA PRENOTAÇÃO.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10033326720258260038",
+   "djen": "2026-11-12",
+   "djenId": 783887769
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Embargos de Declaração 1012401-33.2025.8.26.0068",
+   "com": "BARUERI",
+   "titulo": "Partilha de divórcio com indisponibilidade averbada: embargos rejeitados, mantida a recusa",
+   "resumo": {
+    "tema": "EMBARGOS DE DECLARAÇÃO — PARTILHA DE DIVÓRCIO E INDISPONIBILIDADES AVERBADAS NA MATRÍCULA",
+    "corpo": [
+     "A embargante alegou omissão sobre a anterioridade da partilha, a coisa julgada e a possibilidade de registrar mantendo os gravames. O CSM não viu omissão nenhuma e rejeitou os embargos por pretenderem rediscutir o julgamento.",
+     "A publicação traz só a ementa dos embargos; o fundamento do acórdão embargado não está no texto publicado."
+    ],
+    "orientacao": "Apenas ciência: confirma o julgamento anterior sobre partilha de divórcio com indisponibilidade averbada, cujo fundamento não sai nesta publicação."
+   },
+   "integra": "Embargos de Declaração Cível - Barueri - Embargte: Marcia Regina Vac Giovannini - Embargdo: Oficial de Registro de Imóveis e Anexos da Comarca de Barueri - Magistrado(a) Silvia Rocha (Corregedora Geral) - Rejeitaram os embargos. V. U. - EMBARGOS DE DECLARAÇÃO. DÚVIDA. REGISTRO DE IMÓVEIS. PARTILHA DECORRENTE DE DIVÓRCIO. INDISPONIBILIDADES AVERBADAS NA MATRÍCULA. ALEGAÇÕES DE OMISSÃO QUANTO À ANTERIORIDADE DA PARTILHA, À COISA JULGADA E AO REGISTRO COM MANUTENÇÃO DOS GRAVAMES. INEXISTÊNCIA DE OMISSÃO. PRETENSÃO DE REDISCUSSÃO DO JULGAMENTO. AUSÊNCIA DOS VÍCIOS PREVISTOS NO ARTIGO 1.022 DO CÓDIGO DE PROCESSO CIVIL. EMBARGOS REJEITADOS.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10124013320258260068",
+   "djen": "2026-11-12",
+   "djenId": 783887770
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Apelação 1003486-58.2023.8.26.0587",
+   "com": "SÃO SEBASTIÃO",
+   "titulo": "Condomínio edilício só adquire imóvel por exceção — e não quando quer dispor dele livremente",
+   "resumo": {
+    "tema": "CONDOMÍNIO EDILÍCIO COMO DONATÁRIO — EXCEÇÃO À FALTA DE PERSONALIDADE JURÍDICA NÃO SE APLICA QUANDO O BEM NÃO SE VINCULA À ÁREA COMUM",
+    "corpo": [
+     "A dúvida inversa ficou prejudicada: o condomínio concordou com a exigência de regularizar antes o domínio e não impugnou especificamente outra exigência. Os óbices foram examinados só para orientar.",
+     "O CSM lembrou o precedente que admite, por exceção e com justificativa concreta, que o condomínio edilício adquira imóvel mesmo sem personalidade jurídica: o negócio deve se vincular à atividade-fim, reverter em proveito da coletividade e ser aprovado em assembleia. Aqui a exceção não se aplicou, porque o próprio condomínio afastou a destinação à área comum e disse poder alienar, parcelar ou destinar o bem livremente.",
+     "Também ficaram de pé a sobreposição com terras públicas, que exige prévia definição ou regularização dominial, e a divergência entre a origem tabular da matrícula e a indicada na escritura. Usucapião e anotação de dívida extrapolam o objeto da dúvida."
+    ],
+    "orientacao": "Escritura em que condomínio edilício adquire imóvel: exigir ata de assembleia e vínculo do bem com a atividade-fim ou a área comum; se o próprio título prevê livre disposição, recusar. Conferir a origem tabular citada na escritura com a da matrícula."
+   },
+   "integra": "Apelação Cível - São Sebastião - Apelante: Condomínio Gruta das Lagostas - Apelado: Oficial de Registro de Imóveis e Anexos da Comarca de São Sebastião - SP - Magistrado(a) Silvia Rocha (Corregedora Geral) - Não conheceram do recurso. V. U. - REGISTRO DE IMÓVEIS. DÚVIDA INVERSA. ESCRITURA PÚBLICA DE DOAÇÃO. CONDOMÍNIO EDILÍCIO FIGURANDO COMO DONATÁRIO. CONCORDÂNCIA COM ÓBICE RELATIVO À PRÉVIA REGULARIZAÇÃO DO DOMÍNIO E AUSÊNCIA DE IMPUGNAÇÃO ESPECÍFICA A OUTRA EXIGÊNCIA. IRRESIGNAÇÃO PARCIAL. DÚVIDA PREJUDICADA. RECURSO NÃO CONHECIDO. EXAME DOS ÓBICES, EM CARÁTER ORIENTATIVO. AUSÊNCIA DE PERSONALIDADE JURÍDICA NÃO IMPEDE, EM SITUAÇÃO EXCEPCIONAL E CONCRETAMENTE JUSTIFICADA, A AQUISIÇÃO DE IMÓVEL PELO CONDOMÍNIO, QUANDO O NEGÓCIO SE VINCULA À SUA ATIVIDADE-FIM, REVERTE EM PROVEITO DA COLETIVIDADE E É REGULARMENTE APROVADO EM ASSEMBLEIA. PRECEDENTE DO CSM. HIPÓTESE EM QUE O PRÓPRIO RECORRENTE AFASTA A DESTINAÇÃO NECESSÁRIA À ÁREA COMUM E SUSTENTA PODER ALIENAR, PARCELAR OU DESTINAR LIVREMENTE O BEM. INAPLICABILIDADE DA EXCEÇÃO. SOBREPOSIÇÃO COM TERRAS PÚBLICAS RECONHECIDA PELO REGISTRADOR. NECESSIDADE DE PRÉVIA DEFINIÇÃO OU REGULARIZAÇÃO DOMINIAL. DIVERGÊNCIA ENTRE A ORIGEM TABULAR CONSTANTE DA MATRÍCULA E A INDICADA NO ATO NOTARIAL. ALEGAÇÃO DE USUCAPIÃO E PEDIDO DE ANOTAÇÃO DE DÍVIDA EXTRAPOLAM O OBJETO DA DÚVIDA. RECURSO NÃO CONHECIDO.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10034865820238260587",
+   "djen": "2026-11-12",
+   "djenId": 783887771
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Apelação 1006223-12.2025.8.26.0604",
+   "com": "SUMARÉ",
+   "titulo": "Preço simbólico não dispensa a escritura: vale o valor venal para o art. 108 do Código Civil",
+   "resumo": {
+    "tema": "INSTRUMENTO PARTICULAR COM PREÇO ÍNFIMO — VALOR VENAL ACIMA DE 30 SALÁRIOS MÍNIMOS: ESCRITURA PÚBLICA INDISPENSÁVEL",
+    "corpo": [
+     "A transferência de fração ideal de imóvel urbano veio por instrumento particular, com preço de R$ 1.000,00, mas o valor venal do imóvel passava de trinta vezes o maior salário mínimo. O CSM aplicou o art. 108 do Código Civil e precedentes próprios: prevalece o valor venal sobre o preço simbólico, e a escritura pública é indispensável.",
+     "Também afastou a tentativa de usar o registro para corrigir a situação por via oblíqua."
+    ],
+    "orientacao": "Instrumento particular de transmissão: comparar o preço declarado com o valor venal; se o valor venal superar 30 salários mínimos, exigir escritura pública, ainda que o preço declarado seja menor."
+   },
+   "integra": "Apelação Cível - Sumaré - Apelante: Damaris Guarnieri Gouvêa - Apelado: Oficial de Registro de Imóveis e Anexos da Comarca de Sumaré - Magistrado(a) Silvia Rocha (Corregedora Geral) - Negaram provimento ao recurso. V. U. - DIREITO REGISTRAL IMOBILIÁRIO. DÚVIDA. APELAÇÃO. INSTRUMENTO PARTICULAR DE TRANSFERÊNCIA DE FRAÇÃO IDEAL DE IMÓVEL URBANO. VALOR ÍNFIMO ATRIBUÍDO PELAS PARTES (R$1.000,00). VALOR VENAL DO IMÓVEL SUPERIOR A TRINTA VEZES O MAIOR SALÁRIO MÍNIMO VIGENTE NO PAÍS. APLICAÇÃO DO ART. 108 DO CÓDIGO CIVIL. PREVALÊNCIA DO VALOR VENAL EM FACE DO PREÇO SIMBÓLICO. PRECEDENTES DO CONSELHO SUPERIOR DA MAGISTRATURA. ESCRITURA PÚBLICA INDISPENSÁVEL. IMPOSSIBILIDADE DE RETIFICAÇÃO REGISTRAL POR VIA OBLÍQUA. APELAÇÃO NÃO PROVIDA.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10062231220258260604",
+   "djen": "2026-11-12",
+   "djenId": 783887772
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Apelação 1025542-86.2025.8.26.0564",
+   "com": "SÃO BERNARDO DO CAMPO",
+   "titulo": "Adjudicação compulsória extrajudicial: o imóvel do compromisso tem de bater com a matrícula; firma reconhecida não é exigível",
+   "resumo": {
+    "tema": "ADJUDICAÇÃO COMPULSÓRIA EXTRAJUDICIAL — ESPECIALIDADE OBJETIVA E REPRESENTAÇÃO DAS PARTES; DISPENSA DE FIRMA NOS COMPROMISSOS",
+    "corpo": [
+     "A apelante sustentava que a adjudicação compulsória extrajudicial, por ter disciplina própria, dispensaria as formalidades de ingresso do título. O CSM negou provimento e fixou três teses.",
+     "Primeira: título que ofende a especialidade objetiva não ingressa — sem identidade entre o objeto dos compromissos e a descrição das matrículas, e sem elementos técnicos que mostrem a correspondência espacial entre os lotes e as áreas compromissadas, não há adjudicação. Segunda: o reconhecimento de firma nos compromissos de compra e venda é dispensável, porque eles são prova, não o título apresentado a registro. Terceira: é indispensável comprovar a regularidade da representação das partes na data do negócio.",
+     "Legislação citada: Lei 6.015/1973, arts. 221 e 225; NSCGJ, Tomo II, Cap. XX, item 108."
+    ],
+    "orientacao": "Na adjudicação compulsória extrajudicial: exigir correspondência entre o imóvel compromissado e a matrícula (com elemento técnico se a descrição divergir) e prova dos poderes de quem representou as partes na data do compromisso; não exigir firma reconhecida nos compromissos juntados como prova."
+   },
+   "integra": "Apelação Cível - São Bernardo do Campo - Apelante: Associação Social de Construção por Mutirão Senhor do Bonfim - Apelado: 2º Oficial de Registro de Imóveis e Anexos da Comarca de São Bernardo do Campo - Magistrado(a) Silvia Rocha (Corregedora Geral) - Negaram provimento ao recurso. V. U. - EMENTA: DIREITO REGISTRAL. DÚVIDA JULGADA PROCEDENTE. REGISTRO DE IMÓVEIS. ADJUDICAÇÃO COMPULSÓRIA EXTRAJUDICIAL. APELAÇÃO NÃO PROVIDA.I. CASO EM EXAME1. APELAÇÃO INTERPOSTA CONTRA A R. SENTENÇA QUE CONFIRMOU A NEGATIVA DE REGISTRO DE ADJUDICAÇÃO COMPULSÓRIA EXTRAJUDICIAL. A APELANTE SUSTENTA NÃO HAVER ÓBICE AO REGISTRO PRETENDIDO, POIS O PROCEDIMENTO DE ADJUDICAÇÃO COMPULSÓRIA POSSUI DISCIPLINA PRÓPRIA, O QUE DISPENSARIA AS FORMALIDADES EXIGIDAS PARA O INGRESSO DO TÍTULO NO FÓLIO REAL.II. QUESTÃO EM DISCUSSÃO2. A QUESTÃO EM DISCUSSÃO CONSISTE EM VERIFICAR A NECESSIDADE DE: (I) CORRESPONDÊNCIA ENTRE A DESCRIÇÃO DO IMÓVEL CONSTANTE DOS INSTRUMENTOS PARTICULARES E AQUELA DO REGISTRO; (II) APRESENTAÇÃO DO TÍTULO EM SUA VIA ORIGINAL, COM FIRMAS RECONHECIDAS; E (III) DEMONSTRAÇÃO DA ADEQUAÇÃO DA REPRESENTAÇÃO DAS PARTES CELEBRANTES DO NEGÓCIO.III. RAZÕES DE DECIDIR3. A AUSÊNCIA DE IDENTIDADE ENTRE O OBJETO DO NEGÓCIO JURÍDICO E A DESCRIÇÃO CONSTANTE DAS MATRÍCULAS DOS IMÓVEIS OFENDE O PRINCÍPIO DA ESPECIALIDADE OBJETIVA. 4. A AUSÊNCIA DE ELEMENTOS TÉCNICOS QUE DEMONSTREM A CORRESPONDÊNCIA ESPACIAL ENTRE OS LOTES E AS ÁREAS COMPROMISSADAS IMPEDE A ADJUDICAÇÃO COMPULSÓRIA. 5. A DEMONSTRAÇÃO DA ADEQUADA REPRESENTAÇÃO DAS PARTES É IMPRESCINDÍVEL PARA QUE SE VERIFIQUEM OS PODERES QUE ELAS DETINHAM À ÉPOCA DA CELEBRAÇÃO DO NEGÓCIO JURÍDICO. 6. NÃO É NECESSÁRIO O RECONHECIMENTO DE FIRMA NOS DOCUMENTOS COMPROBATÓRIOS. 7. A MANUTENÇÃO DE PARTE DOS ÓBICES APRESENTADOS PELO REGISTRADOR ENSEJA A MANUTENÇÃO DA PROCEDÊNCIA DA DÚVIDA.IV. DISPOSITIVO E TESE8. APELAÇÃO NÃO PROVIDA.TESE DE JULGAMENTO: 1. TÍTULOS QUE OFENDAM O PRINCÍPIO DA ESPECIALIDADE OBJETIVA NÃO SÃO PASSÍVEIS DE INSCRIÇÃO NO REGISTRO IMOBILIÁRIO. 2. É DISPENSÁVEL O RECONHECIMENTO DE FIRMA EXIGIDO, POIS OS INSTRUMENTOS DE COMPROMISSO DE COMPRA E VENDA NÃO SÃO OS TÍTULOS APRESENTADOS A REGISTRO. 3. A COMPROVAÇÃO DA REGULARIDADE DA REPRESENTAÇÃO DAS PARTES NO MOMENTO DA CELEBRAÇÃO DO NEGÓCIO JURÍDICO É INDISPENSÁVEL PARA AFERIÇÃO DE SUA VALIDADE.LEGISLAÇÃO CITADA:- LEI Nº 6.015/1973, ARTS. 221 E 225;- NSCGJ, TOMO II, CAPÍTULO XX, ITEM 108.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10255428620258260564",
+   "djen": "2026-11-12",
+   "djenId": 783887794
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Apelação 1014686-53.2023.8.26.0590",
+   "com": "SÃO VICENTE",
+   "titulo": "Arrematação de direitos não inscritos é registro nulo — e a cessão desses direitos também não entra",
+   "resumo": {
+    "tema": "ARREMATAÇÃO DE DIREITOS NÃO INSCRITOS NA MATRÍCULA — REGISTRO NULO DE PLENO DIREITO; CESSÃO RECUSADA E COMUNICAÇÃO À CORREGEDORIA",
+    "corpo": [
+     "O apelante arrematou, em leilão judicial, direitos sobre imóvel que não estavam inscritos na matrícula, e depois os cedeu. O CSM manteve a recusa do registro da cessão: pelos princípios da inscrição e da continuidade, o registro da arrematação é nulo de pleno direito, porque não se refere a nenhum direito inscrito; a cessão levaria ao mesmo vício, ao transferir situação jurídica que não está no fólio real.",
+     "A dúvida não serve para retificar o registro nem para discutir indenização ou honorários. O CSM determinou comunicar a Corregedoria-Geral para providências quanto aos assentos nulos."
+    ],
+    "orientacao": "Carta de arrematação: conferir se o bem ou direito arrematado está inscrito na matrícula em nome do executado; se não estiver, recusar o registro. O CSM tratou como nulo de pleno direito o registro feito nessas condições e mandou comunicar a Corregedoria-Geral.",
+    "atencao": "O acórdão declara nulo de pleno direito um registro já lavrado (a arrematação) e manda comunicar a Corregedoria-Geral — situação rara em que o próprio julgamento de dúvida aponta assento nulo na matrícula."
+   },
+   "integra": "Apelação Cível - São Vicente - Apelante: Matheus Sala Riguetti - Apelado: Registro de Imóveis e Anexos de São Vicente - Magistrado(a) Silvia Rocha (Corregedora Geral) - Negaram provimento ao recurso, com determinação. V.U. - DIREITO REGISTRAL. REGISTRO DE IMÓVEIS. DÚVIDA. APELAÇÃO. RECURSO INTERPOSTO CONTRA SENTENÇA QUE MANTEVE RECUSA AO REGISTRO DE CESSÃO DE DIREITOS RELATIVOS A IMÓVEL, ADQUIRIDOS PELO APELANTE, ORA CEDENTE, EM LEILÃO JUDICIAL HAVIDO EM EXECUÇÃO FORÇADA. DIREITOS NÃO FORAM INSCRITOS. PRINCÍPIOS DA INSCRIÇÃO E DA CONTINUIDADE. REGISTRO DA ARREMATAÇÃO É NULO DE PLENO DIREITO, POR NÃO SE REFERIR A NENHUM DIREITO INSCRITO. CESSÃO DE DIREITOS TAMBÉM DETERMINARIA NULIDADE DE PLENO DIREITO, POR IMPLICAR TRANSFERÊNCIA DE SITUAÇÃO JURÍDICA QUE NÃO SE ENCONTRA NO FÓLIO REAL. IMPOSSIBILIDADE DE RETIFICAÇÃO NO CURSO DO PROCESSO DE DÚVIDA. NATUREZA ADMINISTRATIVA DO PROCESSO NÃO ADMITE DISCUSSÃO DE PEDIDOS DE INDENIZAÇÃO OU DE PAGAMENTO DE HONORÁRIOS ADVOCATÍCIOS. DETERMINAÇÃO DE COMUNIAÇÃO À CORREGEDORIA-GERAL DA JUSTIÇA, PARA QUE PROCEDA COMO FOR DE DIREITO QUANTO AOS ASSENTOS NULOS. APELAÇÃO NÃO PROVIDA, COM DETERMINAÇÃO.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10146865320238260590",
+   "djen": "2026-11-12",
+   "djenId": 783887809
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Embargos de Declaração 1120083-48.2025.8.26.0100",
+   "com": "CAPITAL",
+   "titulo": "Embargos rejeitados: acórdão que enfrenta todos os argumentos não é omisso",
+   "resumo": {
+    "tema": "EMBARGOS DE DECLARAÇÃO — INEXISTÊNCIA DE OMISSÃO (ARTS. 1.022 E 489, § 1º, IV, DO CPC)",
+    "corpo": [
+     "Os embargos alegavam omissões no julgamento de dúvida do 1º Registro de Imóveis da Capital. O CSM os rejeitou: o acórdão fundamentado que enfrenta todos os argumentos capazes de mudar a conclusão não tem vício. A publicação não traz o assunto do registro discutido."
+    ],
+    "orientacao": "Questão processual, sem reflexo na qualificação."
+   },
+   "integra": "Embargos de Declaração Cível - São Paulo - Embargte: Priscila Amorim Ferreira - Embargdo: Primeiro Oficial de Registro de Imóveis da Comarca da Capital - Magistrado(a) Silvia Rocha (Corregedora Geral) - Rejeitaram os embargos. V. U. - DIREITO REGISTRAL. REGISTRO DE IMÓVEIS. EMBARGOS DE DECLARAÇÃO. DÚVIDA. ALEGAÇÃO DE OMISSÕES NO JULGADO. INEXISTÊNCIA DOS VÍCIOS PREVISTOS NO ART. 1.022 DO CÓDIGO DE PROCESSO CIVIL. EMBARGOS DE DECLARAÇÃO REJEITADOS.1. NOS TERMOS DO ART. 1.022 DO CÓDIGO DE PROCESSO CIVIL, CABEM EMBARGOS DE DECLARAÇÃO CONTRA QUALQUER DECISÃO JUDICIAL PARA ESCLARECER OBSCURIDADE OU ELIMINAR CONTRADIÇÃO, SUPRIR OMISSÃO DE PONTO OU QUESTÃO SOBRE O QUAL DEVIA SE PRONUNCIAR O JUIZ OU CORRIGIR ERRO MATERIAL.2. O ACÓRDÃO FUNDAMENTADO QUE ENFRENTA TODOS OS ARGUMENTOS DEDUZIDOS NO PROCESSO CAPAZES DE INFIRMAR A CONCLUSÃO ADOTADA PELO JULGADOR, CONFORME O ART. 489, § 1º, IV, DO CÓDIGO DE PROCESSO CIVIL, NÃO PADECE DE VÍCIOS.3. EMBARGOS DE DECLARAÇÃO REJEITADOS.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=11200834820258260100",
+   "djen": "2026-11-12",
+   "djenId": 783887812
+  },
+  {
+   "ed": "12/11/2026",
+   "num": "Apelação 1007143-09.2026.8.26.0100",
+   "com": "CAPITAL",
+   "titulo": "Usucapião extrajudicial não reabre o que a ação judicial julgou improcedente",
+   "resumo": {
+    "tema": "USUCAPIÃO EXTRAJUDICIAL APÓS IMPROCEDÊNCIA JUDICIAL SOBRE O MESMO IMÓVEL — EFICÁCIA PRECLUSIVA DA COISA JULGADA",
+    "corpo": [
+     "Os requerentes pediram a usucapião extrajudicial de vaga de garagem indeterminada depois de a ação judicial de usucapião sobre o mesmo imóvel ter sido julgada improcedente. O CSM aplicou a eficácia preclusiva da coisa julgada material (art. 508 do CPC): a matéria não pode ser rediscutida na via administrativa sem alteração fática superveniente."
+    ],
+    "orientacao": "No pedido de usucapião extrajudicial, verificar se houve ação de usucapião sobre o mesmo imóvel; se foi julgada improcedente, a via extrajudicial só cabe diante de alteração fática superveniente."
+   },
+   "integra": "Apelação Cível - São Paulo - Apelante: Avanil de Matos e outro - Apelado: 2º Oficial de Registro de Imóveis da Comarca da Capital - Magistrado(a) Silvia Rocha (Corregedora Geral) - Negaram provimento ao recurso. V. U. - APELAÇÃO. DÚVIDA INICIALMENTE INSTAURADA COMO PEDIDO DE PROVIDÊNCIAS. DIREITO REGISTRAL. REGISTRO DE IMÓVEIS. USUCAPIÃO EXTRAJUDICIAL. VAGA DE GARAGEM INDETERMINADA. PRETENSÃO DE RECONHECIMENTO EXTRAJUDICIAL DE USUCAPIÃO APÓS IMPROCEDÊNCIA DE AÇÃO JUDICIAL SOBRE O MESMO IMÓVEL. EFICÁCIA PRECLUSIVA DA COISA JULGADA MATERIAL (ART. 508, CPC). IMPOSSIBILIDADE DE REDISCUSSÃO DA MATÉRIA NA VIA ADMINISTRATIVA. AUSÊNCIA DE ALTERAÇÃO FÁTICA SUPERVENIENTE. NÃO PROVIMENTO DO RECURSO.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 12/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10071430920268260100",
+   "djen": "2026-11-12",
+   "djenId": 783887829
+  },
+  {
    "ed": "26/10/2026",
    "num": "Apelação 1011975-33.2023.8.26.0604",
    "com": "SUMARÉ",
@@ -883,21 +1111,15 @@
    "d": "12/11/2026",
    "wd": "quinta-feira",
    "sem": null,
-   "nac": null,
-   "pend": [
-    "DJEN"
-   ],
-   "fonte": "DEJESP (edição 4558) — DJEN pendente"
+   "nac": 12,
+   "fonte": "DJEN + DEJESP (edição 4558)"
   },
   {
    "d": "11/11/2026",
    "wd": "quarta-feira",
    "sem": null,
-   "nac": null,
-   "pend": [
-    "DJEN"
-   ],
-   "fonte": "DEJESP (edição 4557) — DJEN pendente"
+   "nac": 0,
+   "fonte": "DJEN + DEJESP (edição 4557)"
   },
   {
    "d": "10/11/2026",
@@ -1778,15 +2000,11 @@
    "forca": "normativo",
    "vinculante": true,
    "situacao": "Vigente",
-   "afeta": [
-    "RI",
-    "RTD",
-    "RCPJ"
-   ],
-   "titulo": "ART. 235 DO CÓDIGO NACIONAL DE NORMAS COM REDAÇÃO NOVA",
+   "afeta": [],
+   "titulo": "REGISTRO CIVIL DAS PESSOAS NATURAIS — CAI O PODER DAS CORREGEDORIAS LOCAIS DE MUDAR O PRAZO DE ENVIO DOS ASSENTOS ANTIGOS À CRC",
    "ementa": "Altera a redação do artigo 235 do Código Nacional de Normas.",
-   "resumo": "A ementa publicada no portal do CNJ diz só isso. O alcance depende da leitura do texto compilado do art. 235 do CNN/CN/CNJ-Extra, que não foi lido nesta varredura — por isso não há resumo de mérito aqui.",
-   "orientacao": "Ler o texto compilado no link e registrar o que mudou antes de qualquer orientação à equipe.",
+   "resumo": "O Provimento 258 revoga o § 3º do art. 235 do CNN. O art. 235 trata da comunicação à Central de Informações de Registro Civil das Pessoas Naturais (CRC) dos assentos lavrados antes do Provimento 46/2015; o § 3º permitia à Corregedoria-Geral de cada estado reduzir ou prorrogar uma vez o prazo dessas informações. Sem ele, vale só o cronograma nacional do § 2º. Texto do provimento e do art. 235 lidos no portal do CNJ em 11/11/2026.",
+   "orientacao": "Apenas ciência: a norma é do Registro Civil das Pessoas Naturais e não alcança Registro de Imóveis, Títulos e Documentos ou Pessoas Jurídicas.",
    "fonte": "CNJ — Atos normativos (atos.cnj.jus.br), Corregedoria Nacional, situação Vigente",
    "fonteUrl": "https://atos.cnj.jus.br/atos/detalhar/7170"
   },
@@ -1869,10 +2087,10 @@
    "planilha": "2",
    "nome": "DOI — Declaração sobre Operações Imobiliárias",
    "destinatario": "Receita Federal do Brasil (sistema DOI-Web, pelo e-CAC)",
-   "gatilho": "Registro ou averbação de aquisição ou alienação de imóvel, qualquer que seja o valor.",
+   "gatilho": "Operação de aquisição ou alienação de imóvel, qualquer que seja o valor (IN RFB 2.186/2024, art. 4º). No Registro de Imóveis, quando o título for: instrumento particular, inclusive com força de escritura pública; título judicial de adjudicação, herança, legado ou meação; alienação por iniciativa particular ou leilão judicial; título da União, estado, município ou DF em regularização fundiária ou habitação de interesse social; ou escritura de notas ou de consulado, mesmo que já tenha havido DOI (art. 4º, II, a a f). No Registro de Títulos e Documentos, quando registrar instrumento particular dessas operações (art. 4º, III).",
    "periodicidade": "Mensal",
    "prazo": "Até o último dia útil do mês subsequente ao do registro ou averbação (IN RFB 2.186/2024, art. 5º).",
-   "meio": "DOI-Web no e-CAC, conta gov.br nível prata ou ouro, assinatura com certificado ICP-Brasil (art. 5º, §§ 1º e 3º).",
+   "meio": "Sistema DOI-Web, no portal gov.br, com conta gov.br prata ou ouro, restrito aos titulares ou procuradores, assinatura com certificado ICP-Brasil; uma declaração por imóvel (art. 4º, § 1º; art. 5º, §§ 1º a 3º).",
    "base": [
     {
      "norma": "Lei nº 10.426/2002",
@@ -1883,10 +2101,10 @@
     },
     {
      "norma": "Instrução Normativa RFB nº 2.186/2024",
-     "disp": "arts. 1º, 2º, 4º (inc. II), 5º e 10",
-     "o_que": "Regula a DOI; art. 4º, II obriga o registro de imóveis; art. 5º fixa o prazo; art. 10 revoga as IN 1.112/2010, 1.193/2011 e 1.239/2012. Vigente desde 01/06/2024.",
+     "disp": "arts. 1º, 2º, 4º (incs. II e III), 5º e 10",
+     "o_que": "Regula a DOI; art. 4º, II obriga o registro de imóveis nas hipóteses das alíneas a a f e art. 4º, III o registro de títulos e documentos; art. 5º fixa o prazo e o meio; art. 10 revoga as IN 1.112/2010, 1.193/2011 e 1.239/2012. Publicada em 16/04/2024 (retificada em 24/04/2024), vigente desde 01/06/2024; marcada como vigente e sem alteração no portal Normas da Receita em 11/11/2026.",
      "orgao": "Receita Federal",
-     "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/"
+     "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/137341"
     },
     {
      "norma": "NSCGJ-SP, Capítulo XX",
@@ -1903,7 +2121,7 @@
     "Lei 10.426/2002 art. 8",
     "NSCGJ Cap. XX item 144"
    ],
-   "pendencias": "A IN 2.186/2024 foi lida em cópia de repositório de legislação (legisweb), não no portal da Receita, que bloqueia o acesso automático; conferir o texto no portal Normas RFB antes de citar em documento oficial."
+   "pendencias": ""
   },
   {
    "id": "prefeituras",
