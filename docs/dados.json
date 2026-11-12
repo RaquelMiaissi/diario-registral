@@ -880,6 +880,26 @@
  ],
  "dias": [
   {
+   "d": "12/11/2026",
+   "wd": "quinta-feira",
+   "sem": null,
+   "nac": null,
+   "pend": [
+    "DJEN"
+   ],
+   "fonte": "DEJESP (edição 4558) — DJEN pendente"
+  },
+  {
+   "d": "11/11/2026",
+   "wd": "quarta-feira",
+   "sem": null,
+   "nac": null,
+   "pend": [
+    "DJEN"
+   ],
+   "fonte": "DEJESP (edição 4557) — DJEN pendente"
+  },
+  {
    "d": "10/11/2026",
    "wd": "terça-feira",
    "sem": null,
@@ -1184,6 +1204,44 @@
  "_fonte": "DJEN (comunicaapi.pje.jus.br) e DEJESP (tjsp.jus.br/dejesp) — diários oficiais de acesso aberto.",
  "_nota": "Íntegras reproduzidas do DJEN, publicação oficial. Nomes e OAB dos advogados removidos. Fora deste arquivo: verificação do Filtro 1, triagem interna da serventia e qualquer reprodução de compilação de terceiro.",
  "alertas": [
+  {
+   "d": "12/11/2026",
+   "ed": 4558,
+   "num": "CG 917/2026",
+   "proc": "2026/8.26.000010428.9",
+   "origem": "JUQUIÁ – JUIZ DE DIREITO DA VARA ÚNICA",
+   "serv": "Oficial de Registro Civil das Pessoas Naturais e Tabelião de Notas do Município de Sete Barras (Comarca de Registro)",
+   "tipo": [
+    "Procuração"
+   ],
+   "ri": true,
+   "selos": [],
+   "matriculas": [
+    "30.788"
+   ],
+   "resumo": "Procuração pública (Livro 281, fl. 020, de 10/03/1995) com amplos poderes para alienar o imóvel rural Barra do Dique, em Juquiá/SP, objeto da transcrição nº 30.788 do 3º Registro de Imóveis de Santos; o Juízo de Juquiá reconheceu que o outorgante já havia falecido antes da lavratura do ato.",
+   "obs": "O número 30.788 é de transcrição (Terceiro Cartório do Registro de Imóveis de Santos/SP), não de matrícula.",
+   "texto": "COMUNICADO CG Nº 917/2026 PROCESSO Nº 2026/8.26.000010428.9 – JUQUIÁ – JUIZ DE DIREITO DA VARA ÚNICA A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Juízo supramencionado, sobre a r. Decisão, proferida pelo referido Juiz de Direito, acerca de Instrumento Público de Procuração, lavrado junto ao Oficial de Registro Civil das Pessoas Naturais e Tabelião de Notas do Município de Sete Barras, da Comarca de Registro, Livro n° 281, fl. 020, datado de 10/03/1995, no qual figura como outorgante Álvaro Pedro dos Santos, inscrito no CPF n° 026.***.***-87, como outorgado Airton de Oliveira Ramos, inscrito no CPF n°017.***.***-07, conferindo amplos poderes para alienação do imóvel rural denominado Barra do Dique, situado em Juquiá/SP, de transcrição nº 30.788 do Terceiro Cartório do Registro de Imóveis de Santos/SP, tendo em vista o reconhecimento do falecimento do outorgante em data anterior à lavratura o ato.",
+   "fonte": "DEJESP, Caderno 1, edição 4558, 12/11/2026"
+  },
+  {
+   "d": "12/11/2026",
+   "ed": 4558,
+   "num": "CG 916/2026",
+   "proc": "2026/8.26.000013882.5",
+   "origem": "CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE SANTA CATARINA",
+   "serv": "1º Tabelionato de Notas e Protestos de Títulos de Balneário Camboriú/SC",
+   "tipo": [
+    "Procuração"
+   ],
+   "ri": false,
+   "selos": [],
+   "matriculas": [],
+   "resumo": "Procuração pública de 05/10/2026 (Livro 430, fl. 108, protocolo 85204) com amplos poderes para negociar veículo; outorgante sem ficha de firma na serventia, assinatura da escrevente e QR Code (código de resposta rápida) fora do padrão da unidade.",
+   "obs": null,
+   "texto": "COMUNICADO CG Nº 916/2026 PROCESSO Nº 2026/8.26.000013882.5 – CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE SANTA CATARINA A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Órgão supramencionado, noticiando a comunicação do 1º Tabelionato de Notas e Protestos de Títulos de Balneário Camboriú/SC, acerca de suposta ocorrência de fraude em Procuração Pública, atribuída à referida Unidade, datada de 05/10/2026, Livro 430, folha 108, protocolo 85204, na qual figura como outorgante Silvana Machado Franzoni, inscrita no CPF n° 065.***.***-85, como outorgada Priscila Mussulini Rodrigues, inscrita no CPF n° 090.***.***-33, conferindo amplos poderes para negociar o veículo JEEP/COMPASS LIMITED D, placa BDT6F16, Renavam n° 01218767038, tendo em vista que a outorgante não possui ficha de firma arquivada na Serventia, bem como assinatura da escrevente e QR Code fora dos padrões da Unidade.",
+   "fonte": "DEJESP, Caderno 1, edição 4558, 12/11/2026"
+  },
   {
    "d": "05/11/2026",
    "ed": 4553,
