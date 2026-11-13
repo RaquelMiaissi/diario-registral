@@ -1108,6 +1108,16 @@
  ],
  "dias": [
   {
+   "d": "13/11/2026",
+   "wd": "sexta-feira",
+   "sem": null,
+   "nac": null,
+   "pend": [
+    "DJEN"
+   ],
+   "fonte": "DEJESP (edição 4559) — DJEN pendente"
+  },
+  {
    "d": "12/11/2026",
    "wd": "quinta-feira",
    "sem": null,
@@ -1426,6 +1436,25 @@
  "_fonte": "DJEN (comunicaapi.pje.jus.br) e DEJESP (tjsp.jus.br/dejesp) — diários oficiais de acesso aberto.",
  "_nota": "Íntegras reproduzidas do DJEN, publicação oficial. Nomes e OAB dos advogados removidos. Fora deste arquivo: verificação do Filtro 1, triagem interna da serventia e qualquer reprodução de compilação de terceiro.",
  "alertas": [
+  {
+   "d": "13/11/2026",
+   "ed": 4559,
+   "num": "CG 923/2026",
+   "proc": "2026/8.26.000014648.8",
+   "origem": "CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE SANTA CATARINA",
+   "serv": "2º Tabelionato de Notas e Protesto de Títulos de Canoinhas/SC",
+   "tipo": [
+    "Reconhecimento de firma",
+    "Contrato / ATPV"
+   ],
+   "ri": false,
+   "selos": [],
+   "matriculas": [],
+   "resumo": "Reconhecimento de firma da vendedora em Autorização para Transferência de Propriedade de Veículo (ATPV) de 15/10/2026, de uma motocicleta Honda Biz 125, atribuído ao 2º Tabelionato de Canoinhas/SC; a vendedora não tem cartão de assinatura na serventia, e o selo, o QR Code (código de leitura rápida) e a assinatura da escrevente estão fora dos padrões da unidade.",
+   "obs": "O comunicado não informa o número do selo.",
+   "texto": "COMUNICADO CG Nº 923/2026 PROCESSO Nº 2026/8.26.000014648.8 – CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE SANTA CATARINA A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Órgão supramencionado, noticiando a comunicação do 2º Tabelionato de Notas e Protesto de Títulos de Canoinhas/SC, acerca da suposta fraude em reconhecimento de firma, atribuído à referida Unidade, da vendedora Andressa Morais, inscrita no CPF n° 060.***.***-95, em Autorização para Transferência de Propriedade de Veículo – ATPV, datada de 15/10/2026, do veículo HONDA/ BIZ 125 MAIS, placa ATB0840, RENAVAM n° 00234295848, na qual figura como compradora Andreia Fatima Alves, inscrita no CPF nº 008.***.***-70, tendo em vista que a referida vendedora não possui cartão de assinatura no acervo da Serventia, além de selo, QR Code e assinatura da escrevente fora dos padrões da Unidade.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4559"
+  },
   {
    "d": "12/11/2026",
    "ed": 4558,
