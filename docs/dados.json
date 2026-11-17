@@ -1,6 +1,102 @@
 {
  "acordaos": [
   {
+   "ed": "13/11/2026",
+   "num": "Apelação 1004637-70.2024.8.26.0572",
+   "com": "SÃO JOAQUIM DA BARRA",
+   "titulo": "Divisão amigável com indisponibilidade sobre a fração de um condômino: registra-se sem autorização do juízo, levando o gravame à nova matrícula",
+   "resumo": {
+    "tema": "DIVISÃO AMIGÁVEL E EXTINÇÃO DE CONDOMÍNIO COM INDISPONIBILIDADE SOBRE FRAÇÃO IDEAL — NORMA SUPERVENIENTE DO CNN DISPENSA AUTORIZAÇÃO DO JUÍZO ORDENADOR",
+    "corpo": [
+     "A escritura de divisão amigável e extinção de condomínio esbarrou em indisponibilidade averbada sobre a fração ideal de um dos coproprietários. O CSM deu provimento: a divisão tem natureza declaratória e, por modificação superveniente do Código Nacional de Normas, há disposição expressa de que a divisão de imóvel com indisponibilidade independe de autorização do juízo que a ordenou.",
+     "Os gravames são transportados para a nova matrícula aberta em nome do devedor, preservando as restrições, com observância da especialidade, da continuidade e da disponibilidade. O CSM registrou que a qualificação inicial foi correta para a época da apresentação, mas aplicou a norma superveniente no julgamento da dúvida."
+    ],
+    "orientacao": "Divisão, extinção de condomínio, desdobro, desmembramento, unificação, estremação ou retificação de imóvel com indisponibilidade averbada: registrar sem exigir autorização da autoridade que a ordenou, transportar a indisponibilidade para as matrículas abertas e comunicar a providência a essa autoridade (CNN art. 320-H, caput e § 1º, incluído pelo Prov. CN 188/2024).",
+    "atencao": "A ementa fala em \"modificação superveniente do Código Nacional de Normas\" sem dizer qual. É o art. 320-H do CNN, incluído pelo Provimento CN 188/2024 (conferido no texto compilado do CNJ em 14/11/2026): a regra vale também para retificação, unificação, desdobro, desmembramento, estremação e Reurb, e o § 1º obriga o oficial a comunicar o transporte à autoridade ordenadora."
+   },
+   "integra": "Apelação Cível - São Joaquim da Barra - Apelante: EDSON JOSÉ GRELLET DIP e outros - Apelado: Oficial de Registro de Imóveis e Anexos da Comarca de São Joaquim da Barra - Magistrado(a) Silvia Rocha (Corregedora Geral) - Deram provimento ao recurso. V. U. - APELAÇÃO. DÚVIDA. REGISTRO DE IMÓVEIS. DIVISÃO AMIGÁVEL E EXTINÇÃO DE CONDOMÍNIO. EXISTÊNCIA DE AVERBAÇÃO DE INDISPONIBILIDADE DE BENS INCIDENTE SOBRE FRAÇÃO IDEAL DE COPROPRIETÁRIO. NATUREZA DECLARATÓRIA DA DIVISÃO. MODIFICAÇÃO SUPERVENIENTE DO CÓDIGO NACIONAL DE NORMAS DO FORO EXTRAJUDICIAL. DISPOSIÇÃO EXPRESSA NO SENTIDO DE QUE A DIVISÃO DE IMÓVEL COM INDISPONIBILIDADE INDEPENDE DE AUTORIZAÇÃO DO JUÍZO ORDENADOR. TRANSPORTE DOS GRAVAMES PARA A NOVA MATRÍCULA ABERTA EM NOME DO DEVEDOR. PRESERVAÇÃO DAS RESTRIÇÕES. OBSERVÂNCIA DOS PRINCÍPIOS DA ESPECIALIDADE, DA CONTINUIDADE E DA DISPONIBILIDADE. QUALIFICAÇÃO REGISTRAL DO TÍTULO INICIAL ADEQUADA À ÉPOCA DA APRESENTAÇÃO, COM APLICAÇÃO DA NORMA SUPERVENIENTE NO JULGAMENTO DA DÚVIDA. RECURSO PROVIDO.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 13/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10046377020248260572",
+   "djen": "2026-11-13",
+   "djenId": 785519491
+  },
+  {
+   "ed": "13/11/2026",
+   "num": "Embargos de Declaração 1014995-40.2024.8.26.0590",
+   "com": "SÃO VICENTE",
+   "titulo": "Formal de partilha com excesso de meação: mantida a exigência do imposto estadual, embargos rejeitados",
+   "resumo": {
+    "tema": "EMBARGOS DE DECLARAÇÃO — FORMAL DE PARTILHA COM EXCESSO DE MEAÇÃO: COMPROVAÇÃO DO IMPOSTO ESTADUAL (ANTIGO ITBI DOAÇÃO)",
+    "corpo": [
+     "O espólio alegou omissão do acórdão quanto à impossibilidade de cumprir a exigência de comprovar o recolhimento do imposto estadual sobre o excesso de meação (o antigo ITBI doação) e quanto à decadência tributária. O CSM rejeitou os embargos: as questões já tinham sido enfrentadas."
+    ],
+    "orientacao": "Formal de partilha com excesso de meação: a exigência de comprovar o recolhimento do imposto estadual sobre o excesso continua de pé; a alegação de decadência tributária não foi aceita para afastá-la."
+   },
+   "integra": "Embargos de Declaração Cível - São Vicente - Embargte: Espolio de Alessandra Pitta Bresser Pereira - Embargdo: Oficial de Registro de Imóveis e Anexos da Comarca de São Vicente - Magistrado(a) Silvia Rocha (Corregedora Geral) - Rejeitaram os embargos. V. U. - DIREITO REGISTRAL IMOBILIÁRIO. DIREITO TRIBUTÁRIO. DÚVIDA. APELAÇÃO. EMBARGOS DE DECLARAÇÃO. FORMAL DE PARTILHA. EXCESSO DE MEAÇÃO. COMPROVAÇÃO DO RECOLHIMENTO DO TRIBUTO ESTADUAL (ANTIGO ITBI DOAÇÃO). ALEGAÇÃO DE OMISSÃO DO ACÓRDÃO. IMPOSSIBILIDADE DE CUMPRIMENTO DA EXIGÊNCIA REGISTRAL. DECADÊNCIA TRIBUTÁRIA. QUESTÕES JÁ ENFRENTADAS. EMBARGOS REJEITADOS.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 13/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10149954020248260590",
+   "djen": "2026-11-13",
+   "djenId": 785519492
+  },
+  {
+   "ed": "13/11/2026",
+   "num": "Apelação 1001263-65.2025.8.26.0037",
+   "com": "ARARAQUARA",
+   "titulo": "Integralização de capital com imóvel: declaração municipal de não incidência sem ressalva encerra a fiscalização do ITBI pelo oficial",
+   "resumo": {
+    "tema": "INTEGRALIZAÇÃO DE CAPITAL SOCIAL COM IMÓVEL — TEMA 796/STF: DECLARAÇÃO MUNICIPAL DE NÃO INCIDÊNCIA SEM RESSALVA ESGOTA O DEVER DO ART. 289 DA LRP",
+    "corpo": [
+     "A sociedade integralizou capital com parte ideal de imóvel rural. O oficial exigiu ITBI sobre um suposto excedente (Tema 796 do STF), calculado pelo valor da declaração do ITR. O município, porém, havia emitido declaração de não incidência sem ressalva, ratificada depois da fixação da tese.",
+     "O CSM afastou o óbice: apresentada a declaração municipal de não incidência sem ressalva, emitida com ciência do valor atribuído ao bem, esgota-se o dever de fiscalização do art. 289 da Lei 6.015/1973. Cabe ao fisco, em procedimento próprio, apurar e cobrar eventual excedente."
+    ],
+    "orientacao": "Integralização de capital com imóvel acompanhada de declaração municipal de não incidência sem ressalva, emitida com ciência do valor do bem: não exigir ITBI sobre excedente calculado pelo oficial (por ITR ou outro parâmetro)."
+   },
+   "integra": "Apelação Cível - Araraquara - Apelante: Arj Agronegócios Ltda - Apelado: 2º Oficial de Registro de Imóveis e Anexos da Comarca de Araraquara - Magistrado(a) Silvia Rocha (Corregedora Geral) - Deram provimento ao recurso. V. U. - DIREITO REGISTRAL. DÚVIDA INVERSA. ÓBICE MANTIDO EM PRIMEIRO GRAU. REGISTRO DE IMÓVEIS. INTEGRALIZAÇÃO DE CAPITAL SOCIAL MEDIANTE CONFERÊNCIA DE PARTE IDEAL DE IMÓVEL RURAL. IMPOSTO SOBRE TRANSMISSÃO DE BENS IMÓVEIS - ITBI. TEMA 796/STF. EXIGÊNCIA DE RECOLHIMENTO SOBRE SUPOSTO EXCEDENTE APURADO COM BASE NO VALOR CONSTANTE DA DECLARAÇÃO DO ITR. DECLARAÇÃO MUNICIPAL DE NÃO INCIDÊNCIA, SEM RESSALVA, RATIFICADA APÓS A FIXAÇÃO DA TESE. ÓBICE AFASTADO. APRESENTADA DECLARAÇÃO MUNICIPAL DE NÃO INCIDÊNCIA SEM RESSALVA, EMITIDA COM CIÊNCIA DO VALOR ATRIBUÍDO AO BEM, EXAURE-SE O DEVER DE FISCALIZAÇÃO PREVISTO NO ART. 289 DA LEI Nº 6.015/1973, CABENDO AO FISCO, EM PROCEDIMENTO PRÓPRIO, APURAR E COBRAR EVENTUAL EXCEDENTE. APELAÇÃO PROVIDA.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 13/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10012636520258260037",
+   "djen": "2026-11-13",
+   "djenId": 785519493
+  },
+  {
+   "ed": "13/11/2026",
+   "num": "Apelação 1012589-90.2026.8.26.0100",
+   "com": "CAPITAL",
+   "titulo": "Solteira na matrícula, divorciada no título: casamento no exterior exige prova do regime de bens antes da venda",
+   "resumo": {
+    "tema": "ALIENANTE SOLTEIRA NA MATRÍCULA E DIVORCIADA NA ESCRITURA — CASAMENTO NO EXTERIOR: PROVA DO REGIME DE BENS PARA AFERIR A LEGITIMIDADE DISPOSITIVA",
+    "corpo": [
+     "A vendedora constava como solteira na matrícula e como divorciada na escritura; casou e se divorciou no exterior. O CSM manteve a recusa: pelos princípios da especialidade subjetiva e da continuidade, é preciso provar o regime de bens para verificar a legitimidade para dispor e a extensão do direito disponível.",
+     "A certidão estrangeira de divórcio não basta para afastar eventual repercussão patrimonial do casamento sobre o imóvel, e a aquisição anterior ao casamento não autoriza presumir a incomunicabilidade. Boa-fé dos compradores, posse exercida e ausência de reivindicação do ex-cônjuge não superam o óbice.",
+     "O regime pode ser provado por declaração consular ou outro documento idôneo, sem dispensa das averbações exigíveis e sujeito a nova qualificação."
+    ],
+    "orientacao": "Alienante que casou e se divorciou no exterior depois de adquirir o imóvel: exigir prova do regime de bens (declaração consular ou documento idôneo) e as averbações cabíveis; certidão estrangeira de divórcio sozinha não basta, nem a data da aquisição anterior ao casamento.",
+    "atencao": "Lido junto com o acórdão de Jaguariúna, de 12/11/2026: lá o CSM recusou presumir o regime por informações de sites consulares; aqui admite declaração consular ou outro documento idôneo como prova. A diferença está no tipo de prova — página de consulado não é declaração consular."
+   },
+   "integra": "Apelação Cível - São Paulo - Apelante: Leonardo Se Kwang Ahn e outro - Apelado: 1º Oficial de Registro de Imóveis da Capital - Magistrado(a) Silvia Rocha (Corregedora Geral) - Negaram provimento ao recurso. V. U. - APELAÇÃO. DÚVIDA. REGISTRO DE IMÓVEIS. ESCRITURA PÚBLICA DE COMPRA E VENDA. RECUSA DE REGISTRO. ALIENANTE QUALIFICADA COMO SOLTEIRA NA MATRÍCULA DO IMÓVEL E COMO DIVORCIADA NO TÍTULO APRESENTADO. NECESSIDADE DE COMPROVAÇÃO DO REGIME DE BENS DE CASAMENTO CELEBRADO NO EXTERIOR. QUALIFICAÇÃO REGISTRAL. PRINCÍPIOS DA ESPECIALIDADE SUBJETIVA E DA CONTINUIDADE. VERIFICAÇÃO DA LEGITIMIDADE DISPOSITIVA E DA EXTENSÃO DO DIREITO DISPONÍVEL. INSUFICIÊNCIA DA CERTIDÃO ESTRANGEIRA DE DIVÓRCIO PARA AFASTAR EVENTUAL REPERCUSSÃO PATRIMONIAL DO MATRIMÔNIO SOBRE O IMÓVEL. AQUISIÇÃO ANTERIOR AO CASAMENTO QUE NÃO AUTORIZA PRESUNÇÃO DE INCOMUNICABILIDADE DO BEM. IRRELEVÂNCIA DA BOA-FÉ DOS ADQUIRENTES, DA POSSE EXERCIDA E DA AUSÊNCIA DE REIVINDICAÇÃO DO EX-CÔNJUGE PARA SUPERAÇÃO DO ÓBICE REGISTRÁRIO. ADMISSIBILIDADE DE DECLARAÇÃO CONSULAR OU DE OUTRO DOCUMENTO IDÔNEO PARA COMPROVAÇÃO DO REGIME DE BENS, SEM DISPENSA DAS AVERBAÇÕES EXIGÍVEIS E SEM PREJUÍZO DE NOVA QUALIFICAÇÃO DO TÍTULO. EXIGÊNCIA JÁ CONTEMPLADA NA NOTA DEVOLUTIVA. RECURSO NÃO PROVIDO.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 13/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=10125899020268260100",
+   "djen": "2026-11-13",
+   "djenId": 785519511
+  },
+  {
+   "ed": "13/11/2026",
+   "num": "Apelação 1112607-56.2025.8.26.0100",
+   "com": "CAPITAL",
+   "titulo": "Cessão de compromisso de compra e venda não é fato gerador de ITBI: o oficial não pode exigir o imposto",
+   "resumo": {
+    "tema": "CESSÃO DE DIREITOS DE COMPROMISSO DE COMPRA E VENDA — NÃO HÁ TRANSMISSÃO DA PROPRIEDADE NEM FATO GERADOR DO ITBI",
+    "corpo": [
+     "O oficial exigiu prova do recolhimento do ITBI para registrar instrumento particular de cessão de direitos decorrentes de compromisso de compra e venda. O CSM afastou o óbice e julgou a dúvida improcedente: a cessão não transmite a propriedade, e o fato gerador do ITBI só ocorre com a efetiva transferência, pelo registro do título translativo (art. 156, II, da Constituição; art. 35 do CTN; arts. 1.227 e 1.245 do Código Civil)."
+    ],
+    "orientacao": "Registro de cessão de direitos de compromisso de compra e venda: não exigir comprovação de ITBI; o imposto só é exigível no registro do título que transmite a propriedade."
+   },
+   "integra": "Apelação Cível - São Paulo - Apelante: Clovis de Morais - Apelado: 15º Oficial de Registro de Imóveis da Comarca da Capital - Magistrado(a) Silvia Rocha (Corregedora Geral) - Deram provimento ao recurso, v.u. - REGISTRO DE IMÓVEIS. DÚVIDA JULGADA PROCEDENTE. INSTRUMENTO PARTICULAR DE CESSÃO DE DIREITOS DECORRENTES DE COMPROMISSO DE COMPRA E VENDA. EXIGÊNCIA DE COMPROVAÇÃO DO RECOLHIMENTO DE ITBI. ÓBICE INDEVIDO. A CESSÃO DE DIREITOS DECORRENTES DE COMPROMISSO DE COMPRA E VENDA NÃO IMPORTA TRANSMISSÃO DA PROPRIEDADE IMOBILIÁRIA E, PORTANTO, NÃO CONFIGURA FATO GERADOR DO ITBI. FATO GERADOR DO IMPOSTO QUE SOMENTE OCORRE COM A EFETIVA TRANSFERÊNCIA DA PROPRIEDADE MEDIANTE REGISTRO DO TÍTULO TRANSLATIVO NO FÓLIO REAL. INTELIGÊNCIA DO ART. 156, II, DA CONSTITUIÇÃO FEDERAL, DO ART. 35 DO CTN E DOS ARTS. 1.227 E 1.245 DO CÓDIGO CIVIL. RECURSO PROVIDO, PARA JULGAR IMPROCEDENTE A DÚVIDA.",
+   "fonte": "DJEN — TJSP, órgão Intimação de Acordãos, 13/11/2026",
+   "fonteUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao?siglaTribunal=TJSP&numeroProcesso=11126075620258260100",
+   "djen": "2026-11-13",
+   "djenId": 785693241
+  },
+  {
    "ed": "12/11/2026",
    "num": "Apelação 1000220-42.2026.8.26.0366",
    "com": "MONGAGUÁ",
@@ -1108,24 +1204,28 @@
  ],
  "dias": [
   {
-   "d": "16/11/2026",
-   "wd": "segunda-feira",
+   "d": "17/11/2026",
+   "wd": "terça-feira",
    "sem": null,
    "nac": null,
    "pend": [
     "DJEN"
    ],
-   "fonte": "DEJESP (edição 4560) — DJEN pendente"
+   "fonte": "DEJESP (edição 4561) — DJEN pendente"
+  },
+  {
+   "d": "16/11/2026",
+   "wd": "segunda-feira",
+   "sem": null,
+   "nac": 0,
+   "fonte": "DJEN + DEJESP (edição 4560)"
   },
   {
    "d": "13/11/2026",
    "wd": "sexta-feira",
    "sem": null,
-   "nac": null,
-   "pend": [
-    "DJEN"
-   ],
-   "fonte": "DEJESP (edição 4559) — DJEN pendente"
+   "nac": 5,
+   "fonte": "DJEN + DEJESP (edição 4559)"
   },
   {
    "d": "12/11/2026",
@@ -2554,7 +2654,16 @@
    "prazo": "Trimestral, à CGJ e ao INCRA.",
    "base": "CNN, art. 436.",
    "url": "https://atos.cnj.jus.br/atos/detalhar/5243"
+  },
+  {
+   "nome": "Transporte de indisponibilidade em divisão, desdobro, desmembramento, unificação, estremação, retificação ou Reurb",
+   "prazo": "Ao praticar o ato (a norma não fixa prazo): comunicar à autoridade que ordenou a indisponibilidade que ela foi transportada para as matrículas abertas.",
+   "base": "CNN art. 320-H, caput e § 1º (Prov. CN 188/2024). Encontrado em 14/11/2026, a partir do acórdão do CSM de São Joaquim da Barra (Apelação 1004637-70.2024.8.26.0572).",
+   "url": "https://atos.cnj.jus.br/atos/detalhar/5243"
   }
  ],
- "comunicacoes_conferido": "11/11/2026"
+ "comunicacoes_conferido": "11/11/2026",
+ "_complementos_aplicados": [
+  "complemento-2026-11-16-djen-13-e-16-11"
+ ]
 }
