@@ -1204,6 +1204,16 @@
  ],
  "dias": [
   {
+   "d": "18/11/2026",
+   "wd": "quarta-feira",
+   "sem": null,
+   "nac": null,
+   "pend": [
+    "DJEN"
+   ],
+   "fonte": "DEJESP (edição 4562) — DJEN pendente"
+  },
+  {
    "d": "17/11/2026",
    "wd": "terça-feira",
    "sem": null,
@@ -1546,6 +1556,126 @@
  "_fonte": "DJEN (comunicaapi.pje.jus.br) e DEJESP (tjsp.jus.br/dejesp) — diários oficiais de acesso aberto.",
  "_nota": "Íntegras reproduzidas do DJEN, publicação oficial. Nomes e OAB dos advogados removidos. Fora deste arquivo: verificação do Filtro 1, triagem interna da serventia e qualquer reprodução de compilação de terceiro.",
  "alertas": [
+  {
+   "d": "18/11/2026",
+   "ed": 4562,
+   "num": "CG 934/2026",
+   "proc": "2026/8.26.000001520.0",
+   "origem": "ARARAQUARA – JUIZ DE DIREITO DA 5ª VARA CÍVEL",
+   "serv": "1º Tabelionato de Notas da Comarca de Guaranésia/MG (procurações); escrituras lavradas no Registro Civil e Tabelionato do Distrito de Bueno de Andrada (Araraquara)",
+   "tipo": [
+    "Procuração",
+    "Escritura pública"
+   ],
+   "ri": true,
+   "selos": [],
+   "matriculas": [
+    "23.727 (1º RI de Araraquara)",
+    "23.577 (1º RI de Araraquara)"
+   ],
+   "resumo": "Duas escrituras de compra e venda lavradas em Bueno de Andrada (Araraquara), de 06/03/2026 (Livro 44, fl. 203) e 07/05/2026 (Livro 46, fl. 055), tiveram por base procurações supostamente falsas atribuídas ao 1º Tabelionato de Notas de Guaranésia/MG (Livro 049-P, fl. 150v, de 26/02/2026; Livro 49-P, fls. 191/191v, de 23/04/2026). Os imóveis são as matrículas 23.727 e 23.577 do 1º Registro de Imóveis de Araraquara.",
+   "obs": "Mesmo padrão nos dois casos: procuração de Guaranésia/MG usada para escritura em outra comarca. Conferir procurações dessa serventia apresentadas como base de escritura.",
+   "texto": "COMUNICADO CG Nº 934/2026 PROCESSO Nº 2026/8.26.000001520.0 – ARARAQUARA – JUIZ DE DIREITO DA 5ª VARA CÍVEL A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Juízo supramencionado, noticiando a comunicação do Oficial de Registro Civil das Pessoas Naturais e Tabelião de Notas do Distrito de Bueno de Andrada, da referida Comarca, acerca das supostas ocorrências de fraudes, abaixo descritas: - em Escritura de Compra e Venda lavrada junto à referida Unidade, datada de 06/03/2026, Livro 44, Fl. 203, na qual figuram como outorgantes vendedores Salvador Moretti, inscrito no CPF n° 863.***.***-15, e sua esposa Rita Marcia Silva Moretti, inscrita no CPF n° 081.***.***-60, como outorgada compradora Telvanir Aparecida da Silva, inscrita no CPF n° 886.***.***-15, e que tem como objeto o imóvel de matrícula nº 23.727, do 1° Oficial de Registro de Imóveis da referida Comarca, tendo em vista a suposta fraude em Procuração, datada de 26/02/2026, Livro 049-P, Fl. 150v, outorgada perante o 1° Tabelionato de Notas da Comarca de Guaranésia/MG, apresentada para a lavratura do referido ato; e - em Escritura de Compra e Venda lavrada junto à referida Unidade, datada de 07/05/2026, Livro 46, Fl. 055, na qual figuram como outorgantes vendedores Ricardo Alves, inscrito no CPF n° 277.***.***-46, e sua esposa Eliara Franchi Fontes Alves, inscrita no CPF n° 268.***.***-57, como outorgada compradora Maria Betânia de Assis Loiola, inscrita no CPF n° 728.***.***-04,e que tem como objeto o imóvel de matrícula nº 23.577, do 1° Oficial de Registro de Imóveis da referida Comarca, tendo em vista a suposta fraude em Procuração, datada de 23/04/2026, Livro 49-P, Fls. 191/191v, outorgada perante o 1° Tabelionato de Notas da Comarca de Guaranésia/MG, apresentada para a lavratura do referido ato.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4562"
+  },
+  {
+   "d": "18/11/2026",
+   "ed": 4562,
+   "num": "CG 935/2026",
+   "proc": "2026/8.26.000009276.0",
+   "origem": "SÃO BERNARDO DO CAMPO – JUIZ DE DIREITO DA 8ª VARA CÍVEL",
+   "serv": "2º Tabelião de Notas de São Bernardo do Campo",
+   "tipo": [
+    "Procuração"
+   ],
+   "ri": true,
+   "selos": [],
+   "matriculas": [
+    "48.872 (2º RI de Campinas)"
+   ],
+   "resumo": "Procuração pública de 01/07/2026 (Livro 237, fls. 078/078v) atribuída ao 2º Tabelião de Notas de São Bernardo do Campo, com poderes para negociar o imóvel da matrícula 48.872 do 2º Registro de Imóveis de Campinas, é suspeita de falsidade: outorgante e outorgada não têm ficha de firma na serventia, e livro, código de barras, papel de segurança e QR Code (código de leitura rápida) estão fora dos padrões da unidade.",
+   "obs": null,
+   "texto": "COMUNICADO CG Nº 935/2026 PROCESSO Nº 2026/8.26.000009276.0 – SÃO BERNARDO DO CAMPO – JUIZ DE DIREITO DA 8ª VARA CÍVEL A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Juízo supramencionado, noticiando a comunicação do 2º Tabelião de Notas da referida Comarca acerca da suposta fraude em Procuração Pública, atribuída à referida Unidade, datada de 01/07/2026, Livro 237, Fls. 078/078v, na qual figura como outorgante Sonia Maria Zaia Bragaia, inscrita no CPF n° 907.***.***-04, como outorgada Leonora Elias da Silva, inscrita no CPF n° 634.***.***-87, conferindo poderes para negociar o imóvel objeto da matrícula 48.872 do 2º Oficial de Registro de Imóveis de Campinas/SP, tendo em vista que as referidas outorgante e outorgada não possuem ficha de firma arquivada na Serventia, bem como o emprego de número de livro, código de barras, papel de segurança e QR Code fora dos padrões da Unidade.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4562"
+  },
+  {
+   "d": "18/11/2026",
+   "ed": 4562,
+   "num": "CG 936/2026",
+   "proc": "2026/8.26.000015170.8",
+   "origem": "CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE SANTA CATARINA",
+   "serv": "2º Tabelionato de Notas e Protestos de Títulos de Mafra/SC",
+   "tipo": [
+    "Reconhecimento de firma",
+    "Contrato / ATPV"
+   ],
+   "ri": true,
+   "selos": [],
+   "matriculas": [],
+   "resumo": "Reconhecimento de firma por autenticidade do comprador em contrato de compra e venda de terreno de 12/02/2024 (imóvel na Rua João Martins de Chagas, 411, São Francisco do Sul/SC), atribuído ao 2º Tabelionato de Mafra/SC, é suspeito de falsidade: o comprador não tem ficha de firma na serventia e o selo está fora dos padrões da unidade.",
+   "obs": "O comunicado não informa o número do selo nem matrícula.",
+   "texto": "COMUNICADO CG Nº 936/2026 PROCESSO Nº 2026/8.26.000015170.8 – CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE SANTA CATARINA A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Órgão supramencionado, noticiando a comunicação do 2º Tabelionato de Notas e Protestos de Títulos da Comarca de Mafra/SC, acerca da suposta ocorrência de fraude em reconhecimento de firma por autenticação, atribuído à referida Unidade, do comprador Hélio Borges Filho, inscrito no CPF n° 060.***.***-85, em Contrato de Compra e Venda de Terreno, datado de 12/02/2024, no qual figura como vendedor Edson Ferreira Gomes, inscrito no CPF n° 072.***.***-04, e que tem como objeto imóvel situado na Rua João Martins de Chagas, nº 411, Bairro Morro Grande, CEP 89240-000, São Francisco do Sul/SC, tendo em vista que o comprador não possui ficha de firma na Serventia, bem como a utilização de selo fora dos padrões da Unidade.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4562"
+  },
+  {
+   "d": "18/11/2026",
+   "ed": 4562,
+   "num": "CG 937/2026",
+   "proc": "2026/8.26.000015030.2",
+   "origem": "SÃO PAULO – JUIZ DE DIREITO DA 2ª VARA DE REGISTROS PÚBLICOS",
+   "serv": "Registro Civil das Pessoas Naturais do 24º Subdistrito – Indianópolis (São Paulo)",
+   "tipo": [
+    "Certidão"
+   ],
+   "ri": false,
+   "selos": [],
+   "matriculas": [],
+   "resumo": "Certidão de casamento atribuída ao Registro Civil do 24º Subdistrito – Indianópolis (São Paulo), referente a casamento de 20/04/1974 (Livro 56, fls. 121, nº 29.912), foi montada de forma fraudulenta.",
+   "obs": "Certidão de casamento costuma instruir títulos no Registro de Imóveis (estado civil e regime de bens) — vale conferir a autenticidade quando for desta serventia.",
+   "texto": "COMUNICADO CG Nº 937/2026 PROCESSO Nº 2026/8.26.000015030.2 – SÃO PAULO – JUIZ DE DIREITO DA 2ª VARA DE REGISTROS PÚBLICOS A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Juízo supramencionado, noticiando a comunicação do Oficial de Registro Civil das Pessoas Naturais do 24° Subdistrito - Indianópolis, da referida Comarca, acerca da suposta ocorrência de fraude em Certidão de Casamento, atribuída à referida Unidade, de José Rivaldo Barreto e Elza Minchef, datada de 20/04/1974, Livro 56, fls. 121, n° 29.912, mediante montagem fraudulenta dos elementos formadores do ato.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4562"
+  },
+  {
+   "d": "18/11/2026",
+   "ed": 4562,
+   "num": "CG 938/2026",
+   "proc": "2026/8.26.000015286.0",
+   "origem": "CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE SANTA CATARINA",
+   "serv": "Tabelionato de Notas e Protestos de Itapema/SC",
+   "tipo": [
+    "Procuração"
+   ],
+   "ri": false,
+   "selos": [
+    "GZW45578-85ZM"
+   ],
+   "matriculas": [],
+   "resumo": "Procuração pública de 16/01/2026 (Livro 479, fls. 077/078, protocolo 125.446) atribuída ao Tabelionato de Itapema/SC, com poderes para negociar um veículo, é suspeita de falsidade: as partes não têm ato lavrado na serventia e o selo GZW45578-85ZM foi reutilizado ou falsificado.",
+   "obs": null,
+   "texto": "COMUNICADO CG Nº 938/2026 PROCESSO Nº 2026/8.26.000015286.0 – CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE SANTA CATARINA A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Órgão supramencionado, noticiando a comunicação do Tabelionato de Notas e Protestos de Itapema/SC, acerca de suposta ocorrência de fraude em Procuração Pública, atribuída à referida Unidade, datada de 16/01/2026, Livro 479, fls. 077/078, protocolo n° 125.446, na qual figura como outorgante Daniel Nunes de Neque, inscrito no CPF n° 009.***.***-97, como outorgado Rodrigo Floriano, inscrito no CPF n° 092.***.***-07, conferindo amplos poderes para negociar o veículo I/VW GOLF GTI AB, placa OVP1H77, Renavam n° 00695803077, tendo em vista que os referidos outorgante e outorgado não possuem ato lavrado na Serventia, bem como a reutilização ou falsificação do selo nᵒ GZW45578-85ZM.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4562"
+  },
+  {
+   "d": "18/11/2026",
+   "ed": 4562,
+   "num": "CG 939/2026",
+   "proc": "2026/8.26.000015078.7",
+   "origem": "SÃO PAULO – JUIZ DE DIREITO DA 2ª VARA DE REGISTROS PÚBLICOS",
+   "serv": "Registro Civil das Pessoas Naturais do 25º Subdistrito – Pari (São Paulo)",
+   "tipo": [
+    "Reconhecimento de firma",
+    "Procuração"
+   ],
+   "ri": false,
+   "selos": [
+    "RA1076AA0297860"
+   ],
+   "matriculas": [],
+   "resumo": "Reconhecimento de firma por autenticidade da outorgante em procuração particular de 13/07/2026, para representação no DETRAN (Departamento Estadual de Trânsito) quanto a um veículo, atribuído ao Registro Civil do 25º Subdistrito – Pari (São Paulo), foi montado de forma fraudulenta, com reutilização ou falsificação do selo RA1076AA0297860.",
+   "obs": null,
+   "texto": "COMUNICADO CG Nº 939/2026 PROCESSO Nº 2026/8.26.000015078.7 – SÃO PAULO – JUIZ DE DIREITO DA 2ª VARA DE REGISTROS PÚBLICOS A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Juízo supramencionado, noticiando a comunicação do Oficial de Registro Civil das Pessoas Naturais do 25º Subdistrito – Pari, da referida Comarca, acerca da suposta ocorrência de fraude em reconhecimento de firma por autenticidade, atribuído à referida Unidade, da outorgante Camila Barreto Pinto Silva, inscrita no CPF nº 091.***.***-21, em Instrumento Particular de Procuração, datado de 13/07/2026, no qual figura como outorgado Bruno da Silva Santos, inscrito no CPF n° 439.***.***-40, conferindo poderes para representar a outorgante junto ao DETRAN, referente ao veículo VW/T, placa FKG-6H36, Renavam n° 01231563823, mediante montagem fraudulenta dos elementos formadores do ato, além da reutilização ou falsificação do selo nº RA1076AA0297860.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4562"
+  },
   {
    "d": "13/11/2026",
    "ed": 4559,
@@ -2111,6 +2241,24 @@
   }
  ],
  "nacional": [
+  {
+   "d": "17/11/2026",
+   "org": "STJ",
+   "tipo": "Acórdão em informativo",
+   "num": "REsp 2.230.789-TO — Informativo nº 910",
+   "forca": "persuasivo",
+   "vinculante": false,
+   "ramo": "Direito Administrativo; Direito Civil",
+   "afeta": [
+    "RI"
+   ],
+   "titulo": "USUCAPIÃO — IMÓVEL SUBMERSO POR RESERVATÓRIO DE HIDRELÉTRICA É BEM DA UNIÃO E NÃO PODE SER USUCAPIDO, AINDA QUE A MATRÍCULA CONTINUE EM NOME DE PARTICULAR",
+   "ementa": "Ação de usucapião. Imóvel submerso. Formação de reservatório. Usina hidrelétrica. Exploração do potencial energético. Transferência ao domínio público. Determinação constitucional relativa aos bens da União. Imprescritibilidade.",
+   "resumo": "Destaque do informativo: não é juridicamente possível a usucapião de imóvel submerso que, embora ainda tenha um particular como proprietário registral, foi inundado para formar reservatório de usina hidrelétrica. A inundação, com a afetação da área à geração de energia, basta para enquadrá-la como bem da União (CF, art. 20, VIII); o registro no Registro de Imóveis não é indispensável, porque a transferência decorre da Constituição. Incide a vedação de usucapião de bens públicos (CF, art. 183, § 3º; CC, art. 102). Terceira Turma, Rel. Ministra Nancy Andrighi, unânime, julgado em 10/11/2026. Lidos o destaque e as informações do inteiro teor publicados no informativo, não o acórdão.",
+   "orientacao": "Em usucapião extrajudicial, área atingida por reservatório de hidrelétrica deve ser tratada como possível bem público mesmo que a matrícula esteja em nome de particular: exigir esclarecimento da situação e ouvir a União. Decisão de turma, não vinculante — serve de orientação, não de comando.",
+   "fonte": "STJ — Informativo de Jurisprudência nº 910, de 17/11/2026 (processo.stj.jus.br)",
+   "fonteUrl": "https://processo.stj.jus.br/jurisprudencia/externo/informativo/"
+  },
   {
    "d": "05/11/2026",
    "org": "CNJ",
