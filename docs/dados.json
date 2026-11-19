@@ -1204,6 +1204,16 @@
  ],
  "dias": [
   {
+   "d": "19/11/2026",
+   "wd": "quinta-feira",
+   "sem": null,
+   "nac": null,
+   "pend": [
+    "DJEN"
+   ],
+   "fonte": "DEJESP (edição 4563) — DJEN pendente"
+  },
+  {
    "d": "18/11/2026",
    "wd": "quarta-feira",
    "sem": null,
