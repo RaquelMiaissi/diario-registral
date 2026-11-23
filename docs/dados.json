@@ -1204,6 +1204,16 @@
  ],
  "dias": [
   {
+   "d": "23/11/2026",
+   "wd": "segunda-feira",
+   "sem": null,
+   "nac": null,
+   "pend": [
+    "DJEN"
+   ],
+   "fonte": "DEJESP (edição 4564) — DJEN pendente"
+  },
+  {
    "d": "20/11/2026",
    "wd": "sexta-feira",
    "sem": "Feriado nacional (Dia Nacional de Zumbi e da Consciência Negra): sem edição do DEJESP; DJEN não lido (bloqueio por país).",
