@@ -1204,6 +1204,26 @@
  ],
  "dias": [
   {
+   "d": "25/11/2026",
+   "wd": "quarta-feira",
+   "sem": null,
+   "nac": null,
+   "pend": [
+    "DJEN"
+   ],
+   "fonte": "DEJESP (edição 4566) — DJEN pendente"
+  },
+  {
+   "d": "24/11/2026",
+   "wd": "terça-feira",
+   "sem": null,
+   "nac": null,
+   "pend": [
+    "DJEN"
+   ],
+   "fonte": "DEJESP (edição 4565) — DJEN pendente"
+  },
+  {
    "d": "23/11/2026",
    "wd": "segunda-feira",
    "sem": null,
@@ -2271,6 +2291,24 @@
   }
  ],
  "nacional": [
+  {
+   "d": "24/11/2026",
+   "org": "STJ",
+   "tipo": "Acórdão em informativo",
+   "num": "AREsp 2.653.658-MS — Informativo nº 911",
+   "forca": "persuasivo",
+   "vinculante": false,
+   "ramo": "Direito Civil",
+   "afeta": [
+    "RI"
+   ],
+   "titulo": "LOTEAMENTO — NA RESOLUÇÃO DA PROMESSA DE COMPRA E VENDA DE LOTE URBANO, A TAXA DE FRUIÇÃO PODE SER DEDUZIDA MESMO NO LOTE NÃO EDIFICADO, ATÉ 0,75% DO VALOR ATUALIZADO DO CONTRATO",
+   "ementa": "Promessa de compra e venda de lote urbano. Resolução contratual por iniciativa do adquirente. Lei n. 13.786/2018. Taxa de fruição em lote não edificado. Possibilidade de dedução.",
+   "resumo": "Destaque do informativo: nos contratos de promessa de compra e venda de lote urbano firmados sob a Lei 13.786/2018, é possível deduzir da restituição ao adquirente que desiste a taxa de fruição, inclusive em lote não edificado, desde que respeitados os requisitos legais e contratuais e o teto de 0,75% do valor atualizado do contrato, sem exigir prova de exploração econômica, no período entre a transmissão da posse e a devolução do lote ao loteador (Lei 6.766/1979, art. 32-A). A decisão não trata de registro: cuida só das consequências financeiras do desfazimento entre as partes. Quarta Turma, Rel. Ministro João Otávio de Noronha, por maioria, julgado em 17/11/2026. Lidos o destaque e as informações do inteiro teor publicados no informativo, não o acórdão.",
+   "orientacao": "Apenas ciência. Não muda a qualificação; só ajuda a entender a cláusula de devolução de valores quando vier distrato de compromisso de compra e venda de lote averbado. Decisão de turma, por maioria, não vinculante.",
+   "fonte": "STJ — Informativo de Jurisprudência nº 911, de 24/11/2026 (processo.stj.jus.br)",
+   "fonteUrl": "https://processo.stj.jus.br/jurisprudencia/externo/informativo/"
+  },
   {
    "d": "17/11/2026",
    "org": "STJ",
