@@ -1282,6 +1282,16 @@
  ],
  "dias": [
   {
+   "d": "27/11/2026",
+   "wd": "sexta-feira",
+   "sem": null,
+   "nac": null,
+   "pend": [
+    "DJEN"
+   ],
+   "fonte": "DEJESP (edição 4568) — DJEN pendente"
+  },
+  {
    "d": "26/11/2026",
    "wd": "quinta-feira",
    "sem": null,
@@ -1674,6 +1684,106 @@
  "_fonte": "DJEN (comunicaapi.pje.jus.br) e DEJESP (tjsp.jus.br/dejesp) — diários oficiais de acesso aberto.",
  "_nota": "Íntegras reproduzidas do DJEN, publicação oficial. Nomes e OAB dos advogados removidos. Fora deste arquivo: verificação do Filtro 1, triagem interna da serventia e qualquer reprodução de compilação de terceiro.",
  "alertas": [
+  {
+   "d": "27/11/2026",
+   "ed": 4568,
+   "num": "CG 964/2026",
+   "proc": "2026/8.26.000005127.4",
+   "origem": "SÃO PAULO – JUIZ DE DIREITO DA 2ª VARA DE REGISTROS PÚBLICOS",
+   "serv": "12º Tabelião de Notas da Capital (procuração e cartão de firma)",
+   "tipo": [
+    "Procuração",
+    "Cartão de firma (bloqueio)"
+   ],
+   "ri": true,
+   "selos": [],
+   "matriculas": [
+    "25684 (1º Serviço Registral e Tabelionato de Notas e de Protesto de Ribas do Rio Pardo/MS)"
+   ],
+   "resumo": "A 2ª Vara de Registros Públicos da Capital bloqueou procuração pública lavrada no 12º Tabelião de Notas da Capital (Livro 4036, págs. 223/225, de 17/04/2025), outorgada por H & L Empreendimentos Imobiliários Ltda. EPP com poderes para negociar o imóvel da matrícula 25684 de Ribas do Rio Pardo/MS, e o cartão de firma nº 669524 do representante da empresa, por suposto uso de documento falso por terceiros.",
+   "obs": "Imóvel fora de São Paulo, mas a procuração é paulista: conferir se aparecer como base de título.",
+   "texto": "COMUNICADO CG Nº 964/2026 PROCESSO Nº 2026/8.26.000005127.4 – SÃO PAULO – JUIZ DE DIREITO DA 2ª VARA DE REGISTROS PÚBLICOS A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Juízo supramencionado, sobre a r. Decisão, proferida pelo referido Juiz de Direito, acerca dos bloqueios abaixo: - de Procuração Pública, lavrada junto ao 12º Tabelião de Notas da referida Comarca, Livro 4036, Páginas 223/225, datada de 17/04/2025, na qual figura como outorgante H & L Empreendimentos Imobiliários Ltda. EPP., inscrita no CNPJ 18.***.***/0001-48, representada neste ato por Antônio Carlos de Paula de Vicente Júnior, inscrito no CPF n° 375.***.***-02, como outorgado Carlos Eduardo Contena Santos, inscrito no CPF n° 374.***.***-09, conferindo poderes para negociar o imóvel objeto da matrícula nº 25684 do 1° Serviço Registral e Tabelionato de Notas e de Protesto da Comarca de Ribas do Rio Pardo, Estado do Mato Grosso do Sul, tendo em vista o suposto uso de documento falso por terceiros; e - de cartão de firma n° 669524 em nome de Antônio Carlos de Paula Vicente Junior, inscrito no CPF n° 375.***.***-02, depositado perante o 12º Tabelião de Notas da referida Comarca, tendo em vista o suposto uso de documento falso por terceiros.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4568"
+  },
+  {
+   "d": "27/11/2026",
+   "ed": 4568,
+   "num": "CG 965/2026",
+   "proc": "2026/8.26.000016160.6",
+   "origem": "CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE ALAGOAS",
+   "serv": "Cartório do 1º Ofício de Imóveis, Hipotecas e Notas de Rio Largo/AL",
+   "tipo": [
+    "Procuração"
+   ],
+   "ri": false,
+   "selos": [],
+   "matriculas": [],
+   "resumo": "Três procurações públicas lavradas no 1º Ofício de Rio Largo/AL (Livro 455, fl. 30, de 04/11/2024; Livro 458, fl. 152, de 07/05/2026; Livro 457, fl. 73, de 02/09/2025) teriam sido obtidas por terceiro que, com documento falso, se passou pelo outorgante. Os poderes são para movimentação bancária (CEF, Bradesco, Banco do Brasil e Santander), sem imóvel envolvido.",
+   "obs": null,
+   "texto": "COMUNICADO CG Nº 965/2026 PROCESSO Nº 2026/8.26.000016160.6 – CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DE ALAGOAS A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Órgão supramencionado, noticiando a comunicação do Cartório do 1º Ofício de Imóveis, Hipotecas e Notas de Rio Largo/AL, acerca das supostas ocorrências de fraudes abaixo descritas: - em Procuração Pública lavrada junto à referida Unidade, em 04/11/2024, Livro nº 455, Folha 30, na qual figura como outorgante Olivia Rita da Silva, inscrita no CPF n° 066.***.***-26, como outorgada Raelly Santos Faustino, inscrita no CPF n° 163.***.***-97, conferindo poderes para realizar movimentações bancárias junto à Caixa Econômica Federal (CEF) e Banco Bradesco, tendo em visa que, supostamente, terceiro, munido de documento falso, passou-se pelo outorgante; - em Procuração Pública lavrada junto à referida Unidade, em 07/05/2026, Livro nº 458, Folha 152, na qual figura como outorgante Olivia Rita da Silva, inscrita no CPF n° 066.***.***-26, como outorgada Raelly Santos Faustino, inscrita no CPF n° 163.***.***-97, conferindo poderes para realizar movimentações bancárias junto à Caixa Econômica Federal (CEF) e Banco Bradesco, tendo em visa que, supostamente, terceiro, munido de documento falso, passou-se pelo outorgante; e - em Procuração Pública lavrada junto à referida Unidade, em 02/09/2025, Livro nº 457, Folha 73, na qual figura como outorgante Luzia Madalena de Jesus, inscrita no CPF n° 209.***.***-00, como outorgada Maria Helena Romualdo Silva Santos, inscrita no CPF n° 494.***.***-87, conferindo poderes para realizar movimentações bancárias junto ao Banco do Brasil S/A e Banco Santander, tendo em vista que, supostamente, terceiro, munido de documento falso, passou-se pelo outorgante.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4568"
+  },
+  {
+   "d": "27/11/2026",
+   "ed": 4568,
+   "num": "CG 966/2026",
+   "proc": "2026/8.26.000014138.9",
+   "origem": "CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DO PARANÁ",
+   "serv": "Serviço Distrital de Novo Mundo/PR",
+   "tipo": [
+    "Reconhecimento de firma",
+    "Contrato / ATPV"
+   ],
+   "ri": false,
+   "selos": [],
+   "matriculas": [],
+   "resumo": "Reconhecimento de firma da vendedora, atribuído ao Serviço Distrital de Novo Mundo/PR, em Autorização para Transferência de Propriedade de Veículo (ATPV) de 22/01/2026 (veículo placa ARW9E77) é suspeito de fraude, segundo diligência da FUNARPEN (Fundo de Apoio ao Registro Civil das Pessoas Naturais do Paraná). Trata de veículo, sem imóvel envolvido.",
+   "obs": null,
+   "texto": "COMUNICADO CG Nº 966/2026 PROCESSO Nº 2026/8.26.000014138.9 – CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DO PARANÁ A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Órgão supramencionado, noticiando a suposta fraude em reconhecimento de firma, atribuído ao Serviço Distrital de Novo Mundo/PR, da vendedora Kellen Costa da Silveira, inscrita no CPF de nº 020.***.***-03, em Autorização para Transferência de Propriedade de Veículo – ATPV, datada de 22/01/2026, do veículo I/LR EVOQUE DYNAMIC 5D, placa ARW9E77, Renavam n° 01006128589, na qual figura como compradora TTCar Prime Motors LTDA, inscrita no CNPJ n° 60.***.***/0001-81, representada neste ato por Thayssa de Souza Silva, tendo em vista os indícios de fraude na confecção do referido documento, nos termos da diligência realizada pelo FUNARPEN.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4568"
+  },
+  {
+   "d": "27/11/2026",
+   "ed": 4568,
+   "num": "CG 967/2026",
+   "proc": "2026/8.26.000016161.4",
+   "origem": "CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DO ESPÍRITO SANTO",
+   "serv": "Cartório de Tabelionato de Notas da Comarca de Piúma/ES",
+   "tipo": [
+    "Reconhecimento de firma",
+    "Contrato / ATPV"
+   ],
+   "ri": true,
+   "selos": [
+    "482626. CFL2222.00200"
+   ],
+   "matriculas": [],
+   "resumo": "Reconhecimento de firma do vendedor, atribuído ao Tabelionato de Notas de Piúma/ES, em contrato particular de compra e venda de imóvel de 16/10/2026 (Rodovia do Sol, 1092, Bairro Itaputanga, Piúma/ES) é suspeito de fraude, por falsificação ou reutilização do selo nº 482626. CFL2222.00200.",
+   "obs": "O comunicado não informa matrícula. Selo transcrito como publicado.",
+   "texto": "COMUNICADO CG Nº 967/2026 PROCESSO Nº 2026/8.26.000016161.4 – CORREGEDORIA-GERAL DA JUSTIÇA DO ESTADO DO ESPÍRITO SANTO A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Órgão supramencionado, noticiando a comunicação do Cartório de Tabelionato de Notas da Comarca de Piúma/ES, acerca da suposta ocorrência de fraude em reconhecimento de firma, atribuído à referida Unidade, do vendedor Paulo Douglas Ribeiro, inscrito no CPF n° 113.***.***-40, em Contrato Particular de Compra e Venda de Imóvel, datado de 16/10/2026, no qual figura como compradora Kaylane Melo Merence, inscrita no CPF n° 204.***.***-78, e que tem como objeto imóvel localizado na Rodovia do Sol, nº 1092, Bairro Itaputanga, na cidade de Piúma/ES, tendo em vista a falsificação ou reutilização do selo n° 482626. CFL2222.00200.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4568"
+  },
+  {
+   "d": "27/11/2026",
+   "ed": 4568,
+   "num": "CG 968/2026",
+   "proc": "2026/8.26.000016241.6",
+   "origem": "SÃO PAULO – JUIZ DE DIREITO DA 2ª VARA DE REGISTROS PÚBLICOS",
+   "serv": "RCPN do 24º Subdistrito – Indianópolis e RCPN e Tabeliã de Notas do Distrito de São Miguel Paulista (atribuição); selos do RCPN do 35º Subdistrito – Barra Funda (Capital)",
+   "tipo": [
+    "Reconhecimento de firma"
+   ],
+   "ri": false,
+   "selos": [
+    "C11062AA0388212",
+    "C11062AA0388211"
+   ],
+   "matriculas": [],
+   "resumo": "Dois reconhecimentos de firma por semelhança de sócios, em alteração contratual de 11/05/2022 da Roiam Indústria de Produtos Alimentícios Ltda., atribuídos aos Registros Civis de Indianópolis e de São Miguel Paulista (Capital), são suspeitos de montagem fraudulenta, com reutilização ou falsificação dos selos C11062AA0388212 e C11062AA0388211, que pertencem ao Registro Civil do 35º Subdistrito – Barra Funda.",
+   "obs": "Alteração contratual de sociedade limitada: atenção se aparecer em título apresentado ao RI ou ao RTD/RCPJ.",
+   "texto": "COMUNICADO CG Nº 968/2026 PROCESSO Nº 2026/8.26.000016241.6 – SÃO PAULO – JUIZ DE DIREITO DA 2ª VARA DE REGISTROS PÚBLICOS A Corregedoria-Geral da Justiça COMUNICA, para conhecimento geral, o recebimento de informações do Juízo supramencionado, acerca das supostas ocorrências de fraudes abaixo descritas: - em reconhecimento de firma por semelhança, atribuído ao Oficial de Registro Civil das Pessoas Naturais do 24° Subdistrito - Indianópolis, da referida Comarca, do sócio Ednilson Alves de Oliveira, inscrito no CPF n° 101.***.***-60, em Alteração Contratual, da empresa Roiam Indústria de Produtos Alimentícios LTDA, inscrita no CNPJ n° 29.***.***/0001-70, datada de 11/05/2022, mediante montagem fraudulenta dos elementos formadores do ato, bem como a reutilização ou falsificação do selo nº C11062AA0388212, atribuído ao Oficial de Registro Civil das Pessoas Naturais do 35° Subdistrito - Barra Funda, da referida Comarca; e - em reconhecimento de firma por semelhança, atribuído ao Oficial de Registro Civil das Pessoas Naturais e Tabeliã de Notas do Distrito de São Miguel Paulista da referida Comarca, do sócio Rodrigo Eduardo David, inscrito no CPF n° 177.***.***- 71, em Alteração Contratual, da empresa Roiam Indústria de Produtos Alimentícios LTDA, inscrita no CNPJ n° 29.***.***/0001- 70, datada de 11/05/2022, mediante montagem fraudulenta dos elementos formadores do ato, bem como a reutilização ou falsificação do selo nº C11062AA0388211, atribuído ao Oficial de Registro Civil das Pessoas Naturais do 35° Subdistrito - Barra Funda, da referida Comarca.",
+   "fonte": "DEJESP, Caderno 1, Subseção III, EXTRAJUDICIAL, Dicoge 5.1 — edição 4568"
+  },
   {
    "d": "18/11/2026",
    "ed": 4562,
